@@ -1,0 +1,28 @@
+---
+attack_id: T1011
+name: Exfiltration Over Other Network Medium
+type: technique
+parent: null
+tactics: [Exfiltration]
+platforms: [Linux, macOS, Windows]
+url: https://attack.mitre.org/techniques/T1011
+tags: [mitre-attack, technique, T1011]
+---
+
+# T1011 - Exfiltration Over Other Network Medium
+
+**Tactic(s):** Exfiltration  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1011](https://attack.mitre.org/techniques/T1011)
+
+## Summary
+Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel. If the command and control network is a wired Internet connection, the exfiltration may occur, for example, over a WiFi connection, modem, cellular data connection, Bluetooth, or another radio frequency (RF) channel.
+
+Adversaries may choose to do this if they have sufficient access or proximity, and the connection might not be secured or defended as well as the primary Internet-connected channel because it is not routed through the same enterprise network.
+
+## Role in the attack flow
+Used to achieve the **Exfiltration** objective. An autonomous agent invokes this when its current sub-goal matches that tactic and the target platform is one of: Linux, macOS, Windows.
+
+## Mitigations
+- **M1042 Disable or Remove Feature or Program** - Disable or remove unnecessary and potentially vulnerable software, features, or services to reduce the attack surface and prevent abuse by adversaries. This involves identifying software or features that are no longer needed or that could be exploited and ensuring they are either removed or properly disabled. This mitigation can be implemented through the following measures: 
+- **M1028 Operating System Configuration** - Operating System Configuration involves adjusting system settings and hardening the default configurations of an operating system (OS) to mitigate adversary exploitation and prevent abuse of system functionality. Proper OS configurations address security vulnerabilities, limit attack surfaces, and ensure robust defense against a wide range of techniques. This mitigation can be implemented through the following measures: 
+
+Source: MITRE ATT&CK - https://attack.mitre.org/techniques/T1011

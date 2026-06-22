@@ -1,0 +1,26 @@
+---
+attack_id: T1014
+name: Rootkit
+type: technique
+parent: null
+tactics: [Stealth]
+platforms: [Linux, macOS, Windows]
+url: https://attack.mitre.org/techniques/T1014
+tags: [mitre-attack, technique, T1014]
+---
+
+# T1014 - Rootkit
+
+**Tactic(s):** Stealth  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1014](https://attack.mitre.org/techniques/T1014)
+
+## Summary
+Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components. Rootkits are programs that hide the existence of malware by intercepting/hooking and modifying operating system API calls that supply system information. (Citation: Symantec Windows Rootkits) 
+
+Rootkits or rootkit enabling functionality may reside at the user or kernel level in the operating system or lower, to include a hypervisor or [System Firmware](https://attack.mitre.org/techniques/T1542/001). (Citation: Wikipedia Rootkit) Rootkits have been seen for Windows, Linux, and Mac OS X systems. (Citation: CrowdStrike Linux Rootkit) (Citation: BlackHat Mac OSX Rootkit)
+
+Rootkits that reside or modify boot sectors are known as [Bootkit](https://attack.mitre.org/techniques/T1542/003)s and specifically target the boot process of the operating system.
+
+## Role in the attack flow
+Used to achieve the **Stealth** objective. An autonomous agent invokes this when its current sub-goal matches that tactic and the target platform is one of: Linux, macOS, Windows.
+
+Source: MITRE ATT&CK - https://attack.mitre.org/techniques/T1014

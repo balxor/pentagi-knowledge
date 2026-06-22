@@ -1,0 +1,28 @@
+---
+attack_id: T1114
+name: Email Collection
+type: technique
+parent: null
+tactics: [Collection]
+platforms: [Windows, macOS, Linux, Office Suite]
+url: https://attack.mitre.org/techniques/T1114
+tags: [mitre-attack, technique, T1114]
+---
+
+# T1114 - Email Collection
+
+**Tactic(s):** Collection  ·  **Platforms:** Windows, macOS, Linux, Office Suite  ·  **ATT&CK:** [T1114](https://attack.mitre.org/techniques/T1114)
+
+## Summary
+Adversaries may target user email to collect sensitive information. Emails may contain sensitive data, including trade secrets or personal information, that can prove valuable to adversaries. Emails may also contain details of ongoing incident response operations, which may allow adversaries to adjust their techniques in order to maintain persistence or evade defenses.(Citation: TrustedSec OOB Communications)(Citation: CISA AA20-352A 2021) Adversaries can collect or forward email from mail servers or clients.
+
+## Role in the attack flow
+Used to achieve the **Collection** objective. An autonomous agent invokes this when its current sub-goal matches that tactic and the target platform is one of: Windows, macOS, Linux, Office Suite.
+
+## Mitigations
+- **M1032 Multi-factor Authentication** - Multi-Factor Authentication (MFA) enhances security by requiring users to provide at least two forms of verification to prove their identity before granting access. These factors typically include:
+- **M1060 Out-of-Band Communications Channel** - Establish secure out-of-band communication channels to ensure the continuity of critical communications during security incidents, data integrity attacks, or in-network communication failures. Out-of-band communication refers to using an alternative, separate communication path that is not dependent on the potentially compromised primary network infrastructure. This method can include secure messaging apps, encrypted phone lines, satellite communications, or dedicated emergency communication systems. Leveraging these alternative channels reduces the risk of adversaries intercepting, disrupting, or tampering with sensitive communications and helps coordinate an effective incident response.(Citation: TrustedSec OOB Communications)(Citation: NIST Special Publication 800-53 Revision 5)
+- **M1041 Encrypt Sensitive Information** - Protect sensitive information at rest, in transit, and during processing by using strong encryption algorithms. Encryption ensures the confidentiality and integrity of data, preventing unauthorized access or tampering. This mitigation can be implemented through the following measures:
+- **M1047 Audit** - Auditing is the process of recording activity and systematically reviewing and analyzing the activity and system configurations. The primary purpose of auditing is to detect anomalies and identify potential threats or weaknesses in the environment. Proper auditing configurations can also help to meet compliance requirements. The process of auditing encompasses regular analysis of user behaviors and system logs in support of proactive security measures.
+
+Source: MITRE ATT&CK - https://attack.mitre.org/techniques/T1114

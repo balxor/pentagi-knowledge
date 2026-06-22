@@ -1,0 +1,12 @@
+{
+  "source": "MITRE ATT&CK",
+  "framework": "attack",
+  "domain": "enterprise",
+  "attack_version": "v19.1",
+  "stix_source": "https://github.com/mitre-attack/attack-stix-data/blob/master/enterprise-attack/enterprise-attack.json",
+  "generated_at": "2026-06-23",
+  "generator": "tools/build_attack_knowledge.py",
+  "counts": { "tactics": 15, "techniques": 222, "subtechniques": 475, "total": 712 },
+  "format": "one markdown file per item, YAML frontmatter + structured body",
+  "target": "PentAGI Knowledges (pgvector semantic search)"
+}

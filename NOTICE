@@ -1,0 +1,19 @@
+pentagi-knowledge
+=================
+
+This project redistributes and transforms content derived from MITRE ATT&CK®.
+
+  © 2015-2026 The MITRE Corporation. This work is reproduced and distributed
+  with the permission of The MITRE Corporation.
+
+  MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+  ATT&CK® content is used under the MITRE ATT&CK Terms of Use:
+  https://attack.mitre.org/resources/legal-and-branding/terms-of-use/
+
+The knowledge documents under mitre/attack/** are generated from the official
+ATT&CK STIX data (https://github.com/mitre-attack/attack-stix-data) and may
+contain text from ATT&CK technique and tactic descriptions. Attribution to
+MITRE is required for any further redistribution.
+
+The original tooling, repository structure, and surrounding prose are licensed
+under the MIT License - see LICENSE.
