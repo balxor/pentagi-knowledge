@@ -64,7 +64,9 @@ Body sections: **Summary**, **Role in the attack flow**, **Detection**,
 
 ```bash
 pip install mitreattack-python
-python tools/build_attack_knowledge.py --out ./mitre/attack/enterprise
+python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise
+python tools/build_attack_knowledge.py --domain mobile     --out ./mitre/attack/mobile
+python tools/build_attack_knowledge.py --domain ics        --out ./mitre/attack/ics
 ```
 
 ATT&CK is versioned; re-run after a new release to refresh. See `manifest.json` for the
@@ -77,7 +79,8 @@ provider setup (Ollama/OpenAI), API token, and the batch push.
 
 ## Roadmap
 
-- [ ] ATT&CK Mobile + ICS domains
+- [x] Domain-aware generator (Enterprise / Mobile / ICS)
+- [ ] Commit Mobile + ICS packs
 - [ ] MITRE ATLAS (adversarial AI)
 - [ ] OWASP Top 10 / WSTG mappings
 - [ ] CWE / CAPEC cross-references

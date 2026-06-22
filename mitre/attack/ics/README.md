@@ -1,1 +1,7 @@
-# ICS domain - coming soon. Generate with tools/build_attack_knowledge.py (ics-attack STIX).
+# MITRE ATT&CK - ICS domain
+
+Generate this pack from the official ICS ATT&CK STIX:
+
+```bash
+python tools/build_attack_knowledge.py --domain ics --out ./mitre/attack/ics
+```
