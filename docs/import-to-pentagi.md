@@ -35,7 +35,8 @@ PentAGI UI -> **Settings -> PentAGI API** -> create a Bearer token (copy it once
 ## 3. Push the pack
 
 ```bash
-python tools/build_attack_knowledge.py --out ./mitre/attack/enterprise \
+# push one domain at a time (swap enterprise -> mobile / ics for the others)
+python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise \
   --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN"
 ```
 
