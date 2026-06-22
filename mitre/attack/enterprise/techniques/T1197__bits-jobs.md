@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1197]
 
 # T1197 - BITS Jobs
 
-**Tactic(s):** Stealth, Persistence, Execution  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1197](https://attack.mitre.org/techniques/T1197)
+**Tactic(s):** Stealth, Persistence, Execution  -  **Platforms:** Windows  -  **ATT&CK:** [T1197](https://attack.mitre.org/techniques/T1197)
 
 ## Summary
 Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks. Windows Background Intelligent Transfer Service (BITS) is a low-bandwidth, asynchronous file transfer mechanism exposed through [Component Object Model](https://attack.mitre.org/techniques/T1559/001) (COM).(Citation: Microsoft COM)(Citation: Microsoft BITS) BITS is commonly used by updaters, messengers, and other applications preferred to operate in the background (using available idle bandwidth) without interrupting other networked applications. File transfer tasks are implemented as BITS jobs, which contain a queue of one or more file operations.

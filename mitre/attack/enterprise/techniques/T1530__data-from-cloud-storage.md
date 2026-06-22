@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1530]
 
 # T1530 - Data from Cloud Storage
 
-**Tactic(s):** Collection  ·  **Platforms:** IaaS, Office Suite, SaaS  ·  **ATT&CK:** [T1530](https://attack.mitre.org/techniques/T1530)
+**Tactic(s):** Collection  -  **Platforms:** IaaS, Office Suite, SaaS  -  **ATT&CK:** [T1530](https://attack.mitre.org/techniques/T1530)
 
 ## Summary
 Adversaries may access data from cloud storage.

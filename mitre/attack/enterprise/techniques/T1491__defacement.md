@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1491]
 
 # T1491 - Defacement
 
-**Tactic(s):** Impact  ·  **Platforms:** Windows, IaaS, Linux, macOS, ESXi  ·  **ATT&CK:** [T1491](https://attack.mitre.org/techniques/T1491)
+**Tactic(s):** Impact  -  **Platforms:** Windows, IaaS, Linux, macOS, ESXi  -  **ATT&CK:** [T1491](https://attack.mitre.org/techniques/T1491)
 
 ## Summary
 Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content. Reasons for [Defacement](https://attack.mitre.org/techniques/T1491) include delivering messaging, intimidation, or claiming (possibly false) credit for an intrusion. Disturbing or offensive images may be used as a part of [Defacement](https://attack.mitre.org/techniques/T1491) in order to cause user discomfort, or to pressure compliance with accompanying messages.

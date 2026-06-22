@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1057]
 
 # T1057 - Process Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1057](https://attack.mitre.org/techniques/T1057)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1057](https://attack.mitre.org/techniques/T1057)
 
 ## Summary
 Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Administrator or otherwise elevated access may provide better process details. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.

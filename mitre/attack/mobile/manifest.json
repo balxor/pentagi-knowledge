@@ -2,7 +2,7 @@
   "source": "MITRE ATT&CK",
   "framework": "attack",
   "domain": "mobile",
-  "attack_version": "19.1",
+  "attack_version": "v19.1",
   "stix_source": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/mobile-attack/mobile-attack.json",
   "generated_at": "2026-06-23",
   "generator": "tools/build_attack_knowledge.py",

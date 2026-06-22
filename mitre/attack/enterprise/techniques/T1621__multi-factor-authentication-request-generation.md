@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1621]
 
 # T1621 - Multi-Factor Authentication Request Generation
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Windows, Linux, macOS, IaaS, SaaS, Office Suite, Identity Provider  ·  **ATT&CK:** [T1621](https://attack.mitre.org/techniques/T1621)
+**Tactic(s):** Credential Access  -  **Platforms:** Windows, Linux, macOS, IaaS, SaaS, Office Suite, Identity Provider  -  **ATT&CK:** [T1621](https://attack.mitre.org/techniques/T1621)
 
 ## Summary
 Adversaries may attempt to bypass multi-factor authentication (MFA) mechanisms and gain access to accounts by generating MFA requests sent to users.

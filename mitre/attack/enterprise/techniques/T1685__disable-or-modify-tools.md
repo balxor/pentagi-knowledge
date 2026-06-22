@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1685]
 
 # T1685 - Disable or Modify Tools
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Containers, ESXi, IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1685](https://attack.mitre.org/techniques/T1685)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Containers, ESXi, IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1685](https://attack.mitre.org/techniques/T1685)
 
 ## Summary
 Adversaries may disable, degrade, or tamper with security tools or applications (e.g., endpoint detection and response (EDR) tools, intrusion detection systems (IDS), antivirus, logging agents, sensors, etc.) to impair or reduce visibility of defensive capabilities. This may include stopping specific services, killing processes, modifying or deleting tool configuration files and Registry keys, or preventing tools from updating. This may also include impairing defenses more broadly by disrupting preventative, detection, and response mechanisms across host, network, and cloud environments.(Citation: SCADAfence_ransomware) 

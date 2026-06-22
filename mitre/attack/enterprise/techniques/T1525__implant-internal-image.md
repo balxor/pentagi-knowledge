@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1525]
 
 # T1525 - Implant Internal Image
 
-**Tactic(s):** Persistence  ·  **Platforms:** IaaS, Containers  ·  **ATT&CK:** [T1525](https://attack.mitre.org/techniques/T1525)
+**Tactic(s):** Persistence  -  **Platforms:** IaaS, Containers  -  **ATT&CK:** [T1525](https://attack.mitre.org/techniques/T1525)
 
 ## Summary
 Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment. Amazon Web Services (AWS) Amazon Machine Images (AMIs), Google Cloud Platform (GCP) Images, and Azure Images as well as popular container runtimes such as Docker can be implanted or backdoored. Unlike [Upload Malware](https://attack.mitre.org/techniques/T1608/001), this technique focuses on adversaries implanting an image in a registry within a victim’s environment. Depending on how the infrastructure is provisioned, this could provide persistent access if the infrastructure provisioning tool is instructed to always use the latest image.(Citation: Rhino Labs Cloud Image Backdoor Technique Sept 2019)

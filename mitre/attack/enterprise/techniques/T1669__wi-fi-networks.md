@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1669]
 
 # T1669 - Wi-Fi Networks
 
-**Tactic(s):** Initial Access  ·  **Platforms:** Linux, Network Devices, Windows, macOS  ·  **ATT&CK:** [T1669](https://attack.mitre.org/techniques/T1669)
+**Tactic(s):** Initial Access  -  **Platforms:** Linux, Network Devices, Windows, macOS  -  **ATT&CK:** [T1669](https://attack.mitre.org/techniques/T1669)
 
 ## Summary
 Adversaries may gain initial access to target systems by connecting to wireless networks. They may accomplish this by exploiting open Wi-Fi networks used by target devices or by accessing secured Wi-Fi networks - requiring [Valid Accounts](https://attack.mitre.org/techniques/T1078) - belonging to a target organization.(Citation: DOJ GRU Charges 2018)(Citation: Nearest Neighbor Volexity) Establishing a connection to a Wi-Fi access point requires a certain level of proximity to both discover and maintain a stable network connection. 

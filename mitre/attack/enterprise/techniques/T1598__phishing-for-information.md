@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1598]
 
 # T1598 - Phishing for Information
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1598](https://attack.mitre.org/techniques/T1598)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1598](https://attack.mitre.org/techniques/T1598)
 
 ## Summary
 Adversaries may send phishing messages to elicit sensitive information that can be used during targeting. Phishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information. Phishing for information is different from [Phishing](https://attack.mitre.org/techniques/T1566) in that the objective is gathering data from the victim rather than executing malicious code.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1654]
 
 # T1654 - Log Enumeration
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1654](https://attack.mitre.org/techniques/T1654)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1654](https://attack.mitre.org/techniques/T1654)
 
 ## Summary
 Adversaries may enumerate system and service logs to find useful data. These logs may highlight various types of valuable insights for an adversary, such as user authentication records ([Account Discovery](https://attack.mitre.org/techniques/T1087)), security or vulnerable software ([Software Discovery](https://attack.mitre.org/techniques/T1518)), or hosts within a compromised network ([Remote System Discovery](https://attack.mitre.org/techniques/T1018)).

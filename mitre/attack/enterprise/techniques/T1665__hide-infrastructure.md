@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1665]
 
 # T1665 - Hide Infrastructure
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1665](https://attack.mitre.org/techniques/T1665)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1665](https://attack.mitre.org/techniques/T1665)
 
 ## Summary
 Adversaries may manipulate network traffic in order to hide and evade detection of their C2 infrastructure. This can be accomplished by identifying and filtering traffic from defensive tools,(Citation: TA571) masking malicious domains to obfuscate the true destination from both automated scanning tools and security researchers,(Citation: Schema-abuse)(Citation: Facad1ng)(Citation: Browser-updates) and otherwise hiding malicious artifacts to delay discovery and prolong the effectiveness of adversary infrastructure that could otherwise be identified, blocked, or taken down entirely.

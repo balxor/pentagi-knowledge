@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1601]
 
 # T1601 - Modify System Image
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Network Devices  ·  **ATT&CK:** [T1601](https://attack.mitre.org/techniques/T1601)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Network Devices  -  **ATT&CK:** [T1601](https://attack.mitre.org/techniques/T1601)
 
 ## Summary
 Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves.  On such devices, the operating systems are typically monolithic and most of the device functionality and capabilities are contained within a single file.

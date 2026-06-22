@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1570]
 
 # T1570 - Lateral Tool Transfer
 
-**Tactic(s):** Lateral Movement  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1570](https://attack.mitre.org/techniques/T1570)
+**Tactic(s):** Lateral Movement  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1570](https://attack.mitre.org/techniques/T1570)
 
 ## Summary
 Adversaries may transfer tools or other files between systems in a compromised environment. Once brought into the victim environment (i.e., [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)) files may then be copied from one system to another to stage adversary tools or other files over the course of an operation.

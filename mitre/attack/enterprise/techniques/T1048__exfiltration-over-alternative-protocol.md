@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1048]
 
 # T1048 - Exfiltration Over Alternative Protocol
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1048](https://attack.mitre.org/techniques/T1048)
+**Tactic(s):** Exfiltration  -  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1048](https://attack.mitre.org/techniques/T1048)
 
 ## Summary
 Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server.  

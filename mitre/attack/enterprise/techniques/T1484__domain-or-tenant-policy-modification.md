@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1484]
 
 # T1484 - Domain or Tenant Policy Modification
 
-**Tactic(s):** Defense Impairment, Privilege Escalation  ·  **Platforms:** Windows, Identity Provider  ·  **ATT&CK:** [T1484](https://attack.mitre.org/techniques/T1484)
+**Tactic(s):** Defense Impairment, Privilege Escalation  -  **Platforms:** Windows, Identity Provider  -  **ATT&CK:** [T1484](https://attack.mitre.org/techniques/T1484)
 
 ## Summary
 Adversaries may modify the configuration settings of a domain or identity tenant to evade defenses and/or escalate privileges in centrally managed environments. Such services provide a centralized means of managing identity resources such as devices and accounts, and often include configuration settings that may apply between domains or tenants such as trust relationships, identity syncing, or identity federation.

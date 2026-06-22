@@ -1,11 +1,12 @@
 # MITRE ATT&CK - Mobile domain
 
-Generate this pack from the official Mobile ATT&CK STIX:
+Generated pack (see `manifest.json` for exact version and counts):
+12 tactics, 77 techniques, 47 sub-techniques (136 files).
+
+Refresh from the official Mobile ATT&CK STIX after a new release:
 
 ```bash
-pip install mitreattack-python
 python tools/build_attack_knowledge.py --domain mobile --out ./mitre/attack/mobile
 ```
 
-This writes `tactics/`, `techniques/`, `INDEX.md` and `manifest.json` here.
-Optional push to PentAGI: add `--push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN"`.
+Push to PentAGI: add `--push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN"`.

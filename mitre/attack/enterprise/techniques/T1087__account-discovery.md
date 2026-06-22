@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1087]
 
 # T1087 - Account Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1087](https://attack.mitre.org/techniques/T1087)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1087](https://attack.mitre.org/techniques/T1087)
 
 ## Summary
 Adversaries may attempt to get a listing of valid accounts, usernames, or email addresses on a system or within a compromised environment. This information can help adversaries determine which accounts exist, which can aid in follow-on behavior such as brute-forcing, spear-phishing attacks, or account takeovers (e.g., [Valid Accounts](https://attack.mitre.org/techniques/T1078)).

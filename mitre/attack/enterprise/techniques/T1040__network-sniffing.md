@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1040]
 
 # T1040 - Network Sniffing
 
-**Tactic(s):** Credential Access, Discovery  ·  **Platforms:** IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1040](https://attack.mitre.org/techniques/T1040)
+**Tactic(s):** Credential Access, Discovery  -  **Platforms:** IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1040](https://attack.mitre.org/techniques/T1040)
 
 ## Summary
 Adversaries may passively sniff network traffic to capture information about an environment, including authentication material passed over the network. Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection. An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.

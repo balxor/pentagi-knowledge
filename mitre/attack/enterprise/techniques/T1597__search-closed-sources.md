@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1597]
 
 # T1597 - Search Closed Sources
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1597](https://attack.mitre.org/techniques/T1597)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1597](https://attack.mitre.org/techniques/T1597)
 
 ## Summary
 Adversaries may search and gather information about victims from closed (e.g., paid, private, or otherwise not freely available) sources that can be used during targeting. Information about victims may be available for purchase from reputable private sources and databases, such as paid subscriptions to feeds of technical/threat intelligence data. Adversaries may also purchase information from less-reputable sources such as dark web or cybercrime blackmarkets.(Citation: ZDNET Selling Data)

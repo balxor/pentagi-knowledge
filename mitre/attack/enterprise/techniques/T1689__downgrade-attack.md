@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1689]
 
 # T1689 - Downgrade Attack
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** macOS, Windows, Linux  ·  **ATT&CK:** [T1689](https://attack.mitre.org/techniques/T1689)
+**Tactic(s):** Defense Impairment  -  **Platforms:** macOS, Windows, Linux  -  **ATT&CK:** [T1689](https://attack.mitre.org/techniques/T1689)
 
 ## Summary
 Adversaries may downgrade or use a version of system features that may be outdated, vulnerable, and/or does not support updated security controls. Downgrade attacks typically take advantage of a system’s backward compatibility to force it into less secure modes of operation.

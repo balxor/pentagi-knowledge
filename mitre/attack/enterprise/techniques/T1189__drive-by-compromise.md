@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1189]
 
 # T1189 - Drive-by Compromise
 
-**Tactic(s):** Initial Access  ·  **Platforms:** Identity Provider, Linux, macOS, Windows  ·  **ATT&CK:** [T1189](https://attack.mitre.org/techniques/T1189)
+**Tactic(s):** Initial Access  -  **Platforms:** Identity Provider, Linux, macOS, Windows  -  **ATT&CK:** [T1189](https://attack.mitre.org/techniques/T1189)
 
 ## Summary
 Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. Multiple ways of delivering exploit code to a browser exist (i.e., [Drive-by Target](https://attack.mitre.org/techniques/T1608/004)), including:

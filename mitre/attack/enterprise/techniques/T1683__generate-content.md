@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1683]
 
 # T1683 - Generate Content
 
-**Tactic(s):** Resource Development  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1683](https://attack.mitre.org/techniques/T1683)
+**Tactic(s):** Resource Development  -  **Platforms:** PRE  -  **ATT&CK:** [T1683](https://attack.mitre.org/techniques/T1683)
 
 ## Summary
 Adversaries may create or generate content to support targeting and operations. This content may be used to establish personas, impersonate known individuals or organizations, and support [Social Engineering](https://attack.mitre.org/techniques/T1684), fraud, or influence activities. Written materials, audio, images, video, or other media may be developed and tailored to the target and objective.(Citation: IBM AI-Generated Content)

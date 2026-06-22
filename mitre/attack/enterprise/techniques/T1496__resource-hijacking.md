@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1496]
 
 # T1496 - Resource Hijacking
 
-**Tactic(s):** Impact  ·  **Platforms:** Windows, IaaS, Linux, macOS, Containers, SaaS  ·  **ATT&CK:** [T1496](https://attack.mitre.org/techniques/T1496)
+**Tactic(s):** Impact  -  **Platforms:** Windows, IaaS, Linux, macOS, Containers, SaaS  -  **ATT&CK:** [T1496](https://attack.mitre.org/techniques/T1496)
 
 ## Summary
 Adversaries may leverage the resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability. 

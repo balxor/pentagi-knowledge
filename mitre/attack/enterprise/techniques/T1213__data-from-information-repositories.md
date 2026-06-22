@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1213]
 
 # T1213 - Data from Information Repositories
 
-**Tactic(s):** Collection  ·  **Platforms:** Linux, Windows, macOS, SaaS, IaaS, Office Suite  ·  **ATT&CK:** [T1213](https://attack.mitre.org/techniques/T1213)
+**Tactic(s):** Collection  -  **Platforms:** Linux, Windows, macOS, SaaS, IaaS, Office Suite  -  **ATT&CK:** [T1213](https://attack.mitre.org/techniques/T1213)
 
 ## Summary
 Adversaries may leverage information repositories to mine valuable information. Information repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in further objectives, such as Credential Access, Lateral Movement, or Defense Evasion, or direct access to the target information. Adversaries may also abuse external sharing features to share sensitive documents with recipients outside of the organization (i.e., [Transfer Data to Cloud Account](https://attack.mitre.org/techniques/T1537)). 

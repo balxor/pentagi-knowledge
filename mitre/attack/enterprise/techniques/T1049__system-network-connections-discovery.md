@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1049]
 
 # T1049 - System Network Connections Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1049](https://attack.mitre.org/techniques/T1049)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1049](https://attack.mitre.org/techniques/T1049)
 
 ## Summary
 Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. 

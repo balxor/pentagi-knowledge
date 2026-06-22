@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1074]
 
 # T1074 - Data Staged
 
-**Tactic(s):** Collection  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1074](https://attack.mitre.org/techniques/T1074)
+**Tactic(s):** Collection  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1074](https://attack.mitre.org/techniques/T1074)
 
 ## Summary
 Adversaries may stage collected data in a central location or directory prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106) and bash may be used to copy data into a staging location.(Citation: PWC Cloud Hopper April 2017)

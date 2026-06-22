@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1602]
 
 # T1602 - Data from Configuration Repository
 
-**Tactic(s):** Collection  ·  **Platforms:** Network Devices  ·  **ATT&CK:** [T1602](https://attack.mitre.org/techniques/T1602)
+**Tactic(s):** Collection  -  **Platforms:** Network Devices  -  **ATT&CK:** [T1602](https://attack.mitre.org/techniques/T1602)
 
 ## Summary
 Adversaries may collect data related to managed devices from configuration repositories. Configuration repositories are used by management systems in order to configure, manage, and control data on remote systems. Configuration repositories may also facilitate remote access and administration of devices.

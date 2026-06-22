@@ -225,6 +225,14 @@ def md_technique(aid, rec, mit_for, tactics, t_by_sn):
 # ----------------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------------
+def _norm_ver(v):
+    """Render ATT&CK content version as 'vX.Y' (the form used on attack.mitre.org)."""
+    v = str(v).strip()
+    if v and v[0].isdigit():
+        return "v" + v
+    return v
+
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -290,7 +298,7 @@ def main():
         "source": "MITRE ATT&CK",
         "framework": "attack",
         "domain": args.domain,
-        "attack_version": args.version if args.version != "latest" else (coll_ver or "latest"),
+        "attack_version": _norm_ver(args.version if args.version != "latest" else (coll_ver or "latest")),
         "stix_source": f"{STIX_BASE}/{DOMAIN_FILE[args.domain]}",
         "generated_at": datetime.date.today().isoformat(),
         "generator": "tools/build_attack_knowledge.py",

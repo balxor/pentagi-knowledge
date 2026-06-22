@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1668]
 
 # T1668 - Exclusive Control
 
-**Tactic(s):** Persistence  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1668](https://attack.mitre.org/techniques/T1668)
+**Tactic(s):** Persistence  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1668](https://attack.mitre.org/techniques/T1668)
 
 ## Summary
 Adversaries who successfully compromise a system may attempt to maintain persistence by “closing the door” behind them  - in other words, by preventing other threat actors from initially accessing or maintaining a foothold on the same system. 

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1671]
 
 # T1671 - Cloud Application Integration
 
-**Tactic(s):** Persistence  ·  **Platforms:** Office Suite, SaaS  ·  **ATT&CK:** [T1671](https://attack.mitre.org/techniques/T1671)
+**Tactic(s):** Persistence  -  **Platforms:** Office Suite, SaaS  -  **ATT&CK:** [T1671](https://attack.mitre.org/techniques/T1671)
 
 ## Summary
 Adversaries may achieve persistence by leveraging OAuth application integrations in a software-as-a-service environment. Adversaries may create a custom application, add a legitimate application into the environment, or even co-opt an existing integration to achieve malicious ends.(Citation: Push Security SaaS Persistence 2022)(Citation: SaaS Attacks GitHub Evil Twin Integrations)

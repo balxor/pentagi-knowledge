@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1612]
 
 # T1612 - Build Image on Host
 
-**Tactic(s):** Stealth  ·  **Platforms:** Containers  ·  **ATT&CK:** [T1612](https://attack.mitre.org/techniques/T1612)
+**Tactic(s):** Stealth  -  **Platforms:** Containers  -  **ATT&CK:** [T1612](https://attack.mitre.org/techniques/T1612)
 
 ## Summary
 Adversaries may build a container image directly on a host to bypass defenses that monitor for the retrieval of malicious images from a public registry. A remote <code>build</code> request may be sent to the Docker API that includes a Dockerfile that pulls a vanilla base image, such as alpine, from a public or local registry and then builds a custom image upon it.(Citation: Docker Build Image)

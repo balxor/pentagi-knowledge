@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1649]
 
 # T1649 - Steal or Forge Authentication Certificates
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Windows, Linux, macOS, Identity Provider  ·  **ATT&CK:** [T1649](https://attack.mitre.org/techniques/T1649)
+**Tactic(s):** Credential Access  -  **Platforms:** Windows, Linux, macOS, Identity Provider  -  **ATT&CK:** [T1649](https://attack.mitre.org/techniques/T1649)
 
 ## Summary
 Adversaries may steal or forge certificates used for authentication to access remote systems or resources. Digital certificates are often used to sign and encrypt messages and/or files. Certificates are also used as authentication material. For example, Entra ID device certificates and Active Directory Certificate Services (AD CS) certificates bind to an identity and can be used as credentials for domain accounts.(Citation: O365 Blog Azure AD Device IDs)(Citation: Microsoft AD CS Overview)

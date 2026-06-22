@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1080]
 
 # T1080 - Taint Shared Content
 
-**Tactic(s):** Lateral Movement  ·  **Platforms:** Windows, SaaS, Linux, macOS, Office Suite  ·  **ATT&CK:** [T1080](https://attack.mitre.org/techniques/T1080)
+**Tactic(s):** Lateral Movement  -  **Platforms:** Windows, SaaS, Linux, macOS, Office Suite  -  **ATT&CK:** [T1080](https://attack.mitre.org/techniques/T1080)
 
 ## Summary
 Adversaries may deliver payloads to remote systems by adding content to shared storage locations, such as network drives or internal code repositories. Content stored on network drives or in other shared locations may be tainted by adding malicious programs, scripts, or exploit code to otherwise valid files. Once a user opens the shared tainted content, the malicious portion can be executed to run the adversary's code on a remote system. Adversaries may use tainted shared content to move laterally.

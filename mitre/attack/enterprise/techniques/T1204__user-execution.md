@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1204]
 
 # T1204 - User Execution
 
-**Tactic(s):** Execution  ·  **Platforms:** Linux, Windows, macOS, IaaS, Containers  ·  **ATT&CK:** [T1204](https://attack.mitre.org/techniques/T1204)
+**Tactic(s):** Execution  -  **Platforms:** Linux, Windows, macOS, IaaS, Containers  -  **ATT&CK:** [T1204](https://attack.mitre.org/techniques/T1204)
 
 ## Summary
 An adversary may rely upon specific actions by a user in order to gain execution. Users may be subjected to social engineering to get them to execute malicious code by, for example, opening a malicious document file or link. These user actions will typically be observed as follow-on behavior from forms of [Phishing](https://attack.mitre.org/techniques/T1566).

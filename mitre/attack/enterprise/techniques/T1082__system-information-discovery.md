@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1082]
 
 # T1082 - System Information Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1082](https://attack.mitre.org/techniques/T1082)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1082](https://attack.mitre.org/techniques/T1082)
 
 ## Summary
 An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Adversaries may use this information to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions. This behavior is distinct from [Local Storage Discovery](https://attack.mitre.org/techniques/T1680) which is an adversary's discovery of local drive, disks and/or volumes.

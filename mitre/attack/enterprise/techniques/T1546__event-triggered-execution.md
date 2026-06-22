@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1546]
 
 # T1546 - Event Triggered Execution
 
-**Tactic(s):** Privilege Escalation, Persistence  ·  **Platforms:** Linux, macOS, Windows, SaaS, IaaS, Office Suite  ·  **ATT&CK:** [T1546](https://attack.mitre.org/techniques/T1546)
+**Tactic(s):** Privilege Escalation, Persistence  -  **Platforms:** Linux, macOS, Windows, SaaS, IaaS, Office Suite  -  **ATT&CK:** [T1546](https://attack.mitre.org/techniques/T1546)
 
 ## Summary
 Adversaries may establish persistence and/or elevate privileges using system mechanisms that trigger execution based on specific events. Various operating systems have means to monitor and subscribe to events such as logons or other user activity such as running specific applications/binaries. Cloud environments may also support various functions and services that monitor and can be invoked in response to specific cloud events.(Citation: Backdooring an AWS account)(Citation: Varonis Power Automate Data Exfiltration)(Citation: Microsoft DART Case Report 001)

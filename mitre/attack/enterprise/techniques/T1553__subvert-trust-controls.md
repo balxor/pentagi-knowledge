@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1553]
 
 # T1553 - Subvert Trust Controls
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1553](https://attack.mitre.org/techniques/T1553)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1553](https://attack.mitre.org/techniques/T1553)
 
 ## Summary
 Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs. Operating systems and security products may contain mechanisms to identify programs or websites as possessing some level of trust. Examples of such features would include a program being allowed to run because it is signed by a valid code signing certificate, a program prompting the user with a warning because it has an attribute set from being downloaded from the Internet, or getting an indication that you are about to connect to an untrusted site.

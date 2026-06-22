@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1486]
 
 # T1486 - Data Encrypted for Impact
 
-**Tactic(s):** Impact  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1486](https://attack.mitre.org/techniques/T1486)
+**Tactic(s):** Impact  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1486](https://attack.mitre.org/techniques/T1486)
 
 ## Summary
 Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources. They can attempt to render stored data inaccessible by encrypting files or data on local and remote drives and withholding access to a decryption key. This may be done in order to extract monetary compensation from a victim in exchange for decryption or a decryption key (ransomware) or to render data permanently inaccessible in cases where the key is not saved or transmitted.(Citation: US-CERT Ransomware 2016)(Citation: FireEye WannaCry 2017)(Citation: US-CERT NotPetya 2017)(Citation: US-CERT SamSam 2018)

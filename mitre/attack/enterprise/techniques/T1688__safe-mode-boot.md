@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1688]
 
 # T1688 - Safe Mode Boot
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1688](https://attack.mitre.org/techniques/T1688)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Windows  -  **ATT&CK:** [T1688](https://attack.mitre.org/techniques/T1688)
 
 ## Summary
 Adversaries may abuse Windows safe mode to disable endpoint defenses. Safe mode starts up the Windows operating system with a limited set of drivers and services. Third-party security software such as endpoint detection and response (EDR) tools may not start after booting Windows in safe mode. There are two versions of safe mode: Safe Mode and Safe Mode with Networking. It is possible to start additional services after a safe mode boot.(Citation: Microsoft Windows Startup Settings)(Citation: Sophos Safe Mode Boot)

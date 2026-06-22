@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1681]
 
 # T1681 - Search Threat Vendor Data
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1681](https://attack.mitre.org/techniques/T1681)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1681](https://attack.mitre.org/techniques/T1681)
 
 ## Summary
 Threat actors may seek information/indicators from closed or open threat intelligence sources gathered about their own campaigns, as well as those conducted by other adversaries that may align with their target industries, capabilities/objectives, or other operational concerns. These reports may include descriptions of behavior, detailed breakdowns of attacks, atomic indicators such as malware hashes or IP addresses, timelines of a group’s activity, and more. Adversaries may change their behavior when planning their future operations. 

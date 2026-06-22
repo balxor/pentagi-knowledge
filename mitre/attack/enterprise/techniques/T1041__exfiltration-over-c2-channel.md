@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1041]
 
 # T1041 - Exfiltration Over C2 Channel
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1041](https://attack.mitre.org/techniques/T1041)
+**Tactic(s):** Exfiltration  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1041](https://attack.mitre.org/techniques/T1041)
 
 ## Summary
 Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.

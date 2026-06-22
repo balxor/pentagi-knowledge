@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1185]
 
 # T1185 - Browser Session Hijacking
 
-**Tactic(s):** Collection  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1185](https://attack.mitre.org/techniques/T1185)
+**Tactic(s):** Collection  -  **Platforms:** Windows  -  **ATT&CK:** [T1185](https://attack.mitre.org/techniques/T1185)
 
 ## Summary
 Adversaries may take advantage of security vulnerabilities and inherent functionality in browser software to change content, modify user-behaviors, and intercept information as part of various browser session hijacking techniques.(Citation: Wikipedia Man in the Browser)

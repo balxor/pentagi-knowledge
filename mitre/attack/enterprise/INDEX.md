@@ -1,6 +1,6 @@
 # MITRE ATT&CK Enterprise - Knowledge Index
 
-Tactics: 15 · Techniques+sub: 697 · Total files: 712
+Tactics: 15 - Techniques+sub: 697 - Total files: 712
 
 ## TA0043 Reconnaissance
 - T1589 Gather Victim Identity Information

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1678]
 
 # T1678 - Delay Execution
 
-**Tactic(s):** Stealth  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1678](https://attack.mitre.org/techniques/T1678)
+**Tactic(s):** Stealth  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1678](https://attack.mitre.org/techniques/T1678)
 
 ## Summary
 Adversaries may employ various time-based methods to evade detection and analysis. These techniques often exploit system clocks, delays, or timing mechanisms to obscure malicious activity, blend in with benign activity, and avoid scrutiny. Adversaries can perform this behavior within virtualization/sandbox environments or natively on host systems. 

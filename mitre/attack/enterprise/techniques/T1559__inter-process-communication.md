@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1559]
 
 # T1559 - Inter-Process Communication
 
-**Tactic(s):** Execution  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1559](https://attack.mitre.org/techniques/T1559)
+**Tactic(s):** Execution  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1559](https://attack.mitre.org/techniques/T1559)
 
 ## Summary
 Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution. IPC is typically used by processes to share data, communicate with each other, or synchronize execution. IPC is also commonly used to avoid situations such as deadlocks, which occurs when processes are stuck in a cyclic waiting pattern. 

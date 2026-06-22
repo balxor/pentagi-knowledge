@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1046]
 
 # T1046 - Network Service Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Containers, IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1046](https://attack.mitre.org/techniques/T1046)
+**Tactic(s):** Discovery  -  **Platforms:** Containers, IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1046](https://attack.mitre.org/techniques/T1046)
 
 ## Summary
 Adversaries may attempt to get a listing of services running on remote hosts and local network infrastructure devices, including those that may be vulnerable to remote software exploitation. Common methods to acquire this information include port, vulnerability, and/or wordlist scans using tools that are brought onto a system.(Citation: CISA AR21-126A FIVEHANDS May 2021)   

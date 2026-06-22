@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1591]
 
 # T1591 - Gather Victim Org Information
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1591](https://attack.mitre.org/techniques/T1591)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1591](https://attack.mitre.org/techniques/T1591)
 
 ## Summary
 Adversaries may gather information about the victim's organization that can be used during targeting. Information about an organization may include a variety of details, including the names of divisions/departments, specifics of business operations, as well as the roles and responsibilities of key employees.

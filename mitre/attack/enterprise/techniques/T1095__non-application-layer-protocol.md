@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1095]
 
 # T1095 - Non-Application Layer Protocol
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1095](https://attack.mitre.org/techniques/T1095)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1095](https://attack.mitre.org/techniques/T1095)
 
 ## Summary
 Adversaries may use an OSI non-application layer protocol for communication between host and C2 server or among infected hosts within a network. The list of possible protocols is extensive.(Citation: Wikipedia OSI) Specific examples include use of network layer protocols, such as the Internet Control Message Protocol (ICMP), transport layer protocols, such as the User Datagram Protocol (UDP), session layer protocols, such as Socket Secure (SOCKS), as well as redirected/tunneled protocols, such as Serial over LAN (SOL).

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1070]
 
 # T1070 - Indicator Removal
 
-**Tactic(s):** Stealth  ·  **Platforms:** Containers, ESXi, Linux, macOS, Network Devices, Office Suite, Windows  ·  **ATT&CK:** [T1070](https://attack.mitre.org/techniques/T1070)
+**Tactic(s):** Stealth  -  **Platforms:** Containers, ESXi, Linux, macOS, Network Devices, Office Suite, Windows  -  **ATT&CK:** [T1070](https://attack.mitre.org/techniques/T1070)
 
 ## Summary
 Adversaries may selectively delete or modify artifacts generated to reduce indications of their presence and blend in with legitimate activity. Rather than broadly removing evidence, adversaries may target specific artifacts that appear anomalous or are likely to draw scrutiny, while leaving sufficient data intact to maintain the appearance of normal system behavior.

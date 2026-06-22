@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1666]
 
 # T1666 - Modify Cloud Resource Hierarchy
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** IaaS  ·  **ATT&CK:** [T1666](https://attack.mitre.org/techniques/T1666)
+**Tactic(s):** Defense Impairment  -  **Platforms:** IaaS  -  **ATT&CK:** [T1666](https://attack.mitre.org/techniques/T1666)
 
 ## Summary
 Adversaries may attempt to modify hierarchical structures in infrastructure-as-a-service (IaaS) environments in order to evade defenses.  

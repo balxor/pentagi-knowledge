@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1187]
 
 # T1187 - Forced Authentication
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1187](https://attack.mitre.org/techniques/T1187)
+**Tactic(s):** Credential Access  -  **Platforms:** Windows  -  **ATT&CK:** [T1187](https://attack.mitre.org/techniques/T1187)
 
 ## Summary
 Adversaries may gather credential material by invoking or forcing a user to automatically provide authentication information through a mechanism in which they can intercept.

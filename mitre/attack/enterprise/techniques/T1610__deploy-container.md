@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1610]
 
 # T1610 - Deploy Container
 
-**Tactic(s):** Execution  ·  **Platforms:** Containers  ·  **ATT&CK:** [T1610](https://attack.mitre.org/techniques/T1610)
+**Tactic(s):** Execution  -  **Platforms:** Containers  -  **ATT&CK:** [T1610](https://attack.mitre.org/techniques/T1610)
 
 ## Summary
 Adversaries may deploy a container into an environment to facilitate execution or evade defenses. In some cases, adversaries may deploy a new container to execute processes associated with a particular image or deployment, such as processes that execute or download malware. In others, an adversary may deploy a new container configured without network rules, user limitations, etc. to bypass existing defenses within the environment. In Kubernetes environments, an adversary may attempt to deploy a privileged or vulnerable container into a specific node in order to [Escape to Host](https://attack.mitre.org/techniques/T1611) and access other containers running on the node. (Citation: AppSecco Kubernetes Namespace Breakout 2020)

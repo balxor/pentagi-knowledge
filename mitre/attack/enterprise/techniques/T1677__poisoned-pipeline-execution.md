@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1677]
 
 # T1677 - Poisoned Pipeline Execution
 
-**Tactic(s):** Execution  ·  **Platforms:** SaaS  ·  **ATT&CK:** [T1677](https://attack.mitre.org/techniques/T1677)
+**Tactic(s):** Execution  -  **Platforms:** SaaS  -  **ATT&CK:** [T1677](https://attack.mitre.org/techniques/T1677)
 
 ## Summary
 Adversaries may manipulate continuous integration / continuous development (CI/CD) processes by injecting malicious code into the build process. There are several mechanisms for poisoning pipelines: 

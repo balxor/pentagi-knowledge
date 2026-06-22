@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1003]
 
 # T1003 - OS Credential Dumping
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1003](https://attack.mitre.org/techniques/T1003)
+**Tactic(s):** Credential Access  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1003](https://attack.mitre.org/techniques/T1003)
 
 ## Summary
 Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password. Credentials can be obtained from OS caches, memory, or structures.(Citation: Brining MimiKatz to Unix) Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.

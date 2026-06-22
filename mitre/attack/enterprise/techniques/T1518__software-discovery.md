@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1518]
 
 # T1518 - Software Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1518](https://attack.mitre.org/techniques/T1518)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1518](https://attack.mitre.org/techniques/T1518)
 
 ## Summary
 Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.

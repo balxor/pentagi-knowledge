@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1102]
 
 # T1102 - Web Service
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1102](https://attack.mitre.org/techniques/T1102)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1102](https://attack.mitre.org/techniques/T1102)
 
 ## Summary
 Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system. Popular websites, cloud services, and social media acting as a mechanism for C2 may give a significant amount of cover due to the likelihood that hosts within a network are already communicating with them prior to a compromise. Using common services, such as those offered by Google, Microsoft, or Twitter, makes it easier for adversaries to hide in expected noise.(Citation: Broadcom BirdyClient Microsoft Graph API 2024) Web service providers commonly use SSL/TLS encryption, giving adversaries an added level of protection.

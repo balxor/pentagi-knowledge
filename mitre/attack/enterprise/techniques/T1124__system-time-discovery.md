@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1124]
 
 # T1124 - System Time Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1124](https://attack.mitre.org/techniques/T1124)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1124](https://attack.mitre.org/techniques/T1124)
 
 ## Summary
 An adversary may gather the system time and/or time zone settings from a local or remote system. The system time is set and stored by services, such as the Windows Time Service on Windows or <code>systemsetup</code> on macOS.(Citation: MSDN System Time)(Citation: Technet Windows Time Service)(Citation: systemsetup mac time) These time settings may also be synchronized between systems and services in an enterprise network, typically accomplished with a network time server within a domain.(Citation: Mac Time Sync)(Citation: linux system time)

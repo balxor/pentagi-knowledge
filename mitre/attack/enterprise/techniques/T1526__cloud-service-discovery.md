@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1526]
 
 # T1526 - Cloud Service Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** IaaS, Identity Provider, Office Suite, SaaS  ·  **ATT&CK:** [T1526](https://attack.mitre.org/techniques/T1526)
+**Tactic(s):** Discovery  -  **Platforms:** IaaS, Identity Provider, Office Suite, SaaS  -  **ATT&CK:** [T1526](https://attack.mitre.org/techniques/T1526)
 
 ## Summary
 An adversary may attempt to enumerate the cloud services running on a system after gaining access. These methods can differ from platform-as-a-service (PaaS), to infrastructure-as-a-service (IaaS), or software-as-a-service (SaaS). Many services exist throughout the various cloud providers and can include Continuous Integration and Continuous Delivery (CI/CD), Lambda Functions, Entra ID, etc. They may also include security services, such as AWS GuardDuty and Microsoft Defender for Cloud, and logging services, such as AWS CloudTrail and Google Cloud Audit Logs.

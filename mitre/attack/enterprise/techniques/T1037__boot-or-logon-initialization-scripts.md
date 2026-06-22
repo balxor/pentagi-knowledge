@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1037]
 
 # T1037 - Boot or Logon Initialization Scripts
 
-**Tactic(s):** Persistence, Privilege Escalation  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1037](https://attack.mitre.org/techniques/T1037)
+**Tactic(s):** Persistence, Privilege Escalation  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1037](https://attack.mitre.org/techniques/T1037)
 
 ## Summary
 Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence.(Citation: Mandiant APT29 Eye Spy Email Nov 22)(Citation: Anomali Rocke March 2019) Initialization scripts can be used to perform administrative functions, which may often execute other programs or send information to an internal logging server. These scripts can vary based on operating system and whether applied locally or remotely.  

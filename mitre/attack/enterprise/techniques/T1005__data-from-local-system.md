@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1005]
 
 # T1005 - Data from Local System
 
-**Tactic(s):** Collection  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1005](https://attack.mitre.org/techniques/T1005)
+**Tactic(s):** Collection  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1005](https://attack.mitre.org/techniques/T1005)
 
 ## Summary
 Adversaries may search local system sources, such as file systems, configuration files, local databases, virtual machine files, or process memory, to find files of interest and sensitive data prior to Exfiltration.

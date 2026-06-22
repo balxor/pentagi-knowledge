@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1199]
 
 # T1199 - Trusted Relationship
 
-**Tactic(s):** Initial Access  ·  **Platforms:** IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1199](https://attack.mitre.org/techniques/T1199)
+**Tactic(s):** Initial Access  -  **Platforms:** IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1199](https://attack.mitre.org/techniques/T1199)
 
 ## Summary
 Adversaries may breach or otherwise leverage organizations who have access to intended victims. Access through trusted third party relationship abuses an existing connection that may not be protected or receives less scrutiny than standard mechanisms of gaining access to a network.

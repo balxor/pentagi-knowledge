@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1606]
 
 # T1606 - Forge Web Credentials
 
-**Tactic(s):** Credential Access  ·  **Platforms:** SaaS, Windows, macOS, Linux, IaaS, Office Suite, Identity Provider  ·  **ATT&CK:** [T1606](https://attack.mitre.org/techniques/T1606)
+**Tactic(s):** Credential Access  -  **Platforms:** SaaS, Windows, macOS, Linux, IaaS, Office Suite, Identity Provider  -  **ATT&CK:** [T1606](https://attack.mitre.org/techniques/T1606)
 
 ## Summary
 Adversaries may forge credential materials that can be used to gain access to web applications or Internet services. Web applications and services (hosted in cloud SaaS environments or on-premise servers) often use session cookies, tokens, or other materials to authenticate and authorize user access.

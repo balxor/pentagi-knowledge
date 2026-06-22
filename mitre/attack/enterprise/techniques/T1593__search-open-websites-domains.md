@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1593]
 
 # T1593 - Search Open Websites/Domains
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1593](https://attack.mitre.org/techniques/T1593)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1593](https://attack.mitre.org/techniques/T1593)
 
 ## Summary
 Adversaries may search freely available websites and/or domains for information about victims that can be used during targeting. Information about victims may be available in various online sites, such as social media, new sites, or those hosting information about business operations such as hiring or requested/rewarded contracts.(Citation: Cyware Social Media)(Citation: SecurityTrails Google Hacking)(Citation: ExploitDB GoogleHacking)

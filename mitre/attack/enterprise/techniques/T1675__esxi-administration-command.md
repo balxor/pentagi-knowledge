@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1675]
 
 # T1675 - ESXi Administration Command
 
-**Tactic(s):** Execution  ·  **Platforms:** ESXi  ·  **ATT&CK:** [T1675](https://attack.mitre.org/techniques/T1675)
+**Tactic(s):** Execution  -  **Platforms:** ESXi  -  **ATT&CK:** [T1675](https://attack.mitre.org/techniques/T1675)
 
 ## Summary
 Adversaries may abuse ESXi administration services to execute commands on guest machines hosted within an ESXi virtual environment. Persistent background services on ESXi-hosted VMs, such as the VMware Tools Daemon Service, allow for remote management from the ESXi server. The tools daemon service runs as `vmtoolsd.exe` on Windows guest operating systems, `vmware-tools-daemon` on macOS, and `vmtoolsd ` on Linux.(Citation: Broadcom VMware Tools Services) 

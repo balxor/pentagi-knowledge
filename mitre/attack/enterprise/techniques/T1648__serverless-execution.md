@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1648]
 
 # T1648 - Serverless Execution
 
-**Tactic(s):** Execution  ·  **Platforms:** SaaS, IaaS, Office Suite  ·  **ATT&CK:** [T1648](https://attack.mitre.org/techniques/T1648)
+**Tactic(s):** Execution  -  **Platforms:** SaaS, IaaS, Office Suite  -  **ATT&CK:** [T1648](https://attack.mitre.org/techniques/T1648)
 
 ## Summary
 Adversaries may abuse serverless computing, integration, and automation services to execute arbitrary code in cloud environments. Many cloud providers offer a variety of serverless resources, including compute engines, application integration services, and web servers. 

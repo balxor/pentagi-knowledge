@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1010]
 
 # T1010 - Application Window Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1010](https://attack.mitre.org/techniques/T1010)
+**Tactic(s):** Discovery  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1010](https://attack.mitre.org/techniques/T1010)
 
 ## Summary
 Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used.(Citation: Prevailion DarkWatchman 2021) For example, information about application windows could be used identify potential data to collect as well as identifying security tooling ([Security Software Discovery](https://attack.mitre.org/techniques/T1518/001)) to evade.(Citation: ESET Grandoreiro April 2020)

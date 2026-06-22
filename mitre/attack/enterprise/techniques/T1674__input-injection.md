@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1674]
 
 # T1674 - Input Injection
 
-**Tactic(s):** Execution  ·  **Platforms:** Windows, macOS, Linux  ·  **ATT&CK:** [T1674](https://attack.mitre.org/techniques/T1674)
+**Tactic(s):** Execution  -  **Platforms:** Windows, macOS, Linux  -  **ATT&CK:** [T1674](https://attack.mitre.org/techniques/T1674)
 
 ## Summary
 Adversaries may simulate keystrokes on a victim’s computer by various means to perform any type of action on behalf of the user, such as launching the command interpreter using keyboard shortcuts,  typing an inline script to be executed, or interacting directly with a GUI-based application.  These actions can be preprogrammed into adversary tooling or executed through physical devices such as Human Interface Devices (HIDs).

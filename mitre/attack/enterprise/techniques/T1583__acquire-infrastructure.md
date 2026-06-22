@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1583]
 
 # T1583 - Acquire Infrastructure
 
-**Tactic(s):** Resource Development  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1583](https://attack.mitre.org/techniques/T1583)
+**Tactic(s):** Resource Development  -  **Platforms:** PRE  -  **ATT&CK:** [T1583](https://attack.mitre.org/techniques/T1583)
 
 ## Summary
 Adversaries may buy, lease, rent, or obtain infrastructure that can be used during targeting. A wide variety of infrastructure exists for hosting and orchestrating adversary operations. Infrastructure solutions include physical or cloud servers, domains, and third-party web services.(Citation: TrendmicroHideoutsLease) Some infrastructure providers offer free trial periods, enabling infrastructure acquisition at limited to no cost.(Citation: Free Trial PurpleUrchin) Additionally, botnets are available for rent or purchase.

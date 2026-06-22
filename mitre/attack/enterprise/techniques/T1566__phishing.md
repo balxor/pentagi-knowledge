@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1566]
 
 # T1566 - Phishing
 
-**Tactic(s):** Initial Access  ·  **Platforms:** Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1566](https://attack.mitre.org/techniques/T1566)
+**Tactic(s):** Initial Access  -  **Platforms:** Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1566](https://attack.mitre.org/techniques/T1566)
 
 ## Summary
 Adversaries may send phishing messages to gain access to victim systems. All forms of phishing are electronically delivered social engineering. Phishing can be targeted, known as spearphishing. In spearphishing, a specific individual, company, or industry will be targeted by the adversary. More generally, adversaries can conduct non-targeted phishing, such as in mass malware spam campaigns.

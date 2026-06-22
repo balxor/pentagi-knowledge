@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1588]
 
 # T1588 - Obtain Capabilities
 
-**Tactic(s):** Resource Development  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1588](https://attack.mitre.org/techniques/T1588)
+**Tactic(s):** Resource Development  -  **Platforms:** PRE  -  **ATT&CK:** [T1588](https://attack.mitre.org/techniques/T1588)
 
 ## Summary
 Adversaries may buy and/or steal capabilities that can be used during targeting. Rather than developing their own capabilities in-house, adversaries may purchase, freely download, or steal them. Activities may include the acquisition of malware, software (including licenses), exploits, certificates, and information relating to vulnerabilities. Adversaries may obtain capabilities to support their operations throughout numerous phases of the adversary lifecycle.

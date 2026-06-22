@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1059]
 
 # T1059 - Command and Scripting Interpreter
 
-**Tactic(s):** Execution  ·  **Platforms:** Containers, ESXi, IaaS, Identity Provider, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1059](https://attack.mitre.org/techniques/T1059)
+**Tactic(s):** Execution  -  **Platforms:** Containers, ESXi, IaaS, Identity Provider, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1059](https://attack.mitre.org/techniques/T1059)
 
 ## Summary
 Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries. These interfaces and languages provide ways of interacting with computer systems and are a common feature across many different platforms. Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of [Unix Shell](https://attack.mitre.org/techniques/T1059/004) while Windows installations include the [Windows Command Shell](https://attack.mitre.org/techniques/T1059/003) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).

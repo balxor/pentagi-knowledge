@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1216]
 
 # T1216 - System Script Proxy Execution
 
-**Tactic(s):** Stealth  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1216](https://attack.mitre.org/techniques/T1216)
+**Tactic(s):** Stealth  -  **Platforms:** Windows  -  **ATT&CK:** [T1216](https://attack.mitre.org/techniques/T1216)
 
 ## Summary
 Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files. Several Microsoft signed scripts that have been downloaded from Microsoft or are default on Windows installations can be used to proxy execution of other files.(Citation: LOLBAS Project) This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.(Citation: GitHub Ultimate AppLocker Bypass List)

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1495]
 
 # T1495 - Firmware Corruption
 
-**Tactic(s):** Impact  ·  **Platforms:** Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1495](https://attack.mitre.org/techniques/T1495)
+**Tactic(s):** Impact  -  **Platforms:** Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1495](https://attack.mitre.org/techniques/T1495)
 
 ## Summary
 Adversaries may overwrite or corrupt the flash memory contents of system BIOS or other firmware in devices attached to a system in order to render them inoperable or unable to boot, thus denying the availability to use the devices and/or the system.(Citation: Symantec Chernobyl W95.CIH) Firmware is software that is loaded and executed from non-volatile memory on hardware devices in order to initialize and manage device functionality. These devices may include the motherboard, hard drive, or video cards.

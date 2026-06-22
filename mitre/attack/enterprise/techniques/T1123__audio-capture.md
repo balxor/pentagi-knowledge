@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1123]
 
 # T1123 - Audio Capture
 
-**Tactic(s):** Collection  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1123](https://attack.mitre.org/techniques/T1123)
+**Tactic(s):** Collection  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1123](https://attack.mitre.org/techniques/T1123)
 
 ## Summary
 An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information.(Citation: ESET Attor Oct 2019)

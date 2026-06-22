@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1104]
 
 # T1104 - Multi-Stage Channels
 
-**Tactic(s):** Command and Control  ·  **Platforms:** Linux, macOS, Windows, ESXi  ·  **ATT&CK:** [T1104](https://attack.mitre.org/techniques/T1104)
+**Tactic(s):** Command and Control  -  **Platforms:** Linux, macOS, Windows, ESXi  -  **ATT&CK:** [T1104](https://attack.mitre.org/techniques/T1104)
 
 ## Summary
 Adversaries may create multiple stages for command and control that are employed under different conditions or for certain functions. Use of multiple stages may obfuscate the command and control channel to make detection more difficult.

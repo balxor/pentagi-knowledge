@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1112]
 
 # T1112 - Modify Registry
 
-**Tactic(s):** Defense Impairment, Persistence  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1112](https://attack.mitre.org/techniques/T1112)
+**Tactic(s):** Defense Impairment, Persistence  -  **Platforms:** Windows  -  **ATT&CK:** [T1112](https://attack.mitre.org/techniques/T1112)
 
 ## Summary
 Adversaries may interact with the Windows Registry as part of a variety of other techniques to aid in defense evasion, persistence, and execution.

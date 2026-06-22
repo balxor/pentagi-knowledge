@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1027]
 
 # T1027 - Obfuscated Files or Information
 
-**Tactic(s):** Stealth  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1027](https://attack.mitre.org/techniques/T1027)
+**Tactic(s):** Stealth  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1027](https://attack.mitre.org/techniques/T1027)
 
 ## Summary
 Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses. 

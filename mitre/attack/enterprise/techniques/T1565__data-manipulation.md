@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1565]
 
 # T1565 - Data Manipulation
 
-**Tactic(s):** Impact  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1565](https://attack.mitre.org/techniques/T1565)
+**Tactic(s):** Impact  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1565](https://attack.mitre.org/techniques/T1565)
 
 ## Summary
 Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.(Citation: Sygnia Elephant Beetle Jan 2022) By manipulating data, adversaries may attempt to affect a business process, organizational understanding, or decision making.

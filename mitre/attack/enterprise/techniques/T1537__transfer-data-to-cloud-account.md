@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1537]
 
 # T1537 - Transfer Data to Cloud Account
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** IaaS, Office Suite, SaaS  ·  **ATT&CK:** [T1537](https://attack.mitre.org/techniques/T1537)
+**Tactic(s):** Exfiltration  -  **Platforms:** IaaS, Office Suite, SaaS  -  **ATT&CK:** [T1537](https://attack.mitre.org/techniques/T1537)
 
 ## Summary
 Adversaries may exfiltrate data by transferring the data, including through sharing/syncing and creating backups of cloud environments, to another cloud account they control on the same service.

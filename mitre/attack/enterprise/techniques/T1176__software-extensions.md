@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1176]
 
 # T1176 - Software Extensions
 
-**Tactic(s):** Persistence  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1176](https://attack.mitre.org/techniques/T1176)
+**Tactic(s):** Persistence  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1176](https://attack.mitre.org/techniques/T1176)
 
 ## Summary
 Adversaries may abuse software extensions to establish persistent access to victim systems. Software extensions are modular components that enhance or customize the functionality of software applications, including web browsers, Integrated Development Environments (IDEs), and other platforms.(Citation: Chrome Extension C2 Malware)(Citation: Abramovsky VSCode Security) Extensions are typically installed via official marketplaces, app stores, or manually loaded by users, and they often inherit the permissions and access levels of the host application. 

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1133]
 
 # T1133 - External Remote Services
 
-**Tactic(s):** Persistence, Initial Access  ·  **Platforms:** Containers, Linux, macOS, Windows  ·  **ATT&CK:** [T1133](https://attack.mitre.org/techniques/T1133)
+**Tactic(s):** Persistence, Initial Access  -  **Platforms:** Containers, Linux, macOS, Windows  -  **ATT&CK:** [T1133](https://attack.mitre.org/techniques/T1133)
 
 ## Summary
 Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Services such as [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006) and [VNC](https://attack.mitre.org/techniques/T1021/005) can also be used externally.(Citation: MacOS VNC software for Remote Desktop)

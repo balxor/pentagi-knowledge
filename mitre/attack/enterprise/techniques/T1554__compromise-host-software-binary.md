@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1554]
 
 # T1554 - Compromise Host Software Binary
 
-**Tactic(s):** Persistence  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1554](https://attack.mitre.org/techniques/T1554)
+**Tactic(s):** Persistence  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1554](https://attack.mitre.org/techniques/T1554)
 
 ## Summary
 Adversaries may modify host software binaries to establish persistent access to systems. Software binaries/executables provide a wide range of system commands or services, programs, and libraries. Common software binaries are SSH clients, FTP clients, email clients, web browsers, and many other user or server applications.

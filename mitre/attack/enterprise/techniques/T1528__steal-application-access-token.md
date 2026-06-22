@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1528]
 
 # T1528 - Steal Application Access Token
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Containers, IaaS, Identity Provider, Office Suite, SaaS  ·  **ATT&CK:** [T1528](https://attack.mitre.org/techniques/T1528)
+**Tactic(s):** Credential Access  -  **Platforms:** Containers, IaaS, Identity Provider, Office Suite, SaaS  -  **ATT&CK:** [T1528](https://attack.mitre.org/techniques/T1528)
 
 ## Summary
 Adversaries can steal application access tokens as a means of acquiring credentials to access remote systems and resources.

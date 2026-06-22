@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1207]
 
 # T1207 - Rogue Domain Controller
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1207](https://attack.mitre.org/techniques/T1207)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Windows  -  **ATT&CK:** [T1207](https://attack.mitre.org/techniques/T1207)
 
 ## Summary
 Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data. DCShadow may be used to create a rogue Domain Controller (DC). DCShadow is a method of manipulating Active Directory (AD) data, including objects and schemas, by registering (or reusing an inactive registration) and simulating the behavior of a DC. (Citation: DCShadow Blog) Once registered, a rogue DC may be able to inject and replicate changes into AD infrastructure for any domain object, including credentials and keys.

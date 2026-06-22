@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1498]
 
 # T1498 - Network Denial of Service
 
-**Tactic(s):** Impact  ·  **Platforms:** Windows, IaaS, Linux, macOS, Containers  ·  **ATT&CK:** [T1498](https://attack.mitre.org/techniques/T1498)
+**Tactic(s):** Impact  -  **Platforms:** Windows, IaaS, Linux, macOS, Containers  -  **ATT&CK:** [T1498](https://attack.mitre.org/techniques/T1498)
 
 ## Summary
 Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users. Network DoS can be performed by exhausting the network bandwidth services rely on. Example resources include specific websites, email services, DNS, and web-based applications. Adversaries have been observed conducting network DoS attacks for political purposes(Citation: FireEye OpPoisonedHandover February 2016) and to support other malicious activities, including distraction(Citation: FSISAC FraudNetDoS September 2012), hacktivism, and extortion.(Citation: Symantec DDoS October 2014)

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1538]
 
 # T1538 - Cloud Service Dashboard
 
-**Tactic(s):** Discovery  ·  **Platforms:** IaaS, SaaS, Office Suite, Identity Provider  ·  **ATT&CK:** [T1538](https://attack.mitre.org/techniques/T1538)
+**Tactic(s):** Discovery  -  **Platforms:** IaaS, SaaS, Office Suite, Identity Provider  -  **ATT&CK:** [T1538](https://attack.mitre.org/techniques/T1538)
 
 ## Summary
 An adversary may use a cloud service dashboard GUI with stolen credentials to gain useful information from an operational cloud environment, such as specific services, resources, and features. For example, the GCP Command Center can be used to view all assets, review findings of potential security risks, and run additional queries, such as finding public IP addresses and open ports.(Citation: Google Command Center Dashboard)

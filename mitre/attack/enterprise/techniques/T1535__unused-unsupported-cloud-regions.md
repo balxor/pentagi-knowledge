@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1535]
 
 # T1535 - Unused/Unsupported Cloud Regions
 
-**Tactic(s):** Stealth  ·  **Platforms:** IaaS  ·  **ATT&CK:** [T1535](https://attack.mitre.org/techniques/T1535)
+**Tactic(s):** Stealth  -  **Platforms:** IaaS  -  **ATT&CK:** [T1535](https://attack.mitre.org/techniques/T1535)
 
 ## Summary
 Adversaries may create cloud instances in unused geographic service regions in order to evade detection. Access is usually obtained through compromising accounts used to manage cloud infrastructure.

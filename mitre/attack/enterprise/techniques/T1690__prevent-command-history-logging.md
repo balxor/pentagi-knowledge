@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1690]
 
 # T1690 - Prevent Command History Logging
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1690](https://attack.mitre.org/techniques/T1690)
+**Tactic(s):** Defense Impairment  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1690](https://attack.mitre.org/techniques/T1690)
 
 ## Summary
 Adversaries may impair command history logging to hide commands they run on a compromised system. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they have done.

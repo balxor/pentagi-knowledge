@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1011]
 
 # T1011 - Exfiltration Over Other Network Medium
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1011](https://attack.mitre.org/techniques/T1011)
+**Tactic(s):** Exfiltration  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1011](https://attack.mitre.org/techniques/T1011)
 
 ## Summary
 Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel. If the command and control network is a wired Internet connection, the exfiltration may occur, for example, over a WiFi connection, modem, cellular data connection, Bluetooth, or another radio frequency (RF) channel.

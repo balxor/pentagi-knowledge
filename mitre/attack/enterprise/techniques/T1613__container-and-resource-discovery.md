@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1613]
 
 # T1613 - Container and Resource Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Containers  ·  **ATT&CK:** [T1613](https://attack.mitre.org/techniques/T1613)
+**Tactic(s):** Discovery  -  **Platforms:** Containers  -  **ATT&CK:** [T1613](https://attack.mitre.org/techniques/T1613)
 
 ## Summary
 Adversaries may attempt to discover containers and other resources that are available within a containers environment. Other resources may include images, deployments, pods, nodes, and other information such as the status of a cluster.

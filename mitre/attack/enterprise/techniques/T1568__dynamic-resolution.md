@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1568]
 
 # T1568 - Dynamic Resolution
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1568](https://attack.mitre.org/techniques/T1568)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1568](https://attack.mitre.org/techniques/T1568)
 
 ## Summary
 Adversaries may dynamically establish connections to command and control infrastructure to evade common detections and remediations. This may be achieved by using malware that shares a common algorithm with the infrastructure the adversary uses to receive the malware's communications. These calculations can be used to dynamically adjust parameters such as the domain name, IP address, or port number the malware uses for command and control.

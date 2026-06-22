@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1555]
 
 # T1555 - Credentials from Password Stores
 
-**Tactic(s):** Credential Access  ·  **Platforms:** IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1555](https://attack.mitre.org/techniques/T1555)
+**Tactic(s):** Credential Access  -  **Platforms:** IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1555](https://attack.mitre.org/techniques/T1555)
 
 ## Summary
 Adversaries may search for common password storage locations to obtain user credentials.(Citation: F-Secure The Dukes) Passwords are stored in several places on a system, depending on the operating system or application holding the credentials. There are also specific applications and services that store passwords to make them easier for users to manage and maintain, such as password managers and cloud secrets vaults. Once credentials are obtained, they can be used to perform lateral movement and access restricted information.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1531]
 
 # T1531 - Account Access Removal
 
-**Tactic(s):** Impact  ·  **Platforms:** Linux, macOS, Windows, SaaS, IaaS, Office Suite, ESXi  ·  **ATT&CK:** [T1531](https://attack.mitre.org/techniques/T1531)
+**Tactic(s):** Impact  -  **Platforms:** Linux, macOS, Windows, SaaS, IaaS, Office Suite, ESXi  -  **ATT&CK:** [T1531](https://attack.mitre.org/techniques/T1531)
 
 ## Summary
 Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users. Accounts may be deleted, locked, or manipulated (ex: changed credentials, revoked permissions for SaaS platforms such as Sharepoint) to remove access to accounts.(Citation: Obsidian Security SaaS Ransomware June 2023) Adversaries may also subsequently log off and/or perform a [System Shutdown/Reboot](https://attack.mitre.org/techniques/T1529) to set malicious changes into place.(Citation: CarbonBlack LockerGoga 2019)(Citation: Unit42 LockerGoga 2019)

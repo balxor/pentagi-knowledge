@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1615]
 
 # T1615 - Group Policy Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1615](https://attack.mitre.org/techniques/T1615)
+**Tactic(s):** Discovery  -  **Platforms:** Windows  -  **ATT&CK:** [T1615](https://attack.mitre.org/techniques/T1615)
 
 ## Summary
 Adversaries may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that can be manipulated or used to blend in the environment. Group Policy allows for centralized management of user and computer settings in Active Directory (AD). Group policy objects (GPOs) are containers for group policy settings made up of files stored within a predictable network path `\<DOMAIN>\SYSVOL\<DOMAIN>\Policies\`.(Citation: TechNet Group Policy Basics)(Citation: ADSecurity GPO Persistence 2016)

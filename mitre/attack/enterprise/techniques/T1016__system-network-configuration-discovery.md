@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1016]
 
 # T1016 - System Network Configuration Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1016](https://attack.mitre.org/techniques/T1016)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1016](https://attack.mitre.org/techniques/T1016)
 
 ## Summary
 Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include [Arp](https://attack.mitre.org/software/S0099), [ipconfig](https://attack.mitre.org/software/S0100)/[ifconfig](https://attack.mitre.org/software/S0101), [nbtstat](https://attack.mitre.org/software/S0102), and [route](https://attack.mitre.org/software/S0103).

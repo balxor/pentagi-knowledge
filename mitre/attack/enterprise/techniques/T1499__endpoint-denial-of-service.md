@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1499]
 
 # T1499 - Endpoint Denial of Service
 
-**Tactic(s):** Impact  ·  **Platforms:** Windows, Linux, macOS, Containers, IaaS  ·  **ATT&CK:** [T1499](https://attack.mitre.org/techniques/T1499)
+**Tactic(s):** Impact  -  **Platforms:** Windows, Linux, macOS, Containers, IaaS  -  **ATT&CK:** [T1499](https://attack.mitre.org/techniques/T1499)
 
 ## Summary
 Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users. Endpoint DoS can be performed by exhausting the system resources those services are hosted on or exploiting the system to cause a persistent crash condition. Example services include websites, email services, DNS, and web-based applications. Adversaries have been observed conducting DoS attacks for political purposes(Citation: FireEye OpPoisonedHandover February 2016) and to support other malicious activities, including distraction(Citation: FSISAC FraudNetDoS September 2012), hacktivism, and extortion.(Citation: Symantec DDoS October 2014)

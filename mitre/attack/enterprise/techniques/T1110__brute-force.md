@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1110]
 
 # T1110 - Brute Force
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Containers, ESXi, IaaS, Identity Provider, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1110](https://attack.mitre.org/techniques/T1110)
+**Tactic(s):** Credential Access  -  **Platforms:** Containers, ESXi, IaaS, Identity Provider, Linux, macOS, Network Devices, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1110](https://attack.mitre.org/techniques/T1110)
 
 ## Summary
 Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained.(Citation: TrendMicro Pawn Storm Dec 2020) Without knowledge of the password for an account or set of accounts, an adversary may systematically guess the password using a repetitive or iterative mechanism.(Citation: Dragos Crashoverride 2018) Brute forcing passwords can take place via interaction with a service that will check the validity of those credentials or offline against previously acquired credential data, such as password hashes.

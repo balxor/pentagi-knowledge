@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1200]
 
 # T1200 - Hardware Additions
 
-**Tactic(s):** Initial Access  ·  **Platforms:** Windows, Linux, macOS  ·  **ATT&CK:** [T1200](https://attack.mitre.org/techniques/T1200)
+**Tactic(s):** Initial Access  -  **Platforms:** Windows, Linux, macOS  -  **ATT&CK:** [T1200](https://attack.mitre.org/techniques/T1200)
 
 ## Summary
 Adversaries may physically introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access. Rather than just connecting and distributing payloads via removable storage (i.e. [Replication Through Removable Media](https://attack.mitre.org/techniques/T1091)), more robust hardware additions can be used to introduce new functionalities and/or features into a system that can then be abused.

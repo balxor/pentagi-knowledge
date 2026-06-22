@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1574]
 
 # T1574 - Hijack Execution Flow
 
-**Tactic(s):** Stealth, Execution  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1574](https://attack.mitre.org/techniques/T1574)
+**Tactic(s):** Stealth, Execution  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1574](https://attack.mitre.org/techniques/T1574)
 
 ## Summary
 Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs. Hijacking execution flow can be for the purposes of persistence, since this hijacked execution may reoccur over time. Adversaries may also use these mechanisms to elevate privileges or evade defenses, such as application control or other restrictions on execution.

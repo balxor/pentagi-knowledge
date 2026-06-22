@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1580]
 
 # T1580 - Cloud Infrastructure Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** IaaS  ·  **ATT&CK:** [T1580](https://attack.mitre.org/techniques/T1580)
+**Tactic(s):** Discovery  -  **Platforms:** IaaS  -  **ATT&CK:** [T1580](https://attack.mitre.org/techniques/T1580)
 
 ## Summary
 An adversary may attempt to discover infrastructure and resources that are available within an infrastructure-as-a-service (IaaS) environment. This includes compute service resources such as instances, virtual machines, and snapshots as well as resources of other services including the storage and database services.

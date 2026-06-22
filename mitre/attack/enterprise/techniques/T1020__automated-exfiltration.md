@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1020]
 
 # T1020 - Automated Exfiltration
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1020](https://attack.mitre.org/techniques/T1020)
+**Tactic(s):** Exfiltration  -  **Platforms:** Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1020](https://attack.mitre.org/techniques/T1020)
 
 ## Summary
 Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection.(Citation: ESET Gamaredon June 2020) 

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1592]
 
 # T1592 - Gather Victim Host Information
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1592](https://attack.mitre.org/techniques/T1592)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1592](https://attack.mitre.org/techniques/T1592)
 
 ## Summary
 Adversaries may gather information about the victim's hosts that can be used during targeting. Information about hosts may include a variety of details, including administrative data (ex: name, assigned IP, functionality, etc.) as well as specifics regarding its configuration (ex: operating system, language, etc.).

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1659]
 
 # T1659 - Content Injection
 
-**Tactic(s):** Initial Access, Command and Control  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1659](https://attack.mitre.org/techniques/T1659)
+**Tactic(s):** Initial Access, Command and Control  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1659](https://attack.mitre.org/techniques/T1659)
 
 ## Summary
 Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic. Rather than luring victims to malicious payloads hosted on a compromised website (i.e., [Drive-by Target](https://attack.mitre.org/techniques/T1608/004) followed by [Drive-by Compromise](https://attack.mitre.org/techniques/T1189)), adversaries may initially access victims through compromised data-transfer channels where they can manipulate traffic and/or inject their own content. These compromised online network channels may also be used to deliver additional payloads (i.e., [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)) and other data to already compromised systems.(Citation: ESET MoustachedBouncer)

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1195]
 
 # T1195 - Supply Chain Compromise
 
-**Tactic(s):** Initial Access  ·  **Platforms:** Linux, Windows, macOS, SaaS  ·  **ATT&CK:** [T1195](https://attack.mitre.org/techniques/T1195)
+**Tactic(s):** Initial Access  -  **Platforms:** Linux, Windows, macOS, SaaS  -  **ATT&CK:** [T1195](https://attack.mitre.org/techniques/T1195)
 
 ## Summary
 Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise.

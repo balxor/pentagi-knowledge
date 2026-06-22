@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1684]
 
 # T1684 - Social Engineering
 
-**Tactic(s):** Stealth  ·  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1684](https://attack.mitre.org/techniques/T1684)
+**Tactic(s):** Stealth  -  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1684](https://attack.mitre.org/techniques/T1684)
 
 ## Summary
 Adversaries may use social engineering techniques to influence users to take actions that result in unauthorized access, approval of changes, disclosure of sensitive information, or execution of adversary-supplied instructions (i.e., introduction of malicious payloads or software), while minimizing technical indicators. 

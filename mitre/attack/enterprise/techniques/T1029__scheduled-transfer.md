@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1029]
 
 # T1029 - Scheduled Transfer
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1029](https://attack.mitre.org/techniques/T1029)
+**Tactic(s):** Exfiltration  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1029](https://attack.mitre.org/techniques/T1029)
 
 ## Summary
 Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability.

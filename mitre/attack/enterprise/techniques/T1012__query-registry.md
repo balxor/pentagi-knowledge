@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1012]
 
 # T1012 - Query Registry
 
-**Tactic(s):** Discovery  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1012](https://attack.mitre.org/techniques/T1012)
+**Tactic(s):** Discovery  -  **Platforms:** Windows  -  **ATT&CK:** [T1012](https://attack.mitre.org/techniques/T1012)
 
 ## Summary
 Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1680]
 
 # T1680 - Local Storage Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1680](https://attack.mitre.org/techniques/T1680)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1680](https://attack.mitre.org/techniques/T1680)
 
 ## Summary
 Adversaries may enumerate local drives, disks, and/or volumes and their attributes like total or free space and volume serial number. This can be done to prepare for ransomware-related encryption, to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0109), or as a precursor to [Direct Volume Access](https://attack.mitre.org/techniques/T1006). 

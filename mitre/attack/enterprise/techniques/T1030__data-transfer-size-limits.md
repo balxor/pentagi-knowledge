@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1030]
 
 # T1030 - Data Transfer Size Limits
 
-**Tactic(s):** Exfiltration  ·  **Platforms:** Linux, macOS, Windows, ESXi  ·  **ATT&CK:** [T1030](https://attack.mitre.org/techniques/T1030)
+**Tactic(s):** Exfiltration  -  **Platforms:** Linux, macOS, Windows, ESXi  -  **ATT&CK:** [T1030](https://attack.mitre.org/techniques/T1030)
 
 ## Summary
 An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.

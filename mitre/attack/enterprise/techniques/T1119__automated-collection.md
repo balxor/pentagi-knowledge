@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1119]
 
 # T1119 - Automated Collection
 
-**Tactic(s):** Collection  ·  **Platforms:** IaaS, Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1119](https://attack.mitre.org/techniques/T1119)
+**Tactic(s):** Collection  -  **Platforms:** IaaS, Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1119](https://attack.mitre.org/techniques/T1119)
 
 ## Summary
 Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. 

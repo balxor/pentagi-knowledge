@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1647]
 
 # T1647 - Plist File Modification
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** macOS  ·  **ATT&CK:** [T1647](https://attack.mitre.org/techniques/T1647)
+**Tactic(s):** Defense Impairment  -  **Platforms:** macOS  -  **ATT&CK:** [T1647](https://attack.mitre.org/techniques/T1647)
 
 ## Summary
 Adversaries may modify property list files (plist files) to enable other malicious activity, while also potentially evading and bypassing system defenses. macOS applications use plist files, such as the <code>info.plist</code> file, to store properties and configuration settings that inform the operating system how to handle the application at runtime. Plist files are structured metadata in key-value pairs formatted in XML based on Apple's Core Foundation DTD. Plist files can be saved in text or binary format.(Citation: fileinfo plist file description) 

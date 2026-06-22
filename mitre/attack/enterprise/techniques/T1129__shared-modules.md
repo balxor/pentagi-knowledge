@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1129]
 
 # T1129 - Shared Modules
 
-**Tactic(s):** Execution  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1129](https://attack.mitre.org/techniques/T1129)
+**Tactic(s):** Execution  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1129](https://attack.mitre.org/techniques/T1129)
 
 ## Summary
 Adversaries may execute malicious payloads via loading shared modules. Shared modules are executable files that are loaded into processes to provide access to reusable code, such as specific custom functions or invoking OS API functions (i.e., [Native API](https://attack.mitre.org/techniques/T1106)).

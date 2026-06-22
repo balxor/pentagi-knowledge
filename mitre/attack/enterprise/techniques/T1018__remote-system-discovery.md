@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1018]
 
 # T1018 - Remote System Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1018](https://attack.mitre.org/techniques/T1018)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1018](https://attack.mitre.org/techniques/T1018)
 
 ## Summary
 Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097), <code>net view</code> using [Net](https://attack.mitre.org/software/S0039), or, on ESXi servers, `esxcli network diag ping`.

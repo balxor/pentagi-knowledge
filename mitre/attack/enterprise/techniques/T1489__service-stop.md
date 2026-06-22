@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1489]
 
 # T1489 - Service Stop
 
-**Tactic(s):** Impact  ·  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1489](https://attack.mitre.org/techniques/T1489)
+**Tactic(s):** Impact  -  **Platforms:** ESXi, IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1489](https://attack.mitre.org/techniques/T1489)
 
 ## Summary
 Adversaries may stop or disable services on a system to render those services unavailable to legitimate users. Stopping critical services or processes can inhibit or stop response to an incident or aid in the adversary's overall objectives to cause damage to the environment.(Citation: Talos Olympic Destroyer 2018)(Citation: Novetta Blockbuster) 

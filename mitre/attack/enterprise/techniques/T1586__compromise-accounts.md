@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1586]
 
 # T1586 - Compromise Accounts
 
-**Tactic(s):** Resource Development  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1586](https://attack.mitre.org/techniques/T1586)
+**Tactic(s):** Resource Development  -  **Platforms:** PRE  -  **ATT&CK:** [T1586](https://attack.mitre.org/techniques/T1586)
 
 ## Summary
 Adversaries may compromise accounts with services that can be used during targeting. For operations incorporating social engineering, the utilization of an online persona may be important. Rather than creating and cultivating accounts (i.e. [Establish Accounts](https://attack.mitre.org/techniques/T1585)), adversaries may compromise existing accounts. Utilizing an existing persona may engender a level of trust in a potential victim if they have a relationship, or knowledge of, the compromised persona. 

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1136]
 
 # T1136 - Create Account
 
-**Tactic(s):** Persistence  ·  **Platforms:** Windows, IaaS, Linux, macOS, Network Devices, Containers, SaaS, Office Suite, Identity Provider, ESXi  ·  **ATT&CK:** [T1136](https://attack.mitre.org/techniques/T1136)
+**Tactic(s):** Persistence  -  **Platforms:** Windows, IaaS, Linux, macOS, Network Devices, Containers, SaaS, Office Suite, Identity Provider, ESXi  -  **ATT&CK:** [T1136](https://attack.mitre.org/techniques/T1136)
 
 ## Summary
 Adversaries may create an account to maintain access to victim systems.(Citation: Symantec WastedLocker June 2020) With a sufficient level of access, creating such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.

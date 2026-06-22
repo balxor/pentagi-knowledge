@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1595]
 
 # T1595 - Active Scanning
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1595](https://attack.mitre.org/techniques/T1595)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1595](https://attack.mitre.org/techniques/T1595)
 
 ## Summary
 Adversaries may execute active reconnaissance scans to gather information that can be used during targeting. Active scans are those where the adversary probes victim infrastructure via network traffic, as opposed to other forms of reconnaissance that do not involve direct interaction.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1106]
 
 # T1106 - Native API
 
-**Tactic(s):** Execution  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1106](https://attack.mitre.org/techniques/T1106)
+**Tactic(s):** Execution  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1106](https://attack.mitre.org/techniques/T1106)
 
 ## Summary
 Adversaries may interact with the native OS application programming interface (API) to execute behaviors. Native APIs provide a controlled means of calling low-level OS services within the kernel, such as those involving hardware/devices, memory, and processes.(Citation: NT API Windows)(Citation: Linux Kernel API) These native APIs are leveraged by the OS during system boot (when other system components are not yet initialized) as well as carrying out tasks and requests during routine operations.

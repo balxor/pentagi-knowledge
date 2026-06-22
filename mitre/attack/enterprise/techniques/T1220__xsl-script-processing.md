@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1220]
 
 # T1220 - XSL Script Processing
 
-**Tactic(s):** Stealth  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1220](https://attack.mitre.org/techniques/T1220)
+**Tactic(s):** Stealth  -  **Platforms:** Windows  -  **ATT&CK:** [T1220](https://attack.mitre.org/techniques/T1220)
 
 ## Summary
 Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files. Extensible Stylesheet Language (XSL) files are commonly used to describe the processing and rendering of data within XML files. To support complex operations, the XSL standard includes support for embedded scripting in various languages. (Citation: Microsoft XSLT Script Mar 2017)

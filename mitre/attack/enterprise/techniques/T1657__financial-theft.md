@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1657]
 
 # T1657 - Financial Theft
 
-**Tactic(s):** Impact  ·  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1657](https://attack.mitre.org/techniques/T1657)
+**Tactic(s):** Impact  -  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1657](https://attack.mitre.org/techniques/T1657)
 
 ## Summary
 Adversaries may steal monetary resources from targets through extortion, social engineering, technical theft, or other methods aimed at their own financial gain at the expense of the availability of these resources for victims. Financial theft is the ultimate objective of several popular campaign types including extortion by ransomware,(Citation: FBI-ransomware) business email compromise (BEC) and fraud,(Citation: FBI-BEC) "pig butchering,"(Citation: wired-pig butchering) bank hacking,(Citation: DOJ-DPRK Heist) and exploiting cryptocurrency networks.(Citation: BBC-Ronin) 

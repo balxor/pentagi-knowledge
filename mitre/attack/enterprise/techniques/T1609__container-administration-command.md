@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1609]
 
 # T1609 - Container Administration Command
 
-**Tactic(s):** Execution  ·  **Platforms:** Containers  ·  **ATT&CK:** [T1609](https://attack.mitre.org/techniques/T1609)
+**Tactic(s):** Execution  -  **Platforms:** Containers  -  **ATT&CK:** [T1609](https://attack.mitre.org/techniques/T1609)
 
 ## Summary
 Adversaries may abuse a container administration service to execute commands within a container. A container administration service such as the Docker daemon, the Kubernetes API server, or the kubelet may allow remote management of containers within an environment.(Citation: Docker Daemon CLI)(Citation: Kubernetes API)(Citation: Kubernetes Kubelet)

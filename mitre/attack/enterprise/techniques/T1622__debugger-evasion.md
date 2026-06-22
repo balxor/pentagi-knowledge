@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1622]
 
 # T1622 - Debugger Evasion
 
-**Tactic(s):** Stealth, Discovery  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1622](https://attack.mitre.org/techniques/T1622)
+**Tactic(s):** Stealth, Discovery  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1622](https://attack.mitre.org/techniques/T1622)
 
 ## Summary
 Adversaries may employ various means to detect and avoid debuggers. Debuggers are typically used by defenders to trace and/or analyze the execution of potential malware payloads.(Citation: ProcessHacker Github)

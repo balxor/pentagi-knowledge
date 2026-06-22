@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1686]
 
 # T1686 - Disable or Modify System Firewall
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1686](https://attack.mitre.org/techniques/T1686)
+**Tactic(s):** Defense Impairment  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1686](https://attack.mitre.org/techniques/T1686)
 
 ## Summary
 Adversaries may disable or modify host-based or network firewalls to impair defensive mechanisms and enable further action. Once an adversary has gathered sufficient privileges, they can tamper with firewall services, policies, or rule sets to remove restrictions on inbound or outbound traffic. For example, this may include turning off firewall profiles, altering existing rules to permit previously blocked ports or protocols, or adding new rules that create covert communication paths (e.g., adding a new firewall rule for a well-known protocol (such as RDP) using a non-traditional and potentially less securitized port.(Citation: change_rdp_port_conti)

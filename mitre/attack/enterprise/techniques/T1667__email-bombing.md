@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1667]
 
 # T1667 - Email Bombing
 
-**Tactic(s):** Impact  ·  **Platforms:** Linux, Office Suite, Windows, macOS  ·  **ATT&CK:** [T1667](https://attack.mitre.org/techniques/T1667)
+**Tactic(s):** Impact  -  **Platforms:** Linux, Office Suite, Windows, macOS  -  **ATT&CK:** [T1667](https://attack.mitre.org/techniques/T1667)
 
 ## Summary
 Adversaries may flood targeted email addresses with an overwhelming volume of messages. This may bury legitimate emails in a flood of spam and disrupt business operations.(Citation: sophos-bombing)(Citation: krebs-email-bombing)

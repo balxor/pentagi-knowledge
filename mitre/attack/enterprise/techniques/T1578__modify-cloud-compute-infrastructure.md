@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1578]
 
 # T1578 - Modify Cloud Compute Infrastructure
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** IaaS  ·  **ATT&CK:** [T1578](https://attack.mitre.org/techniques/T1578)
+**Tactic(s):** Defense Impairment  -  **Platforms:** IaaS  -  **ATT&CK:** [T1578](https://attack.mitre.org/techniques/T1578)
 
 ## Summary
 An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses. A modification to the compute service infrastructure can include the creation, deletion, or modification of one or more components such as compute instances, virtual machines, and snapshots.

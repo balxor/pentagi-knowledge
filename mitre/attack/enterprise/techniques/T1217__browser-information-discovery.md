@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1217]
 
 # T1217 - Browser Information Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1217](https://attack.mitre.org/techniques/T1217)
+**Tactic(s):** Discovery  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1217](https://attack.mitre.org/techniques/T1217)
 
 ## Summary
 Adversaries may enumerate information about browsers to learn more about compromised environments. Data saved by browsers (such as bookmarks, accounts, and browsing history) may reveal a variety of personal information about users (e.g., banking sites, relationships/interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure.(Citation: Kaspersky Autofill)

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1600]
 
 # T1600 - Weaken Encryption
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** Network Devices  ·  **ATT&CK:** [T1600](https://attack.mitre.org/techniques/T1600)
+**Tactic(s):** Defense Impairment  -  **Platforms:** Network Devices  -  **ATT&CK:** [T1600](https://attack.mitre.org/techniques/T1600)
 
 ## Summary
 Adversaries may compromise a network device’s encryption capability in order to bypass encryption that would otherwise protect data communications.(Citation: Cisco Synful Knock Evolution)

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1069]
 
 # T1069 - Permission Groups Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Containers, IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1069](https://attack.mitre.org/techniques/T1069)
+**Tactic(s):** Discovery  -  **Platforms:** Containers, IaaS, Identity Provider, Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1069](https://attack.mitre.org/techniques/T1069)
 
 ## Summary
 Adversaries may attempt to discover group and permission settings. This information can help adversaries determine which user accounts and groups are available, the membership of users in particular groups, and which users and groups have elevated permissions.

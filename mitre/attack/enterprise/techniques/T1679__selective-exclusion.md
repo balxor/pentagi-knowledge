@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1679]
 
 # T1679 - Selective Exclusion
 
-**Tactic(s):** Stealth  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1679](https://attack.mitre.org/techniques/T1679)
+**Tactic(s):** Stealth  -  **Platforms:** Windows  -  **ATT&CK:** [T1679](https://attack.mitre.org/techniques/T1679)
 
 ## Summary
 Adversaries may intentionally exclude certain files, folders, directories, file types, or system components from encryption or tampering during a ransomware or malicious payload execution. Some file extensions that adversaries may avoid encrypting include `.dll`, `.exe`, and `.lnk`.(Citation: Palo Alto Unit 42 Medusa Group Medusa Ransomware January 2024)  

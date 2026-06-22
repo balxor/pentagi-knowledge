@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1584]
 
 # T1584 - Compromise Infrastructure
 
-**Tactic(s):** Resource Development  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1584](https://attack.mitre.org/techniques/T1584)
+**Tactic(s):** Resource Development  -  **Platforms:** PRE  -  **ATT&CK:** [T1584](https://attack.mitre.org/techniques/T1584)
 
 ## Summary
 Adversaries may compromise third-party infrastructure that can be used during targeting. Infrastructure solutions include physical or cloud servers, domains, network devices, and third-party web and DNS services. Instead of buying, leasing, or renting infrastructure an adversary may compromise infrastructure and use it during other phases of the adversary lifecycle.(Citation: Mandiant APT1)(Citation: ICANNDomainNameHijacking)(Citation: Talos DNSpionage Nov 2018)(Citation: FireEye EPS Awakens Part 2) Additionally, adversaries may compromise numerous machines to form a botnet they can leverage.

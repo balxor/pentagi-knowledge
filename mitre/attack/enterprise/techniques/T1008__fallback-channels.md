@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1008]
 
 # T1008 - Fallback Channels
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1008](https://attack.mitre.org/techniques/T1008)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1008](https://attack.mitre.org/techniques/T1008)
 
 ## Summary
 Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thresholds.

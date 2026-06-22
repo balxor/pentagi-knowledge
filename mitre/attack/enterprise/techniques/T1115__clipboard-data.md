@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1115]
 
 # T1115 - Clipboard Data
 
-**Tactic(s):** Collection  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1115](https://attack.mitre.org/techniques/T1115)
+**Tactic(s):** Collection  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1115](https://attack.mitre.org/techniques/T1115)
 
 ## Summary
 Adversaries may collect data stored in the clipboard from users copying information within or between applications. 

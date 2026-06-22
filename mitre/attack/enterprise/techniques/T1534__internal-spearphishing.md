@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1534]
 
 # T1534 - Internal Spearphishing
 
-**Tactic(s):** Lateral Movement  ·  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1534](https://attack.mitre.org/techniques/T1534)
+**Tactic(s):** Lateral Movement  -  **Platforms:** Linux, macOS, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1534](https://attack.mitre.org/techniques/T1534)
 
 ## Summary
 After they already have access to accounts or systems within the environment, adversaries may use internal spearphishing to gain access to additional information or compromise other users within the same organization. Internal spearphishing is multi-staged campaign where a legitimate account is initially compromised either by controlling the user's device or by compromising the account credentials of the user. Adversaries may then attempt to take advantage of the trusted internal account to increase the likelihood of tricking more victims into falling for phish attempts, often incorporating [Impersonation](https://attack.mitre.org/techniques/T1684/001).(Citation: Trend Micro - Int SP)

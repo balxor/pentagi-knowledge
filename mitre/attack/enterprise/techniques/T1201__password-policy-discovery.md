@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1201]
 
 # T1201 - Password Policy Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** Windows, Linux, macOS, IaaS, Network Devices, Identity Provider, SaaS, Office Suite  ·  **ATT&CK:** [T1201](https://attack.mitre.org/techniques/T1201)
+**Tactic(s):** Discovery  -  **Platforms:** Windows, Linux, macOS, IaaS, Network Devices, Identity Provider, SaaS, Office Suite  -  **ATT&CK:** [T1201](https://attack.mitre.org/techniques/T1201)
 
 ## Summary
 Adversaries may attempt to access detailed information about the password policy used within an enterprise network or cloud environment. Password policies are a way to enforce complex passwords that are difficult to guess or crack through [Brute Force](https://attack.mitre.org/techniques/T1110). This information may help the adversary to create a list of common passwords and launch dictionary and/or brute force attacks which adheres to the policy (e.g. if the minimum password length should be 8, then not trying passwords such as 'pass123'; not checking for more than 3-4 passwords per account if the lockout is set to 6 as to not lock out accounts).

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1558]
 
 # T1558 - Steal or Forge Kerberos Tickets
 
-**Tactic(s):** Credential Access  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1558](https://attack.mitre.org/techniques/T1558)
+**Tactic(s):** Credential Access  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1558](https://attack.mitre.org/techniques/T1558)
 
 ## Summary
 Adversaries may attempt to subvert Kerberos authentication by stealing or forging Kerberos tickets to enable [Pass the Ticket](https://attack.mitre.org/techniques/T1550/003). Kerberos is an authentication protocol widely used in modern Windows domain environments. In Kerberos environments, referred to as “realms”, there are three basic participants: client, service, and Key Distribution Center (KDC).(Citation: ADSecurity Kerberos Ring Decoder) Clients request access to a service and through the exchange of Kerberos tickets, originating from KDC, they are granted access after having successfully authenticated. The KDC is responsible for both authentication and ticket granting.  Adversaries may attempt to abuse Kerberos by stealing tickets or forging tickets to enable unauthorized access.

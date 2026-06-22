@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1620]
 
 # T1620 - Reflective Code Loading
 
-**Tactic(s):** Stealth  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1620](https://attack.mitre.org/techniques/T1620)
+**Tactic(s):** Stealth  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1620](https://attack.mitre.org/techniques/T1620)
 
 ## Summary
 Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads. Reflective loading involves allocating then executing payloads directly within the memory of the process, vice creating a thread or process backed by a file path on disk (e.g., [Shared Modules](https://attack.mitre.org/techniques/T1129)).

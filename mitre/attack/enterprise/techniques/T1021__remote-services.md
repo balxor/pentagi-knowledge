@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1021]
 
 # T1021 - Remote Services
 
-**Tactic(s):** Lateral Movement  ·  **Platforms:** Linux, macOS, Windows, IaaS, ESXi  ·  **ATT&CK:** [T1021](https://attack.mitre.org/techniques/T1021)
+**Tactic(s):** Lateral Movement  -  **Platforms:** Linux, macOS, Windows, IaaS, ESXi  -  **ATT&CK:** [T1021](https://attack.mitre.org/techniques/T1021)
 
 ## Summary
 Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a service that accepts remote connections, such as telnet, SSH, and VNC. The adversary may then perform actions as the logged-on user.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1105]
 
 # T1105 - Ingress Tool Transfer
 
-**Tactic(s):** Command and Control  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1105](https://attack.mitre.org/techniques/T1105)
+**Tactic(s):** Command and Control  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1105](https://attack.mitre.org/techniques/T1105)
 
 ## Summary
 Adversaries may transfer tools or other files from an external system into a compromised environment. Tools or files may be copied from an external adversary-controlled system to the victim network through the command and control channel or through alternate protocols such as [ftp](https://attack.mitre.org/software/S0095). Once present, adversaries may also transfer/spread tools between victim devices within a compromised environment (i.e. [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570)). 

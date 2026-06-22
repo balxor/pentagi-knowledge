@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1006]
 
 # T1006 - Direct Volume Access
 
-**Tactic(s):** Stealth  ·  **Platforms:** Network Devices, Windows  ·  **ATT&CK:** [T1006](https://attack.mitre.org/techniques/T1006)
+**Tactic(s):** Stealth  -  **Platforms:** Network Devices, Windows  -  **ATT&CK:** [T1006](https://attack.mitre.org/techniques/T1006)
 
 ## Summary
 Adversaries may directly access a volume to bypass file access controls and file system monitoring. Windows allows programs to have direct access to logical volumes. Programs with direct access may read and write files directly from the drive by analyzing file system data structures. This technique may bypass Windows file access controls as well as file system monitoring tools.(Citation: Hakobyan 2009)

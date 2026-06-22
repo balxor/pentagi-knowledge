@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1614]
 
 # T1614 - System Location Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** IaaS, Linux, macOS, Windows  ·  **ATT&CK:** [T1614](https://attack.mitre.org/techniques/T1614)
+**Tactic(s):** Discovery  -  **Platforms:** IaaS, Linux, macOS, Windows  -  **ATT&CK:** [T1614](https://attack.mitre.org/techniques/T1614)
 
 ## Summary
 Adversaries may gather information in an attempt to calculate the geographical location of a victim host. Adversaries may use the information from [System Location Discovery](https://attack.mitre.org/techniques/T1614) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.

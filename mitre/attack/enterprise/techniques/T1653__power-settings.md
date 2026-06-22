@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1653]
 
 # T1653 - Power Settings
 
-**Tactic(s):** Persistence  ·  **Platforms:** Windows, Linux, macOS, Network Devices  ·  **ATT&CK:** [T1653](https://attack.mitre.org/techniques/T1653)
+**Tactic(s):** Persistence  -  **Platforms:** Windows, Linux, macOS, Network Devices  -  **ATT&CK:** [T1653](https://attack.mitre.org/techniques/T1653)
 
 ## Summary
 Adversaries may impair a system's ability to hibernate, reboot, or shut down in order to extend access to infected machines. When a computer enters a dormant state, some or all software and hardware may cease to operate which can disrupt malicious activity.(Citation: Sleep, shut down, hibernate)

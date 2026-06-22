@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1529]
 
 # T1529 - System Shutdown/Reboot
 
-**Tactic(s):** Impact  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1529](https://attack.mitre.org/techniques/T1529)
+**Tactic(s):** Impact  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1529](https://attack.mitre.org/techniques/T1529)
 
 ## Summary
 Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems. Operating systems may contain commands to initiate a shutdown/reboot of a machine or network device. In some cases, these commands may also be used to initiate a shutdown/reboot of a remote computer or network device via [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) (e.g. <code>reload</code>).(Citation: Microsoft Shutdown Oct 2017)(Citation: alert_TA18_106A) They may also include shutdown/reboot of a virtual machine via hypervisor / cloud consoles or command line tools.

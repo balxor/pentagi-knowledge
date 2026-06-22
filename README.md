@@ -17,9 +17,9 @@ planner/pentester agents.
 
 | Source | Framework | Domain | Version | Items |
 |--------|-----------|--------|---------|-------|
-| MITRE ATT&CK | ATT&CK | Enterprise | v19.1 | 15 tactics · 222 techniques · 475 sub-techniques (712) |
-| MITRE ATT&CK | ATT&CK | Mobile | - | _planned_ |
-| MITRE ATT&CK | ATT&CK | ICS | - | _planned_ |
+| MITRE ATT&CK | ATT&CK | Enterprise | v19.1 | 15 tactics - 222 techniques - 475 sub-techniques (712) |
+| MITRE ATT&CK | ATT&CK | Mobile | v19.1 | 12 tactics, 77 techniques, 47 sub-techniques (136) |
+| MITRE ATT&CK | ATT&CK | ICS | v19.1 | 12 tactics, 79 techniques, 18 sub-techniques (109) |
 
 ## Repository structure
 
@@ -34,11 +34,11 @@ pentagi-knowledge/
 │       │   ├── techniques/         # 697 technique + sub-technique files
 │       │   ├── INDEX.md            # full map
 │       │   └── manifest.json       # version, counts, source, date
-│       ├── mobile/                 # planned
-│       └── ics/                    # planned
+│       ├── mobile/                 # 12 tactics, 124 technique files, INDEX, manifest
+│       └── ics/                    # 12 tactics, 97 technique files, INDEX, manifest
 ├── docs/
 │   └── import-to-pentagi.md        # how to push into PentAGI Knowledges
-├── README.md  ·  LICENSE (MIT)  ·  NOTICE (MITRE attribution)  ·  CONTRIBUTING.md
+├── README.md  -  LICENSE (MIT)  -  NOTICE (MITRE attribution)  -  CONTRIBUTING.md
 ```
 
 Future non-MITRE sources sit as siblings of `mitre/` (e.g. `owasp/`, `atlas/`), one
@@ -80,7 +80,7 @@ provider setup (Ollama/OpenAI), API token, and the batch push.
 ## Roadmap
 
 - [x] Domain-aware generator (Enterprise / Mobile / ICS)
-- [ ] Commit Mobile + ICS packs
+- [x] Mobile + ICS packs committed (957 docs total across 3 domains)
 - [ ] MITRE ATLAS (adversarial AI)
 - [ ] OWASP Top 10 / WSTG mappings
 - [ ] CWE / CAPEC cross-references

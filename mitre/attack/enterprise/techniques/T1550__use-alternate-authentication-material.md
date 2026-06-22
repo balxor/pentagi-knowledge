@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1550]
 
 # T1550 - Use Alternate Authentication Material
 
-**Tactic(s):** Lateral Movement  ·  **Platforms:** Containers, IaaS, Identity Provider, Linux, Office Suite, SaaS, Windows  ·  **ATT&CK:** [T1550](https://attack.mitre.org/techniques/T1550)
+**Tactic(s):** Lateral Movement  -  **Platforms:** Containers, IaaS, Identity Provider, Linux, Office Suite, SaaS, Windows  -  **ATT&CK:** [T1550](https://attack.mitre.org/techniques/T1550)
 
 ## Summary
 Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls. 

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1611]
 
 # T1611 - Escape to Host
 
-**Tactic(s):** Privilege Escalation  ·  **Platforms:** Windows, Linux, Containers, ESXi  ·  **ATT&CK:** [T1611](https://attack.mitre.org/techniques/T1611)
+**Tactic(s):** Privilege Escalation  -  **Platforms:** Windows, Linux, Containers, ESXi  -  **ATT&CK:** [T1611](https://attack.mitre.org/techniques/T1611)
 
 ## Summary
 Adversaries may break out of a container or virtualized environment to gain access to the underlying host. This can allow an adversary access to other containerized or virtualized resources from the host level or to the host itself. In principle, containerized / virtualized resources should provide a clear separation of application functionality and be isolated from the host environment.(Citation: Docker Overview)

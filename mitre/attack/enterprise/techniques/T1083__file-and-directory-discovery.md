@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1083]
 
 # T1083 - File and Directory Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1083](https://attack.mitre.org/techniques/T1083)
+**Tactic(s):** Discovery  -  **Platforms:** ESXi, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1083](https://attack.mitre.org/techniques/T1083)
 
 ## Summary
 Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.

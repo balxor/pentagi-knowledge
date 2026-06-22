@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1543]
 
 # T1543 - Create or Modify System Process
 
-**Tactic(s):** Persistence, Privilege Escalation  ·  **Platforms:** Containers, Linux, macOS, Windows  ·  **ATT&CK:** [T1543](https://attack.mitre.org/techniques/T1543)
+**Tactic(s):** Persistence, Privilege Escalation  -  **Platforms:** Containers, Linux, macOS, Windows  -  **ATT&CK:** [T1543](https://attack.mitre.org/techniques/T1543)
 
 ## Summary
 Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence. When operating systems boot up, they can start processes that perform background system functions. On Windows and Linux, these system processes are referred to as services.(Citation: TechNet Services) On macOS, launchd processes known as [Launch Daemon](https://attack.mitre.org/techniques/T1543/004) and [Launch Agent](https://attack.mitre.org/techniques/T1543/001) are run to finish system initialization and load user specific parameters.(Citation: AppleDocs Launch Agent Daemons) 

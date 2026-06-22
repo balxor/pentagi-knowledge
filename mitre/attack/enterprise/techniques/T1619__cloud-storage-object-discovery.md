@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1619]
 
 # T1619 - Cloud Storage Object Discovery
 
-**Tactic(s):** Discovery  ·  **Platforms:** IaaS  ·  **ATT&CK:** [T1619](https://attack.mitre.org/techniques/T1619)
+**Tactic(s):** Discovery  -  **Platforms:** IaaS  -  **ATT&CK:** [T1619](https://attack.mitre.org/techniques/T1619)
 
 ## Summary
 Adversaries may enumerate objects in cloud storage infrastructure. Adversaries may use this information during automated discovery to shape follow-on behaviors, including requesting all or specific objects from cloud storage.  Similar to [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) on a local host, after identifying available storage services (i.e. [Cloud Infrastructure Discovery](https://attack.mitre.org/techniques/T1580)) adversaries may access the contents/objects stored in cloud infrastructure.

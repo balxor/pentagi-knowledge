@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1072]
 
 # T1072 - Software Deployment Tools
 
-**Tactic(s):** Execution, Lateral Movement  ·  **Platforms:** Linux, macOS, Network Devices, SaaS, Windows  ·  **ATT&CK:** [T1072](https://attack.mitre.org/techniques/T1072)
+**Tactic(s):** Execution, Lateral Movement  -  **Platforms:** Linux, macOS, Network Devices, SaaS, Windows  -  **ATT&CK:** [T1072](https://attack.mitre.org/techniques/T1072)
 
 ## Summary
 Adversaries may gain access to and use centralized software suites installed within an enterprise to execute commands and move laterally through the network. Configuration management and software deployment applications may be used in an enterprise network or cloud environment for routine administration purposes. These systems may also be integrated into CI/CD pipelines. Examples of such solutions include: SCCM, HBSS, Altiris, AWS Systems Manager, Microsoft Intune, Azure Arc, and GCP Deployment Manager.  

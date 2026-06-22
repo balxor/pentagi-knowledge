@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1137]
 
 # T1137 - Office Application Startup
 
-**Tactic(s):** Persistence  ·  **Platforms:** Windows, Office Suite  ·  **ATT&CK:** [T1137](https://attack.mitre.org/techniques/T1137)
+**Tactic(s):** Persistence  -  **Platforms:** Windows, Office Suite  -  **ATT&CK:** [T1137](https://attack.mitre.org/techniques/T1137)
 
 ## Summary
 Adversaries may leverage Microsoft Office-based applications for persistence between startups. Microsoft Office is a fairly common application suite on Windows-based operating systems within an enterprise network. There are multiple mechanisms that can be used with Office for persistence when an Office-based application is started; this can include the use of Office Template Macros and add-ins.

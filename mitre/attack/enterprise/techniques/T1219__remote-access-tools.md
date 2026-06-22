@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1219]
 
 # T1219 - Remote Access Tools
 
-**Tactic(s):** Command and Control  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1219](https://attack.mitre.org/techniques/T1219)
+**Tactic(s):** Command and Control  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1219](https://attack.mitre.org/techniques/T1219)
 
 ## Summary
 An adversary may use legitimate remote access tools to establish an interactive command and control channel within a network. Remote access tools create a session between two trusted hosts through a graphical interface, a command line interaction, a protocol tunnel via development or management software, or hardware-level access such as KVM (Keyboard, Video, Mouse) over IP solutions. Desktop support software (usually graphical interface) and remote management software (typically command line interface) allow a user to control a computer remotely as if they are a local user inheriting the user or software permissions. This software is commonly used for troubleshooting, software installation, and system management.(Citation: Symantec Living off the Land)(Citation: CrowdStrike 2015 Global Threat Report)(Citation: CrySyS Blog TeamSpy) Adversaries may similarly abuse response features included in EDR and other defensive tools that enable remote access.

@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1589]
 
 # T1589 - Gather Victim Identity Information
 
-**Tactic(s):** Reconnaissance  ·  **Platforms:** PRE  ·  **ATT&CK:** [T1589](https://attack.mitre.org/techniques/T1589)
+**Tactic(s):** Reconnaissance  -  **Platforms:** PRE  -  **ATT&CK:** [T1589](https://attack.mitre.org/techniques/T1589)
 
 ## Summary
 Adversaries may gather information about the victim's identity that can be used during targeting. Information about identities may include a variety of details, including personal data (ex: employee names, email addresses, security question responses, etc.) as well as sensitive details such as credentials or multi-factor authentication (MFA) configurations.

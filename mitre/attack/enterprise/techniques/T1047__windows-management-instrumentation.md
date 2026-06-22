@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1047]
 
 # T1047 - Windows Management Instrumentation
 
-**Tactic(s):** Execution  ·  **Platforms:** Windows  ·  **ATT&CK:** [T1047](https://attack.mitre.org/techniques/T1047)
+**Tactic(s):** Execution  -  **Platforms:** Windows  -  **ATT&CK:** [T1047](https://attack.mitre.org/techniques/T1047)
 
 ## Summary
 Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads. WMI is designed for programmers and is the infrastructure for management data and operations on Windows systems.(Citation: WMI 1-3) WMI is an administration feature that provides a uniform environment to access Windows system components.

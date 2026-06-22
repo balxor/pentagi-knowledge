@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1222]
 
 # T1222 - File and Directory Permissions Modification
 
-**Tactic(s):** Defense Impairment  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1222](https://attack.mitre.org/techniques/T1222)
+**Tactic(s):** Defense Impairment  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1222](https://attack.mitre.org/techniques/T1222)
 
 ## Summary
 Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files.(Citation: Hybrid Analysis Icacls1 June 2018)(Citation: Hybrid Analysis Icacls2 May 2018) File and directory permissions are commonly managed by ACLs configured by the file or directory owner, or users with the appropriate permissions. File and directory ACL implementations vary by platform, but generally explicitly designate which users or groups can perform which actions (read, write, execute, etc.).

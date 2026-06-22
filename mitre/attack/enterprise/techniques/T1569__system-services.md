@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1569]
 
 # T1569 - System Services
 
-**Tactic(s):** Execution  ·  **Platforms:** Windows, macOS, Linux  ·  **ATT&CK:** [T1569](https://attack.mitre.org/techniques/T1569)
+**Tactic(s):** Execution  -  **Platforms:** Windows, macOS, Linux  -  **ATT&CK:** [T1569](https://attack.mitre.org/techniques/T1569)
 
 ## Summary
 Adversaries may abuse system services or daemons to execute commands or programs. Adversaries can execute malicious content by interacting with or creating services either locally or remotely. Many services are set to run at boot, which can aid in achieving persistence ([Create or Modify System Process](https://attack.mitre.org/techniques/T1543)), but adversaries can also abuse services for one-time or temporary execution.

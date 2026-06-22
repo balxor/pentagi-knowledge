@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1490]
 
 # T1490 - Inhibit System Recovery
 
-**Tactic(s):** Impact  ·  **Platforms:** Containers, ESXi, IaaS, Linux, macOS, Network Devices, Windows  ·  **ATT&CK:** [T1490](https://attack.mitre.org/techniques/T1490)
+**Tactic(s):** Impact  -  **Platforms:** Containers, ESXi, IaaS, Linux, macOS, Network Devices, Windows  -  **ATT&CK:** [T1490](https://attack.mitre.org/techniques/T1490)
 
 ## Summary
 Adversaries may delete or remove built-in data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.(Citation: Talos Olympic Destroyer 2018)(Citation: FireEye WannaCry 2017) This may deny access to available backups and recovery options.

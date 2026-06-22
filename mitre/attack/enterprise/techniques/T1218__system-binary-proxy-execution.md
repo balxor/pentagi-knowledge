@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1218]
 
 # T1218 - System Binary Proxy Execution
 
-**Tactic(s):** Stealth  ·  **Platforms:** Linux, macOS, Windows  ·  **ATT&CK:** [T1218](https://attack.mitre.org/techniques/T1218)
+**Tactic(s):** Stealth  -  **Platforms:** Linux, macOS, Windows  -  **ATT&CK:** [T1218](https://attack.mitre.org/techniques/T1218)
 
 ## Summary
 Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries. Binaries used in this technique are often Microsoft-signed files, indicating that they have been either downloaded from Microsoft or are already native in the operating system.(Citation: LOLBAS Project) Binaries signed with trusted digital certificates can typically execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files or commands.

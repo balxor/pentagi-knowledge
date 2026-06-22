@@ -11,7 +11,7 @@ tags: [mitre-attack, technique, T1140]
 
 # T1140 - Deobfuscate/Decode Files or Information
 
-**Tactic(s):** Stealth  ·  **Platforms:** ESXi, Linux, macOS, Windows  ·  **ATT&CK:** [T1140](https://attack.mitre.org/techniques/T1140)
+**Tactic(s):** Stealth  -  **Platforms:** ESXi, Linux, macOS, Windows  -  **ATT&CK:** [T1140](https://attack.mitre.org/techniques/T1140)
 
 ## Summary
 Adversaries may use [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027) to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware or by using utilities present on the system.
