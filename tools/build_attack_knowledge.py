@@ -80,6 +80,24 @@ def attack_id(obj):
     return None, None
 
 
+def detect_domain(bundle):
+    """Infer the ATT&CK domain from the bundle's kill_chain_name values, so a
+    --stix file is labelled correctly regardless of the --domain flag."""
+    names = set()
+    for o in bundle.get("objects", []):
+        if o.get("type") == "attack-pattern":
+            for ph in o.get("kill_chain_phases", []) or []:
+                if ph.get("kill_chain_name", "").startswith("mitre"):
+                    names.add(ph["kill_chain_name"])
+    if "mitre-mobile-attack" in names:
+        return "mobile"
+    if "mitre-ics-attack" in names:
+        return "ics"
+    if "mitre-attack" in names:
+        return "enterprise"
+    return None
+
+
 # ----------------------------------------------------------------------------
 # Parse the bundle
 # ----------------------------------------------------------------------------
@@ -247,6 +265,11 @@ def main():
     args = ap.parse_args()
 
     bundle = load_stix(args.domain, args.stix)
+    detected = detect_domain(bundle)
+    domain = detected or args.domain
+    if args.stix and detected and detected != args.domain:
+        print(f"[*] Detected domain '{detected}' from STIX content "
+              f"(overriding --domain '{args.domain}')", file=sys.stderr)
     tactics, techniques, mit_for, t_by_sn, order, coll_ver = parse(bundle)
 
     per_tactic = {sn: [] for sn in t_by_sn}
@@ -282,7 +305,7 @@ def main():
         written.append(path)
 
     with open(os.path.join(args.out, "INDEX.md"), "w", encoding="utf-8") as fh:
-        fh.write(f"# MITRE ATT&CK {args.domain.capitalize()} - Knowledge Index\n\n")
+        fh.write(f"# MITRE ATT&CK {domain.capitalize()} - Knowledge Index\n\n")
         fh.write(f"Tactics: {len(tactics)} - Techniques+sub: {len(techniques)} - "
                  f"Total files: {len(written)}\n\n")
         for i, sn in enumerate(order, 1):
@@ -297,9 +320,9 @@ def main():
     manifest = {
         "source": "MITRE ATT&CK",
         "framework": "attack",
-        "domain": args.domain,
+        "domain": domain,
         "attack_version": _norm_ver(args.version if args.version != "latest" else (coll_ver or "latest")),
-        "stix_source": f"{STIX_BASE}/{DOMAIN_FILE[args.domain]}",
+        "stix_source": f"{STIX_BASE}/{DOMAIN_FILE[domain]}",
         "generated_at": datetime.date.today().isoformat(),
         "generator": "tools/build_attack_knowledge.py",
         "counts": {"tactics": len(tactics), "techniques": n_top,
