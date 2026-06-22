@@ -1,0 +1,17 @@
+{
+  "source": "MITRE ATT&CK",
+  "framework": "attack",
+  "domain": "ics",
+  "attack_version": "19.1",
+  "stix_source": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/ics-attack/ics-attack.json",
+  "generated_at": "2026-06-23",
+  "generator": "tools/build_attack_knowledge.py",
+  "counts": {
+    "tactics": 12,
+    "techniques": 79,
+    "subtechniques": 18,
+    "total": 109
+  },
+  "format": "one markdown file per item, YAML frontmatter + structured body",
+  "target": "PentAGI Knowledges (pgvector semantic search)"
+}

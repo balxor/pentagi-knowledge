@@ -1,0 +1,27 @@
+---
+attack_id: T0869
+name: Standard Application Layer Protocol
+type: technique
+parent: null
+tactics: [Command and Control]
+platforms: [None]
+url: https://attack.mitre.org/techniques/T0869
+tags: [mitre-attack, technique, T0869]
+---
+
+# T0869 - Standard Application Layer Protocol
+
+**Tactic(s):** Command and Control  -  **Platforms:** None  -  **ATT&CK:** [T0869](https://attack.mitre.org/techniques/T0869)
+
+## Summary
+Adversaries may establish command and control capabilities over commonly used application layer protocols such as HTTP(S), OPC, RDP, telnet, DNP3, and modbus. These protocols may be used to disguise adversary actions as benign network traffic. Standard protocols may be seen on their associated port or in some cases over a non-standard port.  Adversaries may use these protocols to reach out of the network for command and control, or in some cases to other infected devices within the network.
+
+## Role in the attack flow
+Used to achieve the **Command and Control** objective. An autonomous agent invokes this when its current sub-goal matches that tactic and the target platform is one of: None.
+
+## Mitigations
+- **M0930 Network Segmentation** - Architect sections of the network to isolate critical systems, functions, or resources. Use physical and logical segmentation to prevent access to potentially sensitive systems and information. Use a DMZ to contain any internet-facing services that should not be exposed from the internal network.  Restrict network access to only required systems and services. In addition, prevent systems from other networks or business functions (e.g., enterprise) from accessing critical process control systems. For example, in IEC 62443, systems within the same secure level should be grouped into a zone, and access to that zone is restricted by a conduit, or mechanism to restrict data flows between zones by segmenting the network. (Citation: IEC February 2019) (Citation: IEC August 2013)
+- **M0931 Network Intrusion Prevention** - Use intrusion detection signatures to block traffic at network boundaries.  In industrial control environments, network intrusion prevention should be configured so it will not disrupt protocols and communications responsible for real-time functions related to control or safety.
+- **M0807 Network Allowlists** - Network allowlists can be implemented through either host-based files or system hosts files to specify what connections (e.g., IP address, MAC address, port, protocol) can be made from a device. Allowlist techniques that operate at the  application layer (e.g., DNP3, Modbus, HTTP) are addressed in [Filter Network Traffic](https://attack.mitre.org/mitigations/M0937) mitigation.
+
+Source: MITRE ATT&CK - https://attack.mitre.org/techniques/T0869
