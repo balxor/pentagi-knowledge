@@ -59,7 +59,7 @@ Tooling effort is prioritised by tactic - techniques from higher-priority tactic
 - [x] T1059.004 - Unix Shell (tooling/enterprise/T1059.004__unix-shell.md)
 - [x] T1059.005 - Visual Basic (tooling/enterprise/T1059.005__visual-basic.md)
 - [x] T1059.006 - Python (tooling/enterprise/T1059.006__python.md)
-- [ ] T1059.007 - JavaScript
+- [x] T1059.007 - JavaScript (tooling/enterprise/T1059.007__javascript.md)
 - [ ] T1059.008 - Network Device CLI
 - [ ] T1059.009 - Cloud API
 - [ ] T1059.010 - AutoHotKey/AutoIT
