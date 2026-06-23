@@ -1,0 +1,34 @@
+---
+capec_id: CAPEC-162
+name: Manipulating Hidden Fields
+type: attack-pattern
+abstraction: Detailed
+likelihood: n/a
+severity: High
+related_cwe: [CWE-602]
+related_attack: []
+url: https://capec.mitre.org/data/definitions/162.html
+tags: [mitre-capec, attack-pattern, CAPEC-162]
+---
+
+# CAPEC-162 - Manipulating Hidden Fields
+
+**Abstraction:** Detailed  -  **Likelihood:** n/a  -  **Severity:** High  -  **CAPEC:** [CAPEC-162](https://capec.mitre.org/data/definitions/162.html)
+
+## Description
+An adversary exploits a weakness in the server's trust of client-side processing by modifying data on the client-side, such as price information, and then submitting this data to the server, which processes the modified data. For example, eShoplifting is a data manipulation attack against an on-line merchant during a purchasing transaction. The manipulation of price, discount or quantity fields in the transaction message allows the adversary to acquire items at a lower cost than the merchant intended. The adversary performs a normal purchasing transaction but edits hidden fields within the HTML form response that store price or other information to give themselves a better deal. The merchant then uses the modified pricing information in calculating the cost of the selected items.
+
+## Prerequisites
+- The targeted site must contain hidden fields to be modified.
+- The targeted site must not validate the hidden fields with backend processing.
+
+## Resources required
+- The adversary must have the ability to modify hidden fields by editing the HTTP response to the server.
+
+## Execution flow
+Execution Flow Explore Probe target web application: The adversary first probes the target web application to find all possible pages that can be visited on the website. Techniques Use a spidering tool to follow and record all links Use a proxy tool to record all links visited during a manual traversal of the web application. Find hidden fields: Once the web application has been traversed, the adversary looks for all hidden HTML fields present in the client-side. Techniques Use the inspect tool on all modern browsers and filter for the keyword "hidden" Specifically look for hidden fields inside form elements. Experiment Send modified hidden fields to server-side: Once the adversary has found hidden fields in the client-side, they will modify the values of these hidden fields one by one and then interact with the web application so that this data is sent to the server-side. The adversary observes the response from the server to determine if the values of each hidden field are being validated. Exploit Manipulate hidden fields: Once the adversary has determined which hidden fields are not being validated by the server, they will manipulate them to change the normal behavior of the web application in a way that benefits the adversary. Techniques Manipulate a hidden field inside a form element and then submit the form so that the manipulated data is sent to the server.
+
+## Related weaknesses (CWE)
+- [CWE-602](https://cwe.mitre.org/data/definitions/602.html)
+
+Source: MITRE CAPEC - https://capec.mitre.org/data/definitions/162.html

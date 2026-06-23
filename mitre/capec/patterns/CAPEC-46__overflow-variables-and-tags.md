@@ -1,0 +1,54 @@
+---
+capec_id: CAPEC-46
+name: Overflow Variables and Tags
+type: attack-pattern
+abstraction: Detailed
+likelihood: High
+severity: High
+related_cwe: [CWE-120, CWE-118, CWE-119, CWE-74, CWE-20, CWE-680, CWE-733, CWE-697]
+related_attack: []
+url: https://capec.mitre.org/data/definitions/46.html
+tags: [mitre-capec, attack-pattern, CAPEC-46]
+---
+
+# CAPEC-46 - Overflow Variables and Tags
+
+**Abstraction:** Detailed  -  **Likelihood:** High  -  **Severity:** High  -  **CAPEC:** [CAPEC-46](https://capec.mitre.org/data/definitions/46.html)
+
+## Description
+This type of attack leverages the use of tags or variables from a formatted configuration data to cause buffer overflow. The adversary crafts a malicious HTML page or configuration file that includes oversized strings, thus causing an overflow.
+
+## Prerequisites
+- The target program consumes user-controllable data in the form of tags or variables.
+- The target program does not perform sufficient boundary checking.
+
+## Skills required
+- **High**: Exploiting a buffer overflow to inject malicious code into the stack of a software system or even the heap can require a higher skill level.
+- **Low**: An adversary can simply overflow a buffer by inserting a long string into an adversary-modifiable injection vector. The result can be a DoS.
+
+## Consequences
+- **Availability**: Unreliable Execution, Execute Unauthorized Commands (Run Arbitrary Code)
+- **Confidentiality**: Execute Unauthorized Commands (Run Arbitrary Code), Read Data
+- **Integrity**: Execute Unauthorized Commands (Run Arbitrary Code), Modify Data
+
+## Execution flow
+Execution Flow Explore Identify target application: The adversary identifies a target application or program to perform the buffer overflow on. Adversaries look for applications or programs that accept formatted files, such as configuration files, as input. Experiment Find injection vector: The adversary identifies an injection vector to deliver the excessive content to the targeted application's buffer. Techniques Knowing the type of file that an application takes as input, the adversary takes a normal input file and modifies a single variable or tag to contain a large amount of data. If there is a crash, this means that a buffer overflow attack is possible. The adversary will keep changing single variables or tags one by one until they see a change in behavior. Craft overflow content: The adversary crafts the content to be injected. If the intent is to simply cause the software to crash, the content need only consist of an excessive quantity of random data. If the intent is to leverage the overflow for execution of arbitrary code, the adversary crafts the payload in such a way that the overwritten return address is replaced with one of the adversary's choosing. Techniques Create malicious shellcode that will execute when the program execution is returned to it. Use a NOP-sled in the overflow content to more easily "slide" into the malicious code. This is done so that the exact return address need not be correct, only in the range of all of the NOPs Exploit Overflow the buffer: The adversary will upload the crafted file to the application, causing a buffer overflow.
+
+## Mitigations
+- Use a language or compiler that performs automatic bounds checking.
+- Use an abstraction library to abstract away risky APIs. Not a complete solution.
+- Compiler-based canary mechanisms such as StackGuard, ProPolice and the Microsoft Visual Studio /GS flag. Unless this provides automatic bounds checking, it is not a complete solution.
+- Use OS-level preventative functionality. Not a complete solution.
+- Do not trust input data from user. Validate all user input.
+
+## Related weaknesses (CWE)
+- [CWE-120](https://cwe.mitre.org/data/definitions/120.html)
+- [CWE-118](https://cwe.mitre.org/data/definitions/118.html)
+- [CWE-119](https://cwe.mitre.org/data/definitions/119.html)
+- [CWE-74](https://cwe.mitre.org/data/definitions/74.html)
+- [CWE-20](https://cwe.mitre.org/data/definitions/20.html)
+- [CWE-680](https://cwe.mitre.org/data/definitions/680.html)
+- [CWE-733](https://cwe.mitre.org/data/definitions/733.html)
+- [CWE-697](https://cwe.mitre.org/data/definitions/697.html)
+
+Source: MITRE CAPEC - https://capec.mitre.org/data/definitions/46.html

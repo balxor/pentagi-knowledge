@@ -1,0 +1,43 @@
+---
+cwe_id: CWE-156
+name: Improper Neutralization of Whitespace
+type: weakness
+abstraction: Variant
+status: Draft
+languages: [Not Language-Specific]
+related_capec: []
+url: https://cwe.mitre.org/data/definitions/156.html
+tags: [mitre-cwe, weakness, CWE-156]
+---
+
+# CWE-156 - Improper Neutralization of Whitespace
+
+**Abstraction:** Variant  -  **Status:** Draft  -  **CWE:** [CWE-156](https://cwe.mitre.org/data/definitions/156.html)
+
+## Description
+The product receives input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could be interpreted as whitespace when they are sent to a downstream component.
+
+## Extended description
+This can include space, tab, etc.
+
+## Applicable platforms / languages
+Not Language-Specific
+
+## Common consequences
+- **Integrity**: Unexpected State
+
+## Potential mitigations
+- **general**: Developers should anticipate that whitespace will be injected/removed/manipulated in the input vectors of their product. Use an appropriate combination of denylists and allowlists to ensure only valid, expected and appropriate input is processed by the system.
+- **Implementation**: Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if the input is only expected to contain colors such as "red" or "blue." Do not rely exclusively on looking for malicious or malformed inputs. This is likely to miss at least one undesirable input, especially if the code's environment changes. This can give attackers enough room to bypass the intended validation. However, denylists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+- **Implementation**: While it is risky to use dynamically-generated query strings, code, or commands that mix control and data together, sometimes it may be unavoidable. Properly quote arguments and escape any special characters within those arguments. The most conservative approach is to escape or filter all characters that do not pass an extremely strict allowlist (such as everything that is not alphanumeric or white space). If some special characters are still needed, such as white space, wrap each argument in quotes after the escaping/filtering step. Be careful of argument injection (CWE-88).
+- **Implementation**: Inputs should be decoded and canonicalized to the application's current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass allowlist validation schemes by introducing dangerous inputs after they have been checked.
+
+## Related weaknesses
+- CWE-138 (ChildOf)
+
+## Observed examples (CVE)
+- **CVE-2002-0637**: MIE. virus protection bypass with RFC violations involving extra whitespace, or missing whitespace.
+- **CVE-2004-0942**: CPU consumption with MIME headers containing lines with many space characters, probably due to algorithmic complexity (RESOURCE.AMP.ALG).
+- **CVE-2003-1015**: MIE. whitespace interpreted differently by mail clients.
+
+Source: MITRE CWE - https://cwe.mitre.org/data/definitions/156.html

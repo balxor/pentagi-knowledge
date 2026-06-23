@@ -1,0 +1,13 @@
+{
+  "source": "MITRE CWE",
+  "framework": "cwe",
+  "cwe_version": "v4.20",
+  "xml_source": "https://cwe.mitre.org/data/xml/cwec_latest.xml.zip",
+  "generated_at": "2026-06-23",
+  "generator": "tools/build_cwe_knowledge.py",
+  "counts": {
+    "weaknesses": 944
+  },
+  "format": "one markdown file per weakness, YAML frontmatter + structured body",
+  "target": "PentAGI Knowledges (pgvector semantic search)"
+}

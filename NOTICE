@@ -1,19 +1,24 @@
 pentagi-knowledge
 =================
 
-This project redistributes and transforms content derived from MITRE ATT&CK®.
+This project redistributes and transforms content derived from MITRE's open
+security frameworks:
 
-  © 2015-2026 The MITRE Corporation. This work is reproduced and distributed
+  - MITRE ATT&CK(R)  - https://attack.mitre.org
+  - MITRE CAPEC(TM)  - https://capec.mitre.org
+  - MITRE CWE(TM)    - https://cwe.mitre.org
+
+  (C) 2015-2026 The MITRE Corporation. This work is reproduced and distributed
   with the permission of The MITRE Corporation.
 
-  MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
-  ATT&CK® content is used under the MITRE ATT&CK Terms of Use:
+  ATT&CK, CAPEC and CWE are trademarks of The MITRE Corporation. ATT&CK content
+  is used under the MITRE ATT&CK Terms of Use:
   https://attack.mitre.org/resources/legal-and-branding/terms-of-use/
+  CAPEC and CWE are used in accordance with their respective terms of use.
 
-The knowledge documents under mitre/attack/** are generated from the official
-ATT&CK STIX data (https://github.com/mitre-attack/attack-stix-data) and may
-contain text from ATT&CK technique and tactic descriptions. Attribution to
-MITRE is required for any further redistribution.
+The knowledge documents under mitre/** are generated from the official ATT&CK
+STIX, CAPEC STIX, and CWE XML data, and may contain text from those sources.
+Attribution to MITRE is required for any further redistribution.
 
 The original tooling, repository structure, and surrounding prose are licensed
 under the MIT License - see LICENSE.

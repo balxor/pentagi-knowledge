@@ -21,28 +21,46 @@ planner/pentester agents.
 | MITRE ATT&CK | ATT&CK | Mobile | v19.1 | 12 tactics, 77 techniques, 47 sub-techniques (136) |
 | MITRE ATT&CK | ATT&CK | ICS | v19.1 | 12 tactics, 79 techniques, 18 sub-techniques (109) |
 
+**Other MITRE sources** (each has its own generator; run locally then commit):
+
+| Source | Covers | Generator |
+|--------|--------|-----------|
+| MITRE CWE | weakness classes - e.g. CWE-134 (format string), CWE-120/121/122/787 (buffer overflow), CWE-416 (use-after-free) | `tools/build_cwe_knowledge.py` |
+| MITRE CAPEC | attack patterns - e.g. CAPEC-135 (format-string injection), CAPEC-100/123 (buffer overflow) | `tools/build_capec_knowledge.py` |
+
 ## Repository structure
 
 ```
 pentagi-knowledge/
 ├── tools/
-│   └── build_attack_knowledge.py   # generator + optional PentAGI push
+│   ├── build_attack_knowledge.py       # ATT&CK (enterprise/mobile/ics)
+│   ├── build_capec_knowledge.py        # CAPEC attack patterns
+│   ├── build_cwe_knowledge.py          # CWE weakness classes
+│   └── update_tracking_status.py       # Sync TRACKING.md checkboxes
 ├── mitre/
-│   └── attack/
-│       ├── enterprise/
-│       │   ├── tactics/            # 15 files
-│       │   ├── techniques/         # 697 technique + sub-technique files
-│       │   ├── INDEX.md            # full map
-│       │   └── manifest.json       # version, counts, source, date
-│       ├── mobile/                 # 12 tactics, 124 technique files, INDEX, manifest
-│       └── ics/                    # 12 tactics, 97 technique files, INDEX, manifest
+│   ├── attack/
+│   │   ├── enterprise/                 # 15 tactics, 697 technique files, INDEX, manifest
+│   │   ├── mobile/                     # 12 tactics, 124 technique files, INDEX, manifest
+│   │   └── ics/                        # 12 tactics, 97 technique files, INDEX, manifest
+│   ├── capec/                          # CAPEC-### attack patterns (build_capec_knowledge.py)
+│   └── cwe/                            # CWE-### weakness classes (build_cwe_knowledge.py)
+├── tooling/                            # Curated tooling overlays (survive regenerate)
+│   ├── enterprise/                     # One .md per technique with execution commands
+│   ├── mobile/
+│   ├── ics/
+│   ├── capec/
+│   └── cwe/
 ├── docs/
-│   └── import-to-pentagi.md        # how to push into PentAGI Knowledges
+│   └── import-to-pentagi.md            # how to push into PentAGI Knowledges
+├── TRACKING.md                         # Master checklist & priority for tooling work
 ├── README.md  -  LICENSE (MIT)  -  NOTICE (MITRE attribution)  -  CONTRIBUTING.md
 ```
 
-Future non-MITRE sources sit as siblings of `mitre/` (e.g. `owasp/`, `atlas/`), one
-framework per top-level folder.
+MITRE frameworks live under `mitre/` (`attack/`, `capec/`, `cwe/`). Future non-MITRE
+sources sit as siblings of `mitre/` (e.g. `owasp/`), one framework per folder.
+Tooling overlays sit under `tooling/` - standalone Markdown files that reference ATT&CK
+IDs via YAML frontmatter but never merge into MITRE-generated files, so they survive
+regeneration. See `TRACKING.md` for priority order and progress.
 
 ## Document format
 
@@ -67,6 +85,8 @@ pip install mitreattack-python
 python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise
 python tools/build_attack_knowledge.py --domain mobile     --out ./mitre/attack/mobile
 python tools/build_attack_knowledge.py --domain ics        --out ./mitre/attack/ics
+python tools/build_capec_knowledge.py --out ./mitre/capec
+python tools/build_cwe_knowledge.py   --out ./mitre/cwe
 ```
 
 ATT&CK is versioned; re-run after a new release to refresh. See `manifest.json` for the
@@ -83,8 +103,10 @@ provider setup (Ollama/OpenAI), API token, and the batch push.
 - [x] Mobile + ICS packs committed (957 docs total across 3 domains)
 - [ ] MITRE ATLAS (adversarial AI)
 - [ ] OWASP Top 10 / WSTG mappings
-- [ ] CWE / CAPEC cross-references
-- [ ] Per-technique tooling hints (nmap, metasploit, sqlmap, …)
+- [x] CWE + CAPEC generators
+- [ ] Commit CWE + CAPEC packs
+- [x] Per-technique tooling hints (execution commands for autonomous agents)
+- [ ] Expand tooling coverage (P0 Credential Access, P1 Lateral Movement, …)
 
 ## License & attribution
 

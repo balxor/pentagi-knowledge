@@ -1,0 +1,42 @@
+---
+cwe_id: CWE-497
+name: Exposure of Sensitive System Information to an Unauthorized Control Sphere
+type: weakness
+abstraction: Base
+status: Incomplete
+languages: [Not Language-Specific, Not Technology-Specific, Web Based]
+related_capec: [CAPEC-170, CAPEC-694]
+url: https://cwe.mitre.org/data/definitions/497.html
+tags: [mitre-cwe, weakness, CWE-497]
+---
+
+# CWE-497 - Exposure of Sensitive System Information to an Unauthorized Control Sphere
+
+**Abstraction:** Base  -  **Status:** Incomplete  -  **CWE:** [CWE-497](https://cwe.mitre.org/data/definitions/497.html)
+
+## Description
+The product does not properly prevent sensitive system-level information from being accessed by unauthorized actors who do not have the same level of access to the underlying system as the product does.
+
+## Extended description
+Network-based products, such as web applications, often run on top of an operating system or similar environment. When the product communicates with outside parties, details about the underlying system are expected to remain hidden, such as path names for data files, other OS users, installed packages, the application environment, etc. This system information may be provided by the product itself, or buried within diagnostic or debugging messages. Debugging information helps an adversary learn about the system and form an attack plan. An information exposure occurs when system data or debugging information leaves the program through an output stream or logging function that makes it accessible to unauthorized parties. Using other weaknesses, an attacker could cause errors to occur; the response to these errors can reveal detailed system information, along with other impacts. An attacker can use messages that reveal technologies, operating systems, and product versions to tune the attack against known vulnerabilities in these technologies. A product may use diagnostic methods that provide significant implementation details such as stack traces as part of its error handling mechanism.
+
+## Applicable platforms / languages
+Not Language-Specific, Not Technology-Specific, Web Based
+
+## Common consequences
+- **Confidentiality**: Read Application Data
+
+## Potential mitigations
+- **Architecture and Design, Implementation**: Production applications should never use methods that generate internal details such as stack traces and error messages unless that information is directly committed to a log that is not viewable by the end user. All error message text should be HTML entity encoded before being written to the log file to protect against potential cross-site scripting attacks against the viewer of the logs
+
+## Related attack patterns (CAPEC)
+- [CAPEC-170](https://capec.mitre.org/data/definitions/170.html)
+- [CAPEC-694](https://capec.mitre.org/data/definitions/694.html)
+
+## Related weaknesses
+- CWE-200 (ChildOf)
+
+## Observed examples (CVE)
+- **CVE-2021-32638**: Code analysis product passes access tokens as a command-line parameter or through an environment variable, making them visible to other processes via the ps command.
+
+Source: MITRE CWE - https://cwe.mitre.org/data/definitions/497.html

@@ -1,0 +1,35 @@
+---
+cwe_id: CWE-1276
+name: Hardware Child Block Incorrectly Connected to Parent System
+type: weakness
+abstraction: Base
+status: Incomplete
+languages: [Not Language-Specific, Not OS-Specific, Not Architecture-Specific, Not Technology-Specific]
+related_capec: []
+url: https://cwe.mitre.org/data/definitions/1276.html
+tags: [mitre-cwe, weakness, CWE-1276]
+---
+
+# CWE-1276 - Hardware Child Block Incorrectly Connected to Parent System
+
+**Abstraction:** Base  -  **Status:** Incomplete  -  **CWE:** [CWE-1276](https://cwe.mitre.org/data/definitions/1276.html)
+
+## Description
+Signals between a hardware IP and the parent system design are incorrectly connected causing security risks.
+
+## Extended description
+Individual hardware IP must communicate with the parent system in order for the product to function correctly and as intended. If implemented incorrectly, while not causing any apparent functional issues, may cause security issues. For example, if the IP should only be reset by a system-wide hard reset, but instead the reset input is connected to a software-triggered debug mode reset (which is also asserted during a hard reset), integrity of data inside the IP can be violated.
+
+## Applicable platforms / languages
+Not Language-Specific, Not OS-Specific, Not Architecture-Specific, Not Technology-Specific
+
+## Common consequences
+- **Confidentiality, Integrity, Availability**: Varies by Context
+
+## Potential mitigations
+- **Testing**: System-level verification may be used to ensure that components are correctly connected and that design security requirements are not violated due to interactions between various IP blocks.
+
+## Related weaknesses
+- CWE-284 (ChildOf)
+
+Source: MITRE CWE - https://cwe.mitre.org/data/definitions/1276.html

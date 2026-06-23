@@ -1,0 +1,24 @@
+---
+capec_id: CAPEC-399
+name: Cloning RFID Cards or Chips
+type: attack-pattern
+abstraction: Detailed
+likelihood: n/a
+severity: n/a
+related_cwe: []
+related_attack: []
+url: https://capec.mitre.org/data/definitions/399.html
+tags: [mitre-capec, attack-pattern, CAPEC-399]
+---
+
+# CAPEC-399 - Cloning RFID Cards or Chips
+
+**Abstraction:** Detailed  -  **Likelihood:** n/a  -  **Severity:** n/a  -  **CAPEC:** [CAPEC-399](https://capec.mitre.org/data/definitions/399.html)
+
+## Description
+An attacker analyzes data returned by an RFID chip and uses this information to duplicate a RFID signal that responds identically to the target chip. In some cases RFID chips are used for building access control, employee identification, or as markers on products being delivered along a supply chain. Some organizations also embed RFID tags inside computer assets to trigger alarms if they are removed from particular rooms, zones, or buildings. Similar to Magnetic strip cards, RFID cards are susceptible to duplication (cloning) and reuse.
+
+## Extended description
+RFID (Radio Frequency Identification) are passive devices which consist of an integrated circuit for processing RF signals and an antenna. RFID devices are passive in that they lack an on on-board power source. The majority of RFID chips operate on either the 13.56 MHz or 135 KHz frequency. The chip is powered when a signal is received by the antenna on the chip, powering the chip long enough to send a reply message. An attacker is able to capture and analyze RFID data by either stimulating the chip to respond or being proximate to the chip when it sends a response to a remote transmitter. This allows the attacker to duplicate the signal and conduct attacks such as gaining unauthorized access to a building or impersonating a user's identification.
+
+Source: MITRE CAPEC - https://capec.mitre.org/data/definitions/399.html

@@ -1,0 +1,563 @@
+# MITRE CAPEC - Knowledge Index
+
+Attack patterns: 559
+
+- [CAPEC-1](https://capec.mitre.org/data/definitions/1.html) Accessing Functionality Not Properly Constrained by ACLs
+- [CAPEC-2](https://capec.mitre.org/data/definitions/2.html) Inducing Account Lockout
+- [CAPEC-3](https://capec.mitre.org/data/definitions/3.html) Using Leading 'Ghost' Character Sequences to Bypass Input Filters
+- [CAPEC-4](https://capec.mitre.org/data/definitions/4.html) Using Alternative IP Address Encodings
+- [CAPEC-5](https://capec.mitre.org/data/definitions/5.html) Blue Boxing
+- [CAPEC-6](https://capec.mitre.org/data/definitions/6.html) Argument Injection
+- [CAPEC-7](https://capec.mitre.org/data/definitions/7.html) Blind SQL Injection
+- [CAPEC-8](https://capec.mitre.org/data/definitions/8.html) Buffer Overflow in an API Call
+- [CAPEC-9](https://capec.mitre.org/data/definitions/9.html) Buffer Overflow in Local Command-Line Utilities
+- [CAPEC-10](https://capec.mitre.org/data/definitions/10.html) Buffer Overflow via Environment Variables
+- [CAPEC-11](https://capec.mitre.org/data/definitions/11.html) Cause Web Server Misclassification
+- [CAPEC-12](https://capec.mitre.org/data/definitions/12.html) Choosing Message Identifier
+- [CAPEC-13](https://capec.mitre.org/data/definitions/13.html) Subverting Environment Variable Values
+- [CAPEC-14](https://capec.mitre.org/data/definitions/14.html) Client-side Injection-induced Buffer Overflow
+- [CAPEC-15](https://capec.mitre.org/data/definitions/15.html) Command Delimiters
+- [CAPEC-16](https://capec.mitre.org/data/definitions/16.html) Dictionary-based Password Attack
+- [CAPEC-17](https://capec.mitre.org/data/definitions/17.html) Using Malicious Files
+- [CAPEC-18](https://capec.mitre.org/data/definitions/18.html) XSS Targeting Non-Script Elements
+- [CAPEC-19](https://capec.mitre.org/data/definitions/19.html) Embedding Scripts within Scripts
+- [CAPEC-20](https://capec.mitre.org/data/definitions/20.html) Encryption Brute Forcing
+- [CAPEC-21](https://capec.mitre.org/data/definitions/21.html) Exploitation of Trusted Identifiers
+- [CAPEC-22](https://capec.mitre.org/data/definitions/22.html) Exploiting Trust in Client
+- [CAPEC-23](https://capec.mitre.org/data/definitions/23.html) File Content Injection
+- [CAPEC-24](https://capec.mitre.org/data/definitions/24.html) Filter Failure through Buffer Overflow
+- [CAPEC-25](https://capec.mitre.org/data/definitions/25.html) Forced Deadlock
+- [CAPEC-26](https://capec.mitre.org/data/definitions/26.html) Leveraging Race Conditions
+- [CAPEC-27](https://capec.mitre.org/data/definitions/27.html) Leveraging Race Conditions via Symbolic Links
+- [CAPEC-28](https://capec.mitre.org/data/definitions/28.html) Fuzzing
+- [CAPEC-29](https://capec.mitre.org/data/definitions/29.html) Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions
+- [CAPEC-30](https://capec.mitre.org/data/definitions/30.html) Hijacking a Privileged Thread of Execution
+- [CAPEC-31](https://capec.mitre.org/data/definitions/31.html) Accessing/Intercepting/Modifying HTTP Cookies
+- [CAPEC-32](https://capec.mitre.org/data/definitions/32.html) XSS Through HTTP Query Strings
+- [CAPEC-33](https://capec.mitre.org/data/definitions/33.html) HTTP Request Smuggling
+- [CAPEC-34](https://capec.mitre.org/data/definitions/34.html) HTTP Response Splitting
+- [CAPEC-35](https://capec.mitre.org/data/definitions/35.html) Leverage Executable Code in Non-Executable Files
+- [CAPEC-36](https://capec.mitre.org/data/definitions/36.html) Using Unpublished Interfaces or Functionality
+- [CAPEC-37](https://capec.mitre.org/data/definitions/37.html) Retrieve Embedded Sensitive Data
+- [CAPEC-38](https://capec.mitre.org/data/definitions/38.html) Leveraging/Manipulating Configuration File Search Paths
+- [CAPEC-39](https://capec.mitre.org/data/definitions/39.html) Manipulating Opaque Client-based Data Tokens
+- [CAPEC-40](https://capec.mitre.org/data/definitions/40.html) Manipulating Writeable Terminal Devices
+- [CAPEC-41](https://capec.mitre.org/data/definitions/41.html) Using Meta-characters in E-mail Headers to Inject Malicious Payloads
+- [CAPEC-42](https://capec.mitre.org/data/definitions/42.html) MIME Conversion
+- [CAPEC-43](https://capec.mitre.org/data/definitions/43.html) Exploiting Multiple Input Interpretation Layers
+- [CAPEC-44](https://capec.mitre.org/data/definitions/44.html) Overflow Binary Resource File
+- [CAPEC-45](https://capec.mitre.org/data/definitions/45.html) Buffer Overflow via Symbolic Links
+- [CAPEC-46](https://capec.mitre.org/data/definitions/46.html) Overflow Variables and Tags
+- [CAPEC-47](https://capec.mitre.org/data/definitions/47.html) Buffer Overflow via Parameter Expansion
+- [CAPEC-48](https://capec.mitre.org/data/definitions/48.html) Passing Local Filenames to Functions That Expect a URL
+- [CAPEC-49](https://capec.mitre.org/data/definitions/49.html) Password Brute Forcing
+- [CAPEC-50](https://capec.mitre.org/data/definitions/50.html) Password Recovery Exploitation
+- [CAPEC-51](https://capec.mitre.org/data/definitions/51.html) Poison Web Service Registry
+- [CAPEC-52](https://capec.mitre.org/data/definitions/52.html) Embedding NULL Bytes
+- [CAPEC-53](https://capec.mitre.org/data/definitions/53.html) Postfix, Null Terminate, and Backslash
+- [CAPEC-54](https://capec.mitre.org/data/definitions/54.html) Query System for Information
+- [CAPEC-55](https://capec.mitre.org/data/definitions/55.html) Rainbow Table Password Cracking
+- [CAPEC-57](https://capec.mitre.org/data/definitions/57.html) Utilizing REST's Trust in the System Resource to Obtain Sensitive Data
+- [CAPEC-58](https://capec.mitre.org/data/definitions/58.html) Restful Privilege Elevation
+- [CAPEC-59](https://capec.mitre.org/data/definitions/59.html) Session Credential Falsification through Prediction
+- [CAPEC-60](https://capec.mitre.org/data/definitions/60.html) Reusing Session IDs (aka Session Replay)
+- [CAPEC-61](https://capec.mitre.org/data/definitions/61.html) Session Fixation
+- [CAPEC-62](https://capec.mitre.org/data/definitions/62.html) Cross Site Request Forgery
+- [CAPEC-63](https://capec.mitre.org/data/definitions/63.html) Cross-Site Scripting (XSS)
+- [CAPEC-64](https://capec.mitre.org/data/definitions/64.html) Using Slashes and URL Encoding Combined to Bypass Validation Logic
+- [CAPEC-65](https://capec.mitre.org/data/definitions/65.html) Sniff Application Code
+- [CAPEC-66](https://capec.mitre.org/data/definitions/66.html) SQL Injection
+- [CAPEC-67](https://capec.mitre.org/data/definitions/67.html) String Format Overflow in syslog()
+- [CAPEC-68](https://capec.mitre.org/data/definitions/68.html) Subvert Code-signing Facilities
+- [CAPEC-69](https://capec.mitre.org/data/definitions/69.html) Target Programs with Elevated Privileges
+- [CAPEC-70](https://capec.mitre.org/data/definitions/70.html) Try Common or Default Usernames and Passwords
+- [CAPEC-71](https://capec.mitre.org/data/definitions/71.html) Using Unicode Encoding to Bypass Validation Logic
+- [CAPEC-72](https://capec.mitre.org/data/definitions/72.html) URL Encoding
+- [CAPEC-73](https://capec.mitre.org/data/definitions/73.html) User-Controlled Filename
+- [CAPEC-74](https://capec.mitre.org/data/definitions/74.html) Manipulating State
+- [CAPEC-75](https://capec.mitre.org/data/definitions/75.html) Manipulating Writeable Configuration Files
+- [CAPEC-76](https://capec.mitre.org/data/definitions/76.html) Manipulating Web Input to File System Calls
+- [CAPEC-77](https://capec.mitre.org/data/definitions/77.html) Manipulating User-Controlled Variables
+- [CAPEC-78](https://capec.mitre.org/data/definitions/78.html) Using Escaped Slashes in Alternate Encoding
+- [CAPEC-79](https://capec.mitre.org/data/definitions/79.html) Using Slashes in Alternate Encoding
+- [CAPEC-80](https://capec.mitre.org/data/definitions/80.html) Using UTF-8 Encoding to Bypass Validation Logic
+- [CAPEC-81](https://capec.mitre.org/data/definitions/81.html) Web Server Logs Tampering
+- [CAPEC-83](https://capec.mitre.org/data/definitions/83.html) XPath Injection
+- [CAPEC-84](https://capec.mitre.org/data/definitions/84.html) XQuery Injection
+- [CAPEC-85](https://capec.mitre.org/data/definitions/85.html) AJAX Footprinting
+- [CAPEC-86](https://capec.mitre.org/data/definitions/86.html) XSS Through HTTP Headers
+- [CAPEC-87](https://capec.mitre.org/data/definitions/87.html) Forceful Browsing
+- [CAPEC-88](https://capec.mitre.org/data/definitions/88.html) OS Command Injection
+- [CAPEC-89](https://capec.mitre.org/data/definitions/89.html) Pharming
+- [CAPEC-90](https://capec.mitre.org/data/definitions/90.html) Reflection Attack in Authentication Protocol
+- [CAPEC-92](https://capec.mitre.org/data/definitions/92.html) Forced Integer Overflow
+- [CAPEC-93](https://capec.mitre.org/data/definitions/93.html) Log Injection-Tampering-Forging
+- [CAPEC-94](https://capec.mitre.org/data/definitions/94.html) Adversary in the Middle (AiTM)
+- [CAPEC-95](https://capec.mitre.org/data/definitions/95.html) WSDL Scanning
+- [CAPEC-96](https://capec.mitre.org/data/definitions/96.html) Block Access to Libraries
+- [CAPEC-97](https://capec.mitre.org/data/definitions/97.html) Cryptanalysis
+- [CAPEC-98](https://capec.mitre.org/data/definitions/98.html) Phishing
+- [CAPEC-100](https://capec.mitre.org/data/definitions/100.html) Overflow Buffers
+- [CAPEC-101](https://capec.mitre.org/data/definitions/101.html) Server Side Include (SSI) Injection
+- [CAPEC-102](https://capec.mitre.org/data/definitions/102.html) Session Sidejacking
+- [CAPEC-103](https://capec.mitre.org/data/definitions/103.html) Clickjacking
+- [CAPEC-104](https://capec.mitre.org/data/definitions/104.html) Cross Zone Scripting
+- [CAPEC-105](https://capec.mitre.org/data/definitions/105.html) HTTP Request Splitting
+- [CAPEC-107](https://capec.mitre.org/data/definitions/107.html) Cross Site Tracing
+- [CAPEC-108](https://capec.mitre.org/data/definitions/108.html) Command Line Execution through SQL Injection
+- [CAPEC-109](https://capec.mitre.org/data/definitions/109.html) Object Relational Mapping Injection
+- [CAPEC-110](https://capec.mitre.org/data/definitions/110.html) SQL Injection through SOAP Parameter Tampering
+- [CAPEC-111](https://capec.mitre.org/data/definitions/111.html) JSON Hijacking (aka JavaScript Hijacking)
+- [CAPEC-112](https://capec.mitre.org/data/definitions/112.html) Brute Force
+- [CAPEC-113](https://capec.mitre.org/data/definitions/113.html) Interface Manipulation
+- [CAPEC-114](https://capec.mitre.org/data/definitions/114.html) Authentication Abuse
+- [CAPEC-115](https://capec.mitre.org/data/definitions/115.html) Authentication Bypass
+- [CAPEC-116](https://capec.mitre.org/data/definitions/116.html) Excavation
+- [CAPEC-117](https://capec.mitre.org/data/definitions/117.html) Interception
+- [CAPEC-120](https://capec.mitre.org/data/definitions/120.html) Double Encoding
+- [CAPEC-121](https://capec.mitre.org/data/definitions/121.html) Exploit Non-Production Interfaces
+- [CAPEC-122](https://capec.mitre.org/data/definitions/122.html) Privilege Abuse
+- [CAPEC-123](https://capec.mitre.org/data/definitions/123.html) Buffer Manipulation
+- [CAPEC-124](https://capec.mitre.org/data/definitions/124.html) Shared Resource Manipulation
+- [CAPEC-125](https://capec.mitre.org/data/definitions/125.html) Flooding
+- [CAPEC-126](https://capec.mitre.org/data/definitions/126.html) Path Traversal
+- [CAPEC-127](https://capec.mitre.org/data/definitions/127.html) Directory Indexing
+- [CAPEC-128](https://capec.mitre.org/data/definitions/128.html) Integer Attacks
+- [CAPEC-129](https://capec.mitre.org/data/definitions/129.html) Pointer Manipulation
+- [CAPEC-130](https://capec.mitre.org/data/definitions/130.html) Excessive Allocation
+- [CAPEC-131](https://capec.mitre.org/data/definitions/131.html) Resource Leak Exposure
+- [CAPEC-132](https://capec.mitre.org/data/definitions/132.html) Symlink Attack
+- [CAPEC-133](https://capec.mitre.org/data/definitions/133.html) Try All Common Switches
+- [CAPEC-134](https://capec.mitre.org/data/definitions/134.html) Email Injection
+- [CAPEC-135](https://capec.mitre.org/data/definitions/135.html) Format String Injection
+- [CAPEC-136](https://capec.mitre.org/data/definitions/136.html) LDAP Injection
+- [CAPEC-137](https://capec.mitre.org/data/definitions/137.html) Parameter Injection
+- [CAPEC-138](https://capec.mitre.org/data/definitions/138.html) Reflection Injection
+- [CAPEC-139](https://capec.mitre.org/data/definitions/139.html) Relative Path Traversal
+- [CAPEC-140](https://capec.mitre.org/data/definitions/140.html) Bypassing of Intermediate Forms in Multiple-Form Sets
+- [CAPEC-141](https://capec.mitre.org/data/definitions/141.html) Cache Poisoning
+- [CAPEC-142](https://capec.mitre.org/data/definitions/142.html) DNS Cache Poisoning
+- [CAPEC-143](https://capec.mitre.org/data/definitions/143.html) Detect Unpublicized Web Pages
+- [CAPEC-144](https://capec.mitre.org/data/definitions/144.html) Detect Unpublicized Web Services
+- [CAPEC-145](https://capec.mitre.org/data/definitions/145.html) Checksum Spoofing
+- [CAPEC-146](https://capec.mitre.org/data/definitions/146.html) XML Schema Poisoning
+- [CAPEC-147](https://capec.mitre.org/data/definitions/147.html) XML Ping of the Death
+- [CAPEC-148](https://capec.mitre.org/data/definitions/148.html) Content Spoofing
+- [CAPEC-149](https://capec.mitre.org/data/definitions/149.html) Explore for Predictable Temporary File Names
+- [CAPEC-150](https://capec.mitre.org/data/definitions/150.html) Collect Data from Common Resource Locations
+- [CAPEC-151](https://capec.mitre.org/data/definitions/151.html) Identity Spoofing
+- [CAPEC-153](https://capec.mitre.org/data/definitions/153.html) Input Data Manipulation
+- [CAPEC-154](https://capec.mitre.org/data/definitions/154.html) Resource Location Spoofing
+- [CAPEC-155](https://capec.mitre.org/data/definitions/155.html) Screen Temporary Files for Sensitive Information
+- [CAPEC-157](https://capec.mitre.org/data/definitions/157.html) Sniffing Attacks
+- [CAPEC-158](https://capec.mitre.org/data/definitions/158.html) Sniffing Network Traffic
+- [CAPEC-159](https://capec.mitre.org/data/definitions/159.html) Redirect Access to Libraries
+- [CAPEC-160](https://capec.mitre.org/data/definitions/160.html) Exploit Script-Based APIs
+- [CAPEC-161](https://capec.mitre.org/data/definitions/161.html) Infrastructure Manipulation
+- [CAPEC-162](https://capec.mitre.org/data/definitions/162.html) Manipulating Hidden Fields
+- [CAPEC-163](https://capec.mitre.org/data/definitions/163.html) Spear Phishing
+- [CAPEC-164](https://capec.mitre.org/data/definitions/164.html) Mobile Phishing
+- [CAPEC-165](https://capec.mitre.org/data/definitions/165.html) File Manipulation
+- [CAPEC-166](https://capec.mitre.org/data/definitions/166.html) Force the System to Reset Values
+- [CAPEC-167](https://capec.mitre.org/data/definitions/167.html) White Box Reverse Engineering
+- [CAPEC-168](https://capec.mitre.org/data/definitions/168.html) Windows ::DATA Alternate Data Stream
+- [CAPEC-169](https://capec.mitre.org/data/definitions/169.html) Footprinting
+- [CAPEC-170](https://capec.mitre.org/data/definitions/170.html) Web Application Fingerprinting
+- [CAPEC-173](https://capec.mitre.org/data/definitions/173.html) Action Spoofing
+- [CAPEC-174](https://capec.mitre.org/data/definitions/174.html) Flash Parameter Injection
+- [CAPEC-175](https://capec.mitre.org/data/definitions/175.html) Code Inclusion
+- [CAPEC-176](https://capec.mitre.org/data/definitions/176.html) Configuration/Environment Manipulation
+- [CAPEC-177](https://capec.mitre.org/data/definitions/177.html) Create files with the same name as files protected with a higher classification
+- [CAPEC-178](https://capec.mitre.org/data/definitions/178.html) Cross-Site Flashing
+- [CAPEC-179](https://capec.mitre.org/data/definitions/179.html) Calling Micro-Services Directly
+- [CAPEC-180](https://capec.mitre.org/data/definitions/180.html) Exploiting Incorrectly Configured Access Control Security Levels
+- [CAPEC-181](https://capec.mitre.org/data/definitions/181.html) Flash File Overlay
+- [CAPEC-182](https://capec.mitre.org/data/definitions/182.html) Flash Injection
+- [CAPEC-183](https://capec.mitre.org/data/definitions/183.html) IMAP/SMTP Command Injection
+- [CAPEC-184](https://capec.mitre.org/data/definitions/184.html) Software Integrity Attack
+- [CAPEC-185](https://capec.mitre.org/data/definitions/185.html) Malicious Software Download
+- [CAPEC-186](https://capec.mitre.org/data/definitions/186.html) Malicious Software Update
+- [CAPEC-187](https://capec.mitre.org/data/definitions/187.html) Malicious Automated Software Update via Redirection
+- [CAPEC-188](https://capec.mitre.org/data/definitions/188.html) Reverse Engineering
+- [CAPEC-189](https://capec.mitre.org/data/definitions/189.html) Black Box Reverse Engineering
+- [CAPEC-190](https://capec.mitre.org/data/definitions/190.html) Reverse Engineer an Executable to Expose Assumed Hidden Functionality
+- [CAPEC-191](https://capec.mitre.org/data/definitions/191.html) Read Sensitive Constants Within an Executable
+- [CAPEC-192](https://capec.mitre.org/data/definitions/192.html) Protocol Analysis
+- [CAPEC-193](https://capec.mitre.org/data/definitions/193.html) PHP Remote File Inclusion
+- [CAPEC-194](https://capec.mitre.org/data/definitions/194.html) Fake the Source of Data
+- [CAPEC-195](https://capec.mitre.org/data/definitions/195.html) Principal Spoof
+- [CAPEC-196](https://capec.mitre.org/data/definitions/196.html) Session Credential Falsification through Forging
+- [CAPEC-197](https://capec.mitre.org/data/definitions/197.html) Exponential Data Expansion
+- [CAPEC-198](https://capec.mitre.org/data/definitions/198.html) XSS Targeting Error Pages
+- [CAPEC-199](https://capec.mitre.org/data/definitions/199.html) XSS Using Alternate Syntax
+- [CAPEC-200](https://capec.mitre.org/data/definitions/200.html) Removal of filters: Input filters, output filters, data masking
+- [CAPEC-201](https://capec.mitre.org/data/definitions/201.html) Serialized Data External Linking
+- [CAPEC-202](https://capec.mitre.org/data/definitions/202.html) Create Malicious Client
+- [CAPEC-203](https://capec.mitre.org/data/definitions/203.html) Manipulate Registry Information
+- [CAPEC-204](https://capec.mitre.org/data/definitions/204.html) Lifting Sensitive Data Embedded in Cache
+- [CAPEC-206](https://capec.mitre.org/data/definitions/206.html) Signing Malicious Code
+- [CAPEC-207](https://capec.mitre.org/data/definitions/207.html) Removing Important Client Functionality
+- [CAPEC-208](https://capec.mitre.org/data/definitions/208.html) Removing/short-circuiting 'Purse' logic: removing/mutating 'cash' decrements
+- [CAPEC-209](https://capec.mitre.org/data/definitions/209.html) XSS Using MIME Type Mismatch
+- [CAPEC-212](https://capec.mitre.org/data/definitions/212.html) Functionality Misuse
+- [CAPEC-215](https://capec.mitre.org/data/definitions/215.html) Fuzzing for application mapping
+- [CAPEC-216](https://capec.mitre.org/data/definitions/216.html) Communication Channel Manipulation
+- [CAPEC-217](https://capec.mitre.org/data/definitions/217.html) Exploiting Incorrectly Configured SSL/TLS
+- [CAPEC-218](https://capec.mitre.org/data/definitions/218.html) Spoofing of UDDI/ebXML Messages
+- [CAPEC-219](https://capec.mitre.org/data/definitions/219.html) XML Routing Detour Attacks
+- [CAPEC-220](https://capec.mitre.org/data/definitions/220.html) Client-Server Protocol Manipulation
+- [CAPEC-221](https://capec.mitre.org/data/definitions/221.html) Data Serialization External Entities Blowup
+- [CAPEC-222](https://capec.mitre.org/data/definitions/222.html) iFrame Overlay
+- [CAPEC-224](https://capec.mitre.org/data/definitions/224.html) Fingerprinting
+- [CAPEC-226](https://capec.mitre.org/data/definitions/226.html) Session Credential Falsification through Manipulation
+- [CAPEC-227](https://capec.mitre.org/data/definitions/227.html) Sustained Client Engagement
+- [CAPEC-228](https://capec.mitre.org/data/definitions/228.html) DTD Injection
+- [CAPEC-229](https://capec.mitre.org/data/definitions/229.html) Serialized Data Parameter Blowup
+- [CAPEC-230](https://capec.mitre.org/data/definitions/230.html) Serialized Data with Nested Payloads
+- [CAPEC-231](https://capec.mitre.org/data/definitions/231.html) Oversized Serialized Data Payloads
+- [CAPEC-233](https://capec.mitre.org/data/definitions/233.html) Privilege Escalation
+- [CAPEC-234](https://capec.mitre.org/data/definitions/234.html) Hijacking a privileged process
+- [CAPEC-237](https://capec.mitre.org/data/definitions/237.html) Escaping a Sandbox by Calling Code in Another Language
+- [CAPEC-240](https://capec.mitre.org/data/definitions/240.html) Resource Injection
+- [CAPEC-242](https://capec.mitre.org/data/definitions/242.html) Code Injection
+- [CAPEC-243](https://capec.mitre.org/data/definitions/243.html) XSS Targeting HTML Attributes
+- [CAPEC-244](https://capec.mitre.org/data/definitions/244.html) XSS Targeting URI Placeholders
+- [CAPEC-245](https://capec.mitre.org/data/definitions/245.html) XSS Using Doubled Characters
+- [CAPEC-247](https://capec.mitre.org/data/definitions/247.html) XSS Using Invalid Characters
+- [CAPEC-248](https://capec.mitre.org/data/definitions/248.html) Command Injection
+- [CAPEC-250](https://capec.mitre.org/data/definitions/250.html) XML Injection
+- [CAPEC-251](https://capec.mitre.org/data/definitions/251.html) Local Code Inclusion
+- [CAPEC-252](https://capec.mitre.org/data/definitions/252.html) PHP Local File Inclusion
+- [CAPEC-253](https://capec.mitre.org/data/definitions/253.html) Remote Code Inclusion
+- [CAPEC-256](https://capec.mitre.org/data/definitions/256.html) SOAP Array Overflow
+- [CAPEC-261](https://capec.mitre.org/data/definitions/261.html) Fuzzing for garnering other adjacent user/sensitive data
+- [CAPEC-263](https://capec.mitre.org/data/definitions/263.html) Force Use of Corrupted Files
+- [CAPEC-267](https://capec.mitre.org/data/definitions/267.html) Leverage Alternate Encoding
+- [CAPEC-268](https://capec.mitre.org/data/definitions/268.html) Audit Log Manipulation
+- [CAPEC-270](https://capec.mitre.org/data/definitions/270.html) Modification of Registry Run Keys
+- [CAPEC-271](https://capec.mitre.org/data/definitions/271.html) Schema Poisoning
+- [CAPEC-272](https://capec.mitre.org/data/definitions/272.html) Protocol Manipulation
+- [CAPEC-273](https://capec.mitre.org/data/definitions/273.html) HTTP Response Smuggling
+- [CAPEC-274](https://capec.mitre.org/data/definitions/274.html) HTTP Verb Tampering
+- [CAPEC-275](https://capec.mitre.org/data/definitions/275.html) DNS Rebinding
+- [CAPEC-276](https://capec.mitre.org/data/definitions/276.html) Inter-component Protocol Manipulation
+- [CAPEC-277](https://capec.mitre.org/data/definitions/277.html) Data Interchange Protocol Manipulation
+- [CAPEC-278](https://capec.mitre.org/data/definitions/278.html) Web Services Protocol Manipulation
+- [CAPEC-279](https://capec.mitre.org/data/definitions/279.html) SOAP Manipulation
+- [CAPEC-285](https://capec.mitre.org/data/definitions/285.html) ICMP Echo Request Ping
+- [CAPEC-287](https://capec.mitre.org/data/definitions/287.html) TCP SYN Scan
+- [CAPEC-290](https://capec.mitre.org/data/definitions/290.html) Enumerate Mail Exchange (MX) Records
+- [CAPEC-291](https://capec.mitre.org/data/definitions/291.html) DNS Zone Transfers
+- [CAPEC-292](https://capec.mitre.org/data/definitions/292.html) Host Discovery
+- [CAPEC-293](https://capec.mitre.org/data/definitions/293.html) Traceroute Route Enumeration
+- [CAPEC-294](https://capec.mitre.org/data/definitions/294.html) ICMP Address Mask Request
+- [CAPEC-295](https://capec.mitre.org/data/definitions/295.html) Timestamp Request
+- [CAPEC-296](https://capec.mitre.org/data/definitions/296.html) ICMP Information Request
+- [CAPEC-297](https://capec.mitre.org/data/definitions/297.html) TCP ACK Ping
+- [CAPEC-298](https://capec.mitre.org/data/definitions/298.html) UDP Ping
+- [CAPEC-299](https://capec.mitre.org/data/definitions/299.html) TCP SYN Ping
+- [CAPEC-300](https://capec.mitre.org/data/definitions/300.html) Port Scanning
+- [CAPEC-301](https://capec.mitre.org/data/definitions/301.html) TCP Connect Scan
+- [CAPEC-302](https://capec.mitre.org/data/definitions/302.html) TCP FIN Scan
+- [CAPEC-303](https://capec.mitre.org/data/definitions/303.html) TCP Xmas Scan
+- [CAPEC-304](https://capec.mitre.org/data/definitions/304.html) TCP Null Scan
+- [CAPEC-305](https://capec.mitre.org/data/definitions/305.html) TCP ACK Scan
+- [CAPEC-306](https://capec.mitre.org/data/definitions/306.html) TCP Window Scan
+- [CAPEC-307](https://capec.mitre.org/data/definitions/307.html) TCP RPC Scan
+- [CAPEC-308](https://capec.mitre.org/data/definitions/308.html) UDP Scan
+- [CAPEC-309](https://capec.mitre.org/data/definitions/309.html) Network Topology Mapping
+- [CAPEC-310](https://capec.mitre.org/data/definitions/310.html) Scanning for Vulnerable Software
+- [CAPEC-312](https://capec.mitre.org/data/definitions/312.html) Active OS Fingerprinting
+- [CAPEC-313](https://capec.mitre.org/data/definitions/313.html) Passive OS Fingerprinting
+- [CAPEC-317](https://capec.mitre.org/data/definitions/317.html) IP ID Sequencing Probe
+- [CAPEC-318](https://capec.mitre.org/data/definitions/318.html) IP 'ID' Echoed Byte-Order Probe
+- [CAPEC-319](https://capec.mitre.org/data/definitions/319.html) IP (DF) 'Don't Fragment Bit' Echoing Probe
+- [CAPEC-320](https://capec.mitre.org/data/definitions/320.html) TCP Timestamp Probe
+- [CAPEC-321](https://capec.mitre.org/data/definitions/321.html) TCP Sequence Number Probe
+- [CAPEC-322](https://capec.mitre.org/data/definitions/322.html) TCP (ISN) Greatest Common Divisor Probe
+- [CAPEC-323](https://capec.mitre.org/data/definitions/323.html) TCP (ISN) Counter Rate Probe
+- [CAPEC-324](https://capec.mitre.org/data/definitions/324.html) TCP (ISN) Sequence Predictability Probe
+- [CAPEC-325](https://capec.mitre.org/data/definitions/325.html) TCP Congestion Control Flag (ECN) Probe
+- [CAPEC-326](https://capec.mitre.org/data/definitions/326.html) TCP Initial Window Size Probe
+- [CAPEC-327](https://capec.mitre.org/data/definitions/327.html) TCP Options Probe
+- [CAPEC-328](https://capec.mitre.org/data/definitions/328.html) TCP 'RST' Flag Checksum Probe
+- [CAPEC-329](https://capec.mitre.org/data/definitions/329.html) ICMP Error Message Quoting Probe
+- [CAPEC-330](https://capec.mitre.org/data/definitions/330.html) ICMP Error Message Echoing Integrity Probe
+- [CAPEC-331](https://capec.mitre.org/data/definitions/331.html) ICMP IP Total Length Field Probe
+- [CAPEC-332](https://capec.mitre.org/data/definitions/332.html) ICMP IP 'ID' Field Error Message Probe
+- [CAPEC-383](https://capec.mitre.org/data/definitions/383.html) Harvesting Information via API Event Monitoring
+- [CAPEC-384](https://capec.mitre.org/data/definitions/384.html) Application API Message Manipulation via Man-in-the-Middle
+- [CAPEC-385](https://capec.mitre.org/data/definitions/385.html) Transaction or Event Tampering via Application API Manipulation
+- [CAPEC-386](https://capec.mitre.org/data/definitions/386.html) Application API Navigation Remapping
+- [CAPEC-387](https://capec.mitre.org/data/definitions/387.html) Navigation Remapping To Propagate Malicious Content
+- [CAPEC-388](https://capec.mitre.org/data/definitions/388.html) Application API Button Hijacking
+- [CAPEC-389](https://capec.mitre.org/data/definitions/389.html) Content Spoofing Via Application API Manipulation
+- [CAPEC-390](https://capec.mitre.org/data/definitions/390.html) Bypassing Physical Security
+- [CAPEC-391](https://capec.mitre.org/data/definitions/391.html) Bypassing Physical Locks
+- [CAPEC-392](https://capec.mitre.org/data/definitions/392.html) Lock Bumping
+- [CAPEC-393](https://capec.mitre.org/data/definitions/393.html) Lock Picking
+- [CAPEC-394](https://capec.mitre.org/data/definitions/394.html) Using a Snap Gun Lock to Force a Lock
+- [CAPEC-395](https://capec.mitre.org/data/definitions/395.html) Bypassing Electronic Locks and Access Controls
+- [CAPEC-397](https://capec.mitre.org/data/definitions/397.html) Cloning Magnetic Strip Cards
+- [CAPEC-398](https://capec.mitre.org/data/definitions/398.html) Magnetic Strip Card Brute Force Attacks
+- [CAPEC-399](https://capec.mitre.org/data/definitions/399.html) Cloning RFID Cards or Chips
+- [CAPEC-400](https://capec.mitre.org/data/definitions/400.html) RFID Chip Deactivation or Destruction
+- [CAPEC-401](https://capec.mitre.org/data/definitions/401.html) Physically Hacking Hardware
+- [CAPEC-402](https://capec.mitre.org/data/definitions/402.html) Bypassing ATA Password Security
+- [CAPEC-406](https://capec.mitre.org/data/definitions/406.html) Dumpster Diving
+- [CAPEC-407](https://capec.mitre.org/data/definitions/407.html) Pretexting
+- [CAPEC-410](https://capec.mitre.org/data/definitions/410.html) Information Elicitation
+- [CAPEC-412](https://capec.mitre.org/data/definitions/412.html) Pretexting via Customer Service
+- [CAPEC-413](https://capec.mitre.org/data/definitions/413.html) Pretexting via Tech Support
+- [CAPEC-414](https://capec.mitre.org/data/definitions/414.html) Pretexting via Delivery Person
+- [CAPEC-415](https://capec.mitre.org/data/definitions/415.html) Pretexting via Phone
+- [CAPEC-416](https://capec.mitre.org/data/definitions/416.html) Manipulate Human Behavior
+- [CAPEC-417](https://capec.mitre.org/data/definitions/417.html) Influence Perception
+- [CAPEC-418](https://capec.mitre.org/data/definitions/418.html) Influence Perception of Reciprocation
+- [CAPEC-420](https://capec.mitre.org/data/definitions/420.html) Influence Perception of Scarcity
+- [CAPEC-421](https://capec.mitre.org/data/definitions/421.html) Influence Perception of Authority
+- [CAPEC-422](https://capec.mitre.org/data/definitions/422.html) Influence Perception of Commitment and Consistency
+- [CAPEC-423](https://capec.mitre.org/data/definitions/423.html) Influence Perception of Liking
+- [CAPEC-424](https://capec.mitre.org/data/definitions/424.html) Influence Perception of Consensus or Social Proof
+- [CAPEC-425](https://capec.mitre.org/data/definitions/425.html) Target Influence via Framing
+- [CAPEC-426](https://capec.mitre.org/data/definitions/426.html) Influence via Incentives
+- [CAPEC-427](https://capec.mitre.org/data/definitions/427.html) Influence via Psychological Principles
+- [CAPEC-428](https://capec.mitre.org/data/definitions/428.html) Influence via Modes of Thinking
+- [CAPEC-429](https://capec.mitre.org/data/definitions/429.html) Target Influence via Eye Cues
+- [CAPEC-433](https://capec.mitre.org/data/definitions/433.html) Target Influence via The Human Buffer Overflow
+- [CAPEC-434](https://capec.mitre.org/data/definitions/434.html) Target Influence via Interview and Interrogation
+- [CAPEC-435](https://capec.mitre.org/data/definitions/435.html) Target Influence via Instant Rapport
+- [CAPEC-438](https://capec.mitre.org/data/definitions/438.html) Modification During Manufacture
+- [CAPEC-439](https://capec.mitre.org/data/definitions/439.html) Manipulation During Distribution
+- [CAPEC-440](https://capec.mitre.org/data/definitions/440.html) Hardware Integrity Attack
+- [CAPEC-441](https://capec.mitre.org/data/definitions/441.html) Malicious Logic Insertion
+- [CAPEC-442](https://capec.mitre.org/data/definitions/442.html) Infected Software
+- [CAPEC-443](https://capec.mitre.org/data/definitions/443.html) Malicious Logic Inserted Into Product by Authorized Developer
+- [CAPEC-444](https://capec.mitre.org/data/definitions/444.html) Development Alteration
+- [CAPEC-445](https://capec.mitre.org/data/definitions/445.html) Malicious Logic Insertion into Product Software via Configuration Management Manipulation
+- [CAPEC-446](https://capec.mitre.org/data/definitions/446.html) Malicious Logic Insertion into Product via Inclusion of Third-Party Component
+- [CAPEC-447](https://capec.mitre.org/data/definitions/447.html) Design Alteration
+- [CAPEC-448](https://capec.mitre.org/data/definitions/448.html) Embed Virus into DLL
+- [CAPEC-452](https://capec.mitre.org/data/definitions/452.html) Infected Hardware
+- [CAPEC-456](https://capec.mitre.org/data/definitions/456.html) Infected Memory
+- [CAPEC-457](https://capec.mitre.org/data/definitions/457.html) USB Memory Attacks
+- [CAPEC-458](https://capec.mitre.org/data/definitions/458.html) Flash Memory Attacks
+- [CAPEC-459](https://capec.mitre.org/data/definitions/459.html) Creating a Rogue Certification Authority Certificate
+- [CAPEC-460](https://capec.mitre.org/data/definitions/460.html) HTTP Parameter Pollution (HPP)
+- [CAPEC-461](https://capec.mitre.org/data/definitions/461.html) Web Services API Signature Forgery Leveraging Hash Function Extension Weakness
+- [CAPEC-462](https://capec.mitre.org/data/definitions/462.html) Cross-Domain Search Timing
+- [CAPEC-463](https://capec.mitre.org/data/definitions/463.html) Padding Oracle Crypto Attack
+- [CAPEC-464](https://capec.mitre.org/data/definitions/464.html) Evercookie
+- [CAPEC-465](https://capec.mitre.org/data/definitions/465.html) Transparent Proxy Abuse
+- [CAPEC-466](https://capec.mitre.org/data/definitions/466.html) Leveraging Active Adversary in the Middle Attacks to Bypass Same Origin Policy
+- [CAPEC-467](https://capec.mitre.org/data/definitions/467.html) Cross Site Identification
+- [CAPEC-468](https://capec.mitre.org/data/definitions/468.html) Generic Cross-Browser Cross-Domain Theft
+- [CAPEC-469](https://capec.mitre.org/data/definitions/469.html) HTTP DoS
+- [CAPEC-470](https://capec.mitre.org/data/definitions/470.html) Expanding Control over the Operating System from the Database
+- [CAPEC-471](https://capec.mitre.org/data/definitions/471.html) Search Order Hijacking
+- [CAPEC-472](https://capec.mitre.org/data/definitions/472.html) Browser Fingerprinting
+- [CAPEC-473](https://capec.mitre.org/data/definitions/473.html) Signature Spoof
+- [CAPEC-474](https://capec.mitre.org/data/definitions/474.html) Signature Spoofing by Key Theft
+- [CAPEC-475](https://capec.mitre.org/data/definitions/475.html) Signature Spoofing by Improper Validation
+- [CAPEC-476](https://capec.mitre.org/data/definitions/476.html) Signature Spoofing by Misrepresentation
+- [CAPEC-477](https://capec.mitre.org/data/definitions/477.html) Signature Spoofing by Mixing Signed and Unsigned Content
+- [CAPEC-478](https://capec.mitre.org/data/definitions/478.html) Modification of Windows Service Configuration
+- [CAPEC-479](https://capec.mitre.org/data/definitions/479.html) Malicious Root Certificate
+- [CAPEC-480](https://capec.mitre.org/data/definitions/480.html) Escaping Virtualization
+- [CAPEC-481](https://capec.mitre.org/data/definitions/481.html) Contradictory Destinations in Traffic Routing Schemes
+- [CAPEC-482](https://capec.mitre.org/data/definitions/482.html) TCP Flood
+- [CAPEC-485](https://capec.mitre.org/data/definitions/485.html) Signature Spoofing by Key Recreation
+- [CAPEC-486](https://capec.mitre.org/data/definitions/486.html) UDP Flood
+- [CAPEC-487](https://capec.mitre.org/data/definitions/487.html) ICMP Flood
+- [CAPEC-488](https://capec.mitre.org/data/definitions/488.html) HTTP Flood
+- [CAPEC-489](https://capec.mitre.org/data/definitions/489.html) SSL Flood
+- [CAPEC-490](https://capec.mitre.org/data/definitions/490.html) Amplification
+- [CAPEC-491](https://capec.mitre.org/data/definitions/491.html) Quadratic Data Expansion
+- [CAPEC-492](https://capec.mitre.org/data/definitions/492.html) Regular Expression Exponential Blowup
+- [CAPEC-493](https://capec.mitre.org/data/definitions/493.html) SOAP Array Blowup
+- [CAPEC-494](https://capec.mitre.org/data/definitions/494.html) TCP Fragmentation
+- [CAPEC-495](https://capec.mitre.org/data/definitions/495.html) UDP Fragmentation
+- [CAPEC-496](https://capec.mitre.org/data/definitions/496.html) ICMP Fragmentation
+- [CAPEC-497](https://capec.mitre.org/data/definitions/497.html) File Discovery
+- [CAPEC-498](https://capec.mitre.org/data/definitions/498.html) Probe iOS Screenshots
+- [CAPEC-499](https://capec.mitre.org/data/definitions/499.html) Android Intent Intercept
+- [CAPEC-500](https://capec.mitre.org/data/definitions/500.html) WebView Injection
+- [CAPEC-501](https://capec.mitre.org/data/definitions/501.html) Android Activity Hijack
+- [CAPEC-502](https://capec.mitre.org/data/definitions/502.html) Intent Spoof
+- [CAPEC-503](https://capec.mitre.org/data/definitions/503.html) WebView Exposure
+- [CAPEC-504](https://capec.mitre.org/data/definitions/504.html) Task Impersonation
+- [CAPEC-505](https://capec.mitre.org/data/definitions/505.html) Scheme Squatting
+- [CAPEC-506](https://capec.mitre.org/data/definitions/506.html) Tapjacking
+- [CAPEC-507](https://capec.mitre.org/data/definitions/507.html) Physical Theft
+- [CAPEC-508](https://capec.mitre.org/data/definitions/508.html) Shoulder Surfing
+- [CAPEC-509](https://capec.mitre.org/data/definitions/509.html) Kerberoasting
+- [CAPEC-510](https://capec.mitre.org/data/definitions/510.html) SaaS User Request Forgery
+- [CAPEC-511](https://capec.mitre.org/data/definitions/511.html) Infiltration of Software Development Environment
+- [CAPEC-516](https://capec.mitre.org/data/definitions/516.html) Hardware Component Substitution During Baselining
+- [CAPEC-517](https://capec.mitre.org/data/definitions/517.html) Documentation Alteration to Circumvent Dial-down
+- [CAPEC-518](https://capec.mitre.org/data/definitions/518.html) Documentation Alteration to Produce Under-performing Systems
+- [CAPEC-519](https://capec.mitre.org/data/definitions/519.html) Documentation Alteration to Cause Errors in System Design
+- [CAPEC-520](https://capec.mitre.org/data/definitions/520.html) Counterfeit Hardware Component Inserted During Product Assembly
+- [CAPEC-521](https://capec.mitre.org/data/definitions/521.html) Hardware Design Specifications Are Altered
+- [CAPEC-522](https://capec.mitre.org/data/definitions/522.html) Malicious Hardware Component Replacement
+- [CAPEC-523](https://capec.mitre.org/data/definitions/523.html) Malicious Software Implanted
+- [CAPEC-524](https://capec.mitre.org/data/definitions/524.html) Rogue Integration Procedures
+- [CAPEC-528](https://capec.mitre.org/data/definitions/528.html) XML Flood
+- [CAPEC-529](https://capec.mitre.org/data/definitions/529.html) Malware-Directed Internal Reconnaissance
+- [CAPEC-530](https://capec.mitre.org/data/definitions/530.html) Provide Counterfeit Component
+- [CAPEC-531](https://capec.mitre.org/data/definitions/531.html) Hardware Component Substitution
+- [CAPEC-532](https://capec.mitre.org/data/definitions/532.html) Altered Installed BIOS
+- [CAPEC-533](https://capec.mitre.org/data/definitions/533.html) Malicious Manual Software Update
+- [CAPEC-534](https://capec.mitre.org/data/definitions/534.html) Malicious Hardware Update
+- [CAPEC-535](https://capec.mitre.org/data/definitions/535.html) Malicious Gray Market Hardware
+- [CAPEC-536](https://capec.mitre.org/data/definitions/536.html) Data Injected During Configuration
+- [CAPEC-537](https://capec.mitre.org/data/definitions/537.html) Infiltration of Hardware Development Environment
+- [CAPEC-538](https://capec.mitre.org/data/definitions/538.html) Open-Source Library Manipulation
+- [CAPEC-539](https://capec.mitre.org/data/definitions/539.html) ASIC With Malicious Functionality
+- [CAPEC-540](https://capec.mitre.org/data/definitions/540.html) Overread Buffers
+- [CAPEC-541](https://capec.mitre.org/data/definitions/541.html) Application Fingerprinting
+- [CAPEC-542](https://capec.mitre.org/data/definitions/542.html) Targeted Malware
+- [CAPEC-543](https://capec.mitre.org/data/definitions/543.html) Counterfeit Websites
+- [CAPEC-544](https://capec.mitre.org/data/definitions/544.html) Counterfeit Organizations
+- [CAPEC-545](https://capec.mitre.org/data/definitions/545.html) Pull Data from System Resources
+- [CAPEC-546](https://capec.mitre.org/data/definitions/546.html) Incomplete Data Deletion in a Multi-Tenant Environment
+- [CAPEC-547](https://capec.mitre.org/data/definitions/547.html) Physical Destruction of Device or Component
+- [CAPEC-548](https://capec.mitre.org/data/definitions/548.html) Contaminate Resource
+- [CAPEC-549](https://capec.mitre.org/data/definitions/549.html) Local Execution of Code
+- [CAPEC-550](https://capec.mitre.org/data/definitions/550.html) Install New Service
+- [CAPEC-551](https://capec.mitre.org/data/definitions/551.html) Modify Existing Service
+- [CAPEC-552](https://capec.mitre.org/data/definitions/552.html) Install Rootkit 
+- [CAPEC-554](https://capec.mitre.org/data/definitions/554.html) Functionality Bypass
+- [CAPEC-555](https://capec.mitre.org/data/definitions/555.html) Remote Services with Stolen Credentials
+- [CAPEC-556](https://capec.mitre.org/data/definitions/556.html) Replace File Extension Handlers
+- [CAPEC-558](https://capec.mitre.org/data/definitions/558.html) Replace Trusted Executable
+- [CAPEC-559](https://capec.mitre.org/data/definitions/559.html) Orbital Jamming
+- [CAPEC-560](https://capec.mitre.org/data/definitions/560.html) Use of Known Domain Credentials
+- [CAPEC-561](https://capec.mitre.org/data/definitions/561.html) Windows Admin Shares with Stolen Credentials
+- [CAPEC-562](https://capec.mitre.org/data/definitions/562.html) Modify Shared File
+- [CAPEC-563](https://capec.mitre.org/data/definitions/563.html) Add Malicious File to Shared Webroot
+- [CAPEC-564](https://capec.mitre.org/data/definitions/564.html) Run Software at Logon
+- [CAPEC-565](https://capec.mitre.org/data/definitions/565.html) Password Spraying
+- [CAPEC-568](https://capec.mitre.org/data/definitions/568.html) Capture Credentials via Keylogger
+- [CAPEC-569](https://capec.mitre.org/data/definitions/569.html) Collect Data as Provided by Users
+- [CAPEC-571](https://capec.mitre.org/data/definitions/571.html) Block Logging to Central Repository
+- [CAPEC-572](https://capec.mitre.org/data/definitions/572.html) Artificially Inflate File Sizes
+- [CAPEC-573](https://capec.mitre.org/data/definitions/573.html) Process Footprinting
+- [CAPEC-574](https://capec.mitre.org/data/definitions/574.html) Services Footprinting
+- [CAPEC-575](https://capec.mitre.org/data/definitions/575.html) Account Footprinting
+- [CAPEC-576](https://capec.mitre.org/data/definitions/576.html) Group Permission Footprinting
+- [CAPEC-577](https://capec.mitre.org/data/definitions/577.html) Owner Footprinting
+- [CAPEC-578](https://capec.mitre.org/data/definitions/578.html) Disable Security Software
+- [CAPEC-579](https://capec.mitre.org/data/definitions/579.html) Replace Winlogon Helper DLL
+- [CAPEC-580](https://capec.mitre.org/data/definitions/580.html) System Footprinting
+- [CAPEC-581](https://capec.mitre.org/data/definitions/581.html) Security Software Footprinting
+- [CAPEC-582](https://capec.mitre.org/data/definitions/582.html) Route Disabling
+- [CAPEC-583](https://capec.mitre.org/data/definitions/583.html) Disabling Network Hardware
+- [CAPEC-584](https://capec.mitre.org/data/definitions/584.html) BGP Route Disabling
+- [CAPEC-585](https://capec.mitre.org/data/definitions/585.html) DNS Domain Seizure
+- [CAPEC-586](https://capec.mitre.org/data/definitions/586.html) Object Injection
+- [CAPEC-587](https://capec.mitre.org/data/definitions/587.html) Cross Frame Scripting (XFS)
+- [CAPEC-588](https://capec.mitre.org/data/definitions/588.html) DOM-Based XSS
+- [CAPEC-589](https://capec.mitre.org/data/definitions/589.html) DNS Blocking
+- [CAPEC-590](https://capec.mitre.org/data/definitions/590.html) IP Address Blocking
+- [CAPEC-591](https://capec.mitre.org/data/definitions/591.html) Reflected XSS
+- [CAPEC-592](https://capec.mitre.org/data/definitions/592.html) Stored XSS
+- [CAPEC-593](https://capec.mitre.org/data/definitions/593.html) Session Hijacking
+- [CAPEC-594](https://capec.mitre.org/data/definitions/594.html) Traffic Injection
+- [CAPEC-595](https://capec.mitre.org/data/definitions/595.html) Connection Reset
+- [CAPEC-596](https://capec.mitre.org/data/definitions/596.html) TCP RST Injection
+- [CAPEC-597](https://capec.mitre.org/data/definitions/597.html) Absolute Path Traversal
+- [CAPEC-598](https://capec.mitre.org/data/definitions/598.html) DNS Spoofing
+- [CAPEC-599](https://capec.mitre.org/data/definitions/599.html) Terrestrial Jamming
+- [CAPEC-600](https://capec.mitre.org/data/definitions/600.html) Credential Stuffing
+- [CAPEC-601](https://capec.mitre.org/data/definitions/601.html) Jamming
+- [CAPEC-603](https://capec.mitre.org/data/definitions/603.html) Blockage
+- [CAPEC-604](https://capec.mitre.org/data/definitions/604.html) Wi-Fi Jamming
+- [CAPEC-605](https://capec.mitre.org/data/definitions/605.html) Cellular Jamming
+- [CAPEC-606](https://capec.mitre.org/data/definitions/606.html) Weakening of Cellular Encryption
+- [CAPEC-607](https://capec.mitre.org/data/definitions/607.html) Obstruction
+- [CAPEC-608](https://capec.mitre.org/data/definitions/608.html) Cryptanalysis of Cellular Encryption
+- [CAPEC-609](https://capec.mitre.org/data/definitions/609.html) Cellular Traffic Intercept
+- [CAPEC-610](https://capec.mitre.org/data/definitions/610.html) Cellular Data Injection
+- [CAPEC-611](https://capec.mitre.org/data/definitions/611.html) BitSquatting
+- [CAPEC-612](https://capec.mitre.org/data/definitions/612.html) WiFi MAC Address Tracking
+- [CAPEC-613](https://capec.mitre.org/data/definitions/613.html) WiFi SSID Tracking
+- [CAPEC-614](https://capec.mitre.org/data/definitions/614.html) Rooting SIM Cards
+- [CAPEC-615](https://capec.mitre.org/data/definitions/615.html) Evil Twin Wi-Fi Attack
+- [CAPEC-616](https://capec.mitre.org/data/definitions/616.html) Establish Rogue Location
+- [CAPEC-617](https://capec.mitre.org/data/definitions/617.html) Cellular Rogue Base Station
+- [CAPEC-618](https://capec.mitre.org/data/definitions/618.html) Cellular Broadcast Message Request
+- [CAPEC-619](https://capec.mitre.org/data/definitions/619.html) Signal Strength Tracking
+- [CAPEC-620](https://capec.mitre.org/data/definitions/620.html) Drop Encryption Level
+- [CAPEC-621](https://capec.mitre.org/data/definitions/621.html) Analysis of Packet Timing and Sizes
+- [CAPEC-622](https://capec.mitre.org/data/definitions/622.html) Electromagnetic Side-Channel Attack
+- [CAPEC-623](https://capec.mitre.org/data/definitions/623.html) Compromising Emanations Attack
+- [CAPEC-624](https://capec.mitre.org/data/definitions/624.html) Hardware Fault Injection
+- [CAPEC-625](https://capec.mitre.org/data/definitions/625.html) Mobile Device Fault Injection
+- [CAPEC-626](https://capec.mitre.org/data/definitions/626.html) Smudge Attack
+- [CAPEC-627](https://capec.mitre.org/data/definitions/627.html) Counterfeit GPS Signals
+- [CAPEC-628](https://capec.mitre.org/data/definitions/628.html) Carry-Off GPS Attack
+- [CAPEC-630](https://capec.mitre.org/data/definitions/630.html) TypoSquatting
+- [CAPEC-631](https://capec.mitre.org/data/definitions/631.html) SoundSquatting
+- [CAPEC-632](https://capec.mitre.org/data/definitions/632.html) Homograph Attack via Homoglyphs
+- [CAPEC-633](https://capec.mitre.org/data/definitions/633.html) Token Impersonation
+- [CAPEC-634](https://capec.mitre.org/data/definitions/634.html) Probe Audio and Video Peripherals
+- [CAPEC-635](https://capec.mitre.org/data/definitions/635.html) Alternative Execution Due to Deceptive Filenames
+- [CAPEC-636](https://capec.mitre.org/data/definitions/636.html) Hiding Malicious Data or Code within Files
+- [CAPEC-637](https://capec.mitre.org/data/definitions/637.html) Collect Data from Clipboard
+- [CAPEC-638](https://capec.mitre.org/data/definitions/638.html) Altered Component Firmware
+- [CAPEC-639](https://capec.mitre.org/data/definitions/639.html) Probe System Files
+- [CAPEC-640](https://capec.mitre.org/data/definitions/640.html) Inclusion of Code in Existing Process
+- [CAPEC-641](https://capec.mitre.org/data/definitions/641.html) DLL Side-Loading
+- [CAPEC-642](https://capec.mitre.org/data/definitions/642.html) Replace Binaries
+- [CAPEC-643](https://capec.mitre.org/data/definitions/643.html) Identify Shared Files/Directories on System
+- [CAPEC-644](https://capec.mitre.org/data/definitions/644.html) Use of Captured Hashes (Pass The Hash)
+- [CAPEC-645](https://capec.mitre.org/data/definitions/645.html) Use of Captured Tickets (Pass The Ticket)
+- [CAPEC-646](https://capec.mitre.org/data/definitions/646.html) Peripheral Footprinting
+- [CAPEC-647](https://capec.mitre.org/data/definitions/647.html) Collect Data from Registries
+- [CAPEC-648](https://capec.mitre.org/data/definitions/648.html) Collect Data from Screen Capture
+- [CAPEC-649](https://capec.mitre.org/data/definitions/649.html) Adding a Space to a File Extension
+- [CAPEC-650](https://capec.mitre.org/data/definitions/650.html) Upload a Web Shell to a Web Server
+- [CAPEC-651](https://capec.mitre.org/data/definitions/651.html) Eavesdropping
+- [CAPEC-652](https://capec.mitre.org/data/definitions/652.html) Use of Known Kerberos Credentials
+- [CAPEC-653](https://capec.mitre.org/data/definitions/653.html) Use of Known Operating System Credentials
+- [CAPEC-654](https://capec.mitre.org/data/definitions/654.html) Credential Prompt Impersonation
+- [CAPEC-655](https://capec.mitre.org/data/definitions/655.html) Avoid Security Tool Identification by Adding Data
+- [CAPEC-656](https://capec.mitre.org/data/definitions/656.html) Voice Phishing
+- [CAPEC-657](https://capec.mitre.org/data/definitions/657.html) Malicious Automated Software Update via Spoofing
+- [CAPEC-660](https://capec.mitre.org/data/definitions/660.html) Root/Jailbreak Detection Evasion via Hooking
+- [CAPEC-661](https://capec.mitre.org/data/definitions/661.html) Root/Jailbreak Detection Evasion via Debugging
+- [CAPEC-662](https://capec.mitre.org/data/definitions/662.html) Adversary in the Browser (AiTB)
+- [CAPEC-663](https://capec.mitre.org/data/definitions/663.html) Exploitation of Transient Instruction Execution
+- [CAPEC-664](https://capec.mitre.org/data/definitions/664.html) Server Side Request Forgery
+- [CAPEC-665](https://capec.mitre.org/data/definitions/665.html) Exploitation of Thunderbolt Protection Flaws
+- [CAPEC-666](https://capec.mitre.org/data/definitions/666.html) BlueSmacking
+- [CAPEC-667](https://capec.mitre.org/data/definitions/667.html) Bluetooth Impersonation AttackS (BIAS)
+- [CAPEC-668](https://capec.mitre.org/data/definitions/668.html) Key Negotiation of Bluetooth Attack (KNOB)
+- [CAPEC-669](https://capec.mitre.org/data/definitions/669.html) Alteration of a Software Update
+- [CAPEC-670](https://capec.mitre.org/data/definitions/670.html) Software Development Tools Maliciously Altered
+- [CAPEC-671](https://capec.mitre.org/data/definitions/671.html) Requirements for ASIC Functionality Maliciously Altered
+- [CAPEC-672](https://capec.mitre.org/data/definitions/672.html) Malicious Code Implanted During Chip Programming
+- [CAPEC-673](https://capec.mitre.org/data/definitions/673.html) Developer Signing Maliciously Altered Software
+- [CAPEC-674](https://capec.mitre.org/data/definitions/674.html) Design for FPGA Maliciously Altered
+- [CAPEC-675](https://capec.mitre.org/data/definitions/675.html) Retrieve Data from Decommissioned Devices
+- [CAPEC-676](https://capec.mitre.org/data/definitions/676.html) NoSQL Injection
+- [CAPEC-677](https://capec.mitre.org/data/definitions/677.html) Server Motherboard Compromise
+- [CAPEC-678](https://capec.mitre.org/data/definitions/678.html) System Build Data Maliciously Altered
+- [CAPEC-679](https://capec.mitre.org/data/definitions/679.html) Exploitation of Improperly Configured or Implemented Memory Protections
+- [CAPEC-680](https://capec.mitre.org/data/definitions/680.html) Exploitation of Improperly Controlled Registers
+- [CAPEC-681](https://capec.mitre.org/data/definitions/681.html) Exploitation of Improperly Controlled Hardware Security Identifiers
+- [CAPEC-682](https://capec.mitre.org/data/definitions/682.html) Exploitation of Firmware or ROM Code with Unpatchable Vulnerabilities
+- [CAPEC-690](https://capec.mitre.org/data/definitions/690.html) Metadata Spoofing
+- [CAPEC-691](https://capec.mitre.org/data/definitions/691.html) Spoof Open-Source Software Metadata
+- [CAPEC-692](https://capec.mitre.org/data/definitions/692.html) Spoof Version Control System Commit Metadata
+- [CAPEC-693](https://capec.mitre.org/data/definitions/693.html) StarJacking
+- [CAPEC-694](https://capec.mitre.org/data/definitions/694.html) System Location Discovery
+- [CAPEC-695](https://capec.mitre.org/data/definitions/695.html) Repo Jacking
+- [CAPEC-696](https://capec.mitre.org/data/definitions/696.html) Load Value Injection
+- [CAPEC-697](https://capec.mitre.org/data/definitions/697.html) DHCP Spoofing
+- [CAPEC-698](https://capec.mitre.org/data/definitions/698.html) Install Malicious Extension
+- [CAPEC-699](https://capec.mitre.org/data/definitions/699.html) Eavesdropping on a Monitor
+- [CAPEC-700](https://capec.mitre.org/data/definitions/700.html) Network Boundary Bridging
+- [CAPEC-701](https://capec.mitre.org/data/definitions/701.html) Browser in the Middle (BiTM)
+- [CAPEC-702](https://capec.mitre.org/data/definitions/702.html) Exploiting Incorrect Chaining or Granularity of Hardware Debug Components

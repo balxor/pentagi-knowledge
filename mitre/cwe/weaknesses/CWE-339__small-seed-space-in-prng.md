@@ -1,0 +1,40 @@
+---
+cwe_id: CWE-339
+name: Small Seed Space in PRNG
+type: weakness
+abstraction: Variant
+status: Draft
+languages: [Not Language-Specific]
+related_capec: []
+url: https://cwe.mitre.org/data/definitions/339.html
+tags: [mitre-cwe, weakness, CWE-339]
+---
+
+# CWE-339 - Small Seed Space in PRNG
+
+**Abstraction:** Variant  -  **Status:** Draft  -  **CWE:** [CWE-339](https://cwe.mitre.org/data/definitions/339.html)
+
+## Description
+A Pseudo-Random Number Generator (PRNG) uses a relatively small seed space, which makes it more susceptible to brute force attacks.
+
+## Extended description
+PRNGs are entirely deterministic once seeded, so it should be extremely difficult to guess the seed. If an attacker can collect the outputs of a PRNG and then brute force the seed by trying every possibility to see which seed matches the observed output, then the attacker will know the output of any subsequent calls to the PRNG. A small seed space implies that the attacker will have far fewer possible values to try to exhaust all possibilities.
+
+## Applicable platforms / languages
+Not Language-Specific
+
+## Common consequences
+- **Other**: Varies by Context
+
+## Potential mitigations
+- **Architecture and Design**: Use well vetted pseudo-random number generating algorithms with adequate length seeds. Pseudo-random number generators can produce predictable numbers if the generator is known and the seed can be guessed. A 256-bit seed is a good starting point for producing a "random enough" number.
+- **Architecture and Design, Requirements**: Use products or modules that conform to FIPS 140-2 [REF-267] to avoid obvious entropy problems, or use the more recent FIPS 140-3 [REF-1192] if possible.
+
+## Related weaknesses
+- CWE-335 (ChildOf)
+- CWE-341 (PeerOf)
+
+## Observed examples (CVE)
+- **CVE-2019-10908**: product generates passwords via org.apache.commons.lang.RandomStringUtils, which uses java.util.Random internally. This PRNG has only a 48-bit seed.
+
+Source: MITRE CWE - https://cwe.mitre.org/data/definitions/339.html
