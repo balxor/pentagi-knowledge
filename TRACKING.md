@@ -426,6 +426,9 @@ target_type: sub-technique      # "technique", "sub-technique", "tactic", "weakn
 tactics: [Execution]            # Tactic(s) this applies to
 platforms: [Windows]            # Target platforms
 attack_ref: https://attack.mitre.org/techniques/T1059/001
+related_attack_ids: [T1003, T1021, T1105]
+risk_level: high
+usage: authorized-lab-only
 tags: [tooling, mitre-attack, T1059.001, execution]
 ---
 

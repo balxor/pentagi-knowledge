@@ -30,6 +30,9 @@ target_type: sub-technique
 tactics: [Execution]
 platforms: [Windows]
 attack_ref: https://attack.mitre.org/techniques/T1059/001
+related_attack_ids: [T1003, T1021, T1105]
+risk_level: high
+usage: authorized-lab-only
 tags: [tooling, mitre-attack, T1059.001, execution]
 ---
 # T1059.001 PowerShell - Tooling
@@ -38,6 +41,8 @@ tags: [tooling, mitre-attack, T1059.001, execution]
 
 - Only create files for techniques worth tooling - this is intentionally sparse.
 - Keep MITRE description out (it lives in the base pack); put only operator tooling here.
+- Use `related_attack_ids` when commands intentionally overlap adjacent ATT&CK
+  techniques, so retrieval can connect the overlay to the right follow-on context.
 - Mark curated/non-MITRE content clearly; attribute any third-party tool snippets.
 
 ## Tracking
