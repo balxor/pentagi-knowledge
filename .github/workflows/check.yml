@@ -25,5 +25,8 @@ jobs:
       - name: Compile tools
         run: python -m py_compile tools/*.py
 
+      - name: Validate tooling frontmatter
+        run: python tools/validate_tooling_frontmatter.py
+
       - name: Check tooling tracker
         run: python tools/update_tracking_status.py --check

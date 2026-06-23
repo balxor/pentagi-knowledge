@@ -79,6 +79,7 @@ regeneration. See `TRACKING.md` for priority order and progress.
 ```bash
 pip install -r requirements.txt
 python -m py_compile tools/*.py
+python tools/validate_tooling_frontmatter.py
 python tools/update_tracking_status.py --check
 ```
 

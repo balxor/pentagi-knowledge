@@ -52,11 +52,13 @@ the files that actually exist under `tooling/**`, so checkbox state stays aligne
 with the curated overlay set.
 
 ```bash
+python tools/validate_tooling_frontmatter.py
 python tools/update_tracking_status.py --check
 python tools/update_tracking_status.py
 ```
 
-The `--check` form reports drift without writing changes. The second command
+The validator checks the metadata contract documented above. The `--check` form
+reports tracking drift without writing changes. The second tracking command
 rewrites `TRACKING.md` with current checkbox state and file paths.
 
 ## Push to PentAGI
