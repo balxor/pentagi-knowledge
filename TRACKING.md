@@ -9,14 +9,14 @@ Each tooling file contains **concrete execution commands** for one technique - b
 ## Repository structure
 
 ```
-pentagi-knowledge-enhanced/
+pentagi-knowledge/
 ├── mitre/                    # MITRE-generated packs (read-only after generation)
 │   ├── attack/enterprise/
 │   ├── attack/mobile/
 │   ├── attack/ics/
 │   ├── capec/
 │   └── cwe/
-├── tooling/                  # ✨ Curated tooling overlays (survive regenerate)
+├── tooling/                  # Curated tooling overlays (survive regenerate)
 │   ├── enterprise/           # One .md per ATT&CK Enterprise technique
 │   ├── mobile/               # One .md per ATT&CK Mobile technique
 │   ├── ics/                  # One .md per ATT&CK ICS technique
@@ -46,7 +46,7 @@ Tooling effort is prioritised by tactic - techniques from higher-priority tactic
 | **P4** | Resource Development | Infrastructure setup, limited tooling | ~5 |
 | **P4** | Discovery | Built-in OS commands, tooling less critical | ~10 |
 
-**Total Enterprise target:** ~180 techniques
+**Tracked Enterprise tooling items:** 228 checklist entries.
 
 ---
 
@@ -422,8 +422,11 @@ CWE is about weaknesses, not attacks. Tooling for CWE means **exploit code** or 
 attack_id: T1059.001            # MITRE technique/sub-technique ID
 name: PowerShell                # Human-readable name
 type: tooling                   # Fixed: "tooling"
-target_type: technique          # "technique", "sub-technique", "tactic", "weakness", "attack-pattern"
+target_type: sub-technique      # "technique", "sub-technique", "tactic", "weakness", "attack-pattern"
 tactics: [Execution]            # Tactic(s) this applies to
+platforms: [Windows]            # Target platforms
+attack_ref: https://attack.mitre.org/techniques/T1059/001
+tags: [tooling, mitre-attack, T1059.001, execution]
 ---
 
 # T1059.001 - PowerShell (tooling)
@@ -454,4 +457,4 @@ usemodule powershell/code_execution/invoke_shellcode
 | ICS | 97 | ~3 | ~3 | ~2 | - | - | 0 |
 | CAPEC | ~558 | ~9 | ~2 | - | - | - | 0 |
 | CWE | ~922 | ~8 | ~4 | - | - | - | 0 |
-| **Total** | **~2398** | **~68** | **~62** | **~62** | **~30** | **~10** | **1** |
+| **Total tracked checklist items** | **271** | **~68** | **~62** | **~62** | **~30** | **~10** | **5** |

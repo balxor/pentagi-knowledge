@@ -10,7 +10,14 @@ ATT&CK packs never overwrites them.
 ```
 tooling/
   enterprise/<ATTACK_ID>__<slug>.md   # one file per technique you enhance (sparse)
+  mobile/                             # reserved for mobile overlays
+  ics/                                # reserved for ICS overlays
+  capec/                              # reserved for CAPEC overlays
+  cwe/                                # reserved for CWE overlays
 ```
+
+Current committed coverage is intentionally sparse: only `tooling/enterprise`
+contains overlay files today.
 
 ## File format
 
@@ -19,6 +26,7 @@ tooling/
 attack_id: T1059.001
 name: PowerShell
 type: tooling
+target_type: sub-technique
 tactics: [Execution]
 platforms: [Windows]
 attack_ref: https://attack.mitre.org/techniques/T1059/001
