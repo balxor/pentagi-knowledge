@@ -9,19 +9,18 @@ Author: Kenshin Himura of DTrust
 """
 
 import argparse
-import json
-import os
 import sys
 from pathlib import Path
 
 try:
     import requests
 except ImportError:
-    print("requests not installed. Run: pip install requests")
+    print("requests not installed. Run: pip install -r requirements.txt")
     sys.exit(1)
 
 
-def send_document(url: str, token: str, title: str, content: str, source: str) -> bool:
+def send_document(url: str, token: str, title: str, content: str,
+                  description: str, insecure: bool) -> bool:
     query = """
     mutation($input: CreateKnowledgeDocumentInput!) {
         createKnowledgeDocument(input: $input) { id }
@@ -29,13 +28,11 @@ def send_document(url: str, token: str, title: str, content: str, source: str) -
     """
     variables = {
         "input": {
-            "title": title,
-            "docType": "guide",
-            "guideType": "pentest",
+            "docType": "code",
+            "codeLang": "markdown",
             "question": title,
             "content": content,
-            "source": source,
-            "tags": ["tooling"],
+            "description": description,
         }
     }
     payload = {"query": query.strip(), "variables": variables}
@@ -48,7 +45,7 @@ def send_document(url: str, token: str, title: str, content: str, source: str) -
             f"{url.rstrip('/')}/api/v1/graphql",
             json=payload,
             headers=headers,
-            verify=False,
+            verify=not insecure,
             timeout=30,
         )
         r.raise_for_status()
@@ -63,6 +60,8 @@ def main():
     parser.add_argument("--dir", required=True, help="Directory with .md files")
     parser.add_argument("--pentagi-url", required=True, help="PentAGI base URL")
     parser.add_argument("--token", required=True, help="PentAGI API bearer token")
+    parser.add_argument("--insecure", action="store_true",
+                        help="skip TLS certificate verification for local self-signed PentAGI")
     args = parser.parse_args()
 
     target_dir = Path(args.dir)
@@ -87,7 +86,9 @@ def main():
         title = fp.stem
         print(f"Pushing {fp.name} ...", end="")
         content = fp.read_text(encoding="utf-8")
-        if send_document(args.pentagi_url, args.token, title, content, source_label):
+        description = f"Tooling overlay from {source_label}/{fp.name}"
+        if send_document(args.pentagi_url, args.token, title, content,
+                         description, args.insecure):
             print(" OK")
             ok += 1
         else:

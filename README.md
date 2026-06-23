@@ -36,6 +36,7 @@ pentagi-knowledge/
 │   ├── build_attack_knowledge.py       # ATT&CK (enterprise/mobile/ics)
 │   ├── build_capec_knowledge.py        # CAPEC attack patterns
 │   ├── build_cwe_knowledge.py          # CWE weakness classes
+│   ├── push_tooling.py                 # Push curated tooling overlays
 │   └── update_tracking_status.py       # Sync TRACKING.md checkboxes
 ├── mitre/
 │   ├── attack/
@@ -52,6 +53,7 @@ pentagi-knowledge/
 │   └── cwe/
 ├── docs/
 │   └── import-to-pentagi.md            # how to push into PentAGI Knowledges
+├── requirements.txt                    # Python dependency for push_tooling.py
 ├── TRACKING.md                         # Master checklist & priority for tooling work
 ├── README.md  -  LICENSE (MIT)  -  NOTICE (MITRE attribution)  -  CONTRIBUTING.md
 ```
@@ -61,6 +63,27 @@ sources sit as siblings of `mitre/` (e.g. `owasp/`), one framework per folder.
 Tooling overlays sit under `tooling/` - standalone Markdown files that reference ATT&CK
 IDs via YAML frontmatter but never merge into MITRE-generated files, so they survive
 regeneration. See `TRACKING.md` for priority order and progress.
+
+## Source of truth
+
+- `mitre/**` is generated content. Regenerate it with the scripts under `tools/`
+  instead of editing individual generated documents by hand.
+- `tooling/**` is curated content. Add operator command references here so they
+  survive MITRE pack regeneration.
+- `TRACKING.md` is the master checklist for tooling coverage. Keep it in sync with
+  `python tools/update_tracking_status.py`.
+- `tools/**` contains generators and import helpers.
+
+## Quick start
+
+```bash
+pip install -r requirements.txt
+python -m py_compile tools/*.py
+python tools/update_tracking_status.py --check
+```
+
+To refresh generated MITRE packs, run the commands in the next section. To import
+the packs into PentAGI, see [docs/import-to-pentagi.md](docs/import-to-pentagi.md).
 
 ## Document format
 
@@ -95,7 +118,7 @@ version currently committed.
 ## Import into PentAGI
 
 See [docs/import-to-pentagi.md](docs/import-to-pentagi.md) - covers the embedding
-provider setup (Ollama/OpenAI), API token, and the batch push.
+provider setup, API token, OS-specific commands, TLS verification, and batch push.
 
 ## Roadmap
 
@@ -104,7 +127,7 @@ provider setup (Ollama/OpenAI), API token, and the batch push.
 - [ ] MITRE ATLAS (adversarial AI)
 - [ ] OWASP Top 10 / WSTG mappings
 - [x] CWE + CAPEC generators
-- [ ] Commit CWE + CAPEC packs
+- [x] Commit CWE + CAPEC packs
 - [x] Per-technique tooling hints (execution commands for autonomous agents)
 - [ ] Expand tooling coverage (P0 Credential Access, P1 Lateral Movement, …)
 

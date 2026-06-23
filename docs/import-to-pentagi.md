@@ -1,100 +1,165 @@
 # Importing into PentAGI Knowledges
 
+Run these commands from the repository root:
+
+```bash
+cd pentagi-knowledge
+pip install -r requirements.txt
+```
+
+The ATT&CK, CWE, and CAPEC build scripts regenerate files before pushing them.
+If you only want to import the committed snapshot, check your working tree after
+running the commands and review any generated changes before committing.
+
 ## 1. Configure an embedding provider
 
-PentAGI embeds every knowledge document into pgvector on creation, so an embedding
-provider must be available. In your PentAGI `.env`:
+PentAGI embeds knowledge documents into pgvector when they are created, so an
+embedding provider must be configured in the PentAGI `.env`.
 
-**Local / free (Ollama):**
+**Local Ollama:**
+
 ```env
 EMBEDDING_PROVIDER=ollama
 EMBEDDING_URL=http://host.docker.internal:11434
 EMBEDDING_MODEL=nomic-embed-text
 ```
+
 ```bash
 ollama pull nomic-embed-text
-# allow Docker to reach Ollama: set OLLAMA_HOST=0.0.0.0 on the host, then restart Ollama
 ```
 
+If PentAGI runs in Docker and Ollama runs on the host, allow Docker to reach
+Ollama by setting `OLLAMA_HOST=0.0.0.0` on the host, then restart Ollama.
+
 **OpenAI:**
+
 ```env
 EMBEDDING_PROVIDER=openai
 EMBEDDING_KEY=sk-...
 EMBEDDING_MODEL=text-embedding-3-small
 ```
 
-Restart PentAGI so `.env` is reloaded:
+Restart PentAGI after editing `.env`:
+
 ```bash
 docker compose up -d
 ```
 
 ## 2. Create an API token
 
-PentAGI UI -> **Settings -> PentAGI API** -> create a Bearer token (copy it once).
+In the PentAGI UI, go to **Settings -> PentAGI API**, create a bearer token,
+and store it in an environment variable.
+
+PowerShell:
+
+```powershell
+$env:PENTAGI_API_TOKEN = "<token>"
+```
+
+cmd.exe:
+
+```cmd
+set PENTAGI_API_TOKEN=<token>
+```
+
+Linux/macOS:
+
+```bash
+export PENTAGI_API_TOKEN="<token>"
+```
 
 ## 3. Push MITRE ATT&CK
 
-```bash
-# push one domain at a time
-python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise ^
-  --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
+For local PentAGI with self-signed TLS, keep `--insecure`. Remove it when using
+a host with a trusted certificate.
 
-python tools/build_attack_knowledge.py --domain mobile --out ./mitre/attack/mobile ^
-  --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
+PowerShell:
 
-python tools/build_attack_knowledge.py --domain ics --out ./mitre/attack/ics ^
-  --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
+```powershell
+python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise --push --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
+python tools/build_attack_knowledge.py --domain mobile --out ./mitre/attack/mobile --push --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
+python tools/build_attack_knowledge.py --domain ics --out ./mitre/attack/ics --push --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
 ```
 
-Each push uses the PentAGI schema with `docType: guide`, `guideType: pentest`, and
-`question` set to the document title (the field embedded for semantic search).
-The GraphQL endpoint is `<pentagi-url>/api/v1/graphql`; for local self-signed TLS
-the script skips certificate verification.
+cmd.exe:
 
-## 4. Push CWE / CAPEC
-
-CWE and CAPEC use separate generators:
-
-```bash
-python tools/build_cwe_knowledge.py --out ./mitre/cwe ^
-  --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
-
-python tools/build_capec_knowledge.py --out ./mitre/capec ^
-  --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
+```cmd
+python tools\build_attack_knowledge.py --domain enterprise --out .\mitre\attack\enterprise --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
+python tools\build_attack_knowledge.py --domain mobile --out .\mitre\attack\mobile --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
+python tools\build_attack_knowledge.py --domain ics --out .\mitre\attack\ics --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
 ```
 
-These generators accept the same `--push`, `--pentagi-url`, and `--token` flags
-as `build_attack_knowledge.py`.
+Linux/macOS:
+
+```bash
+python tools/build_attack_knowledge.py --domain enterprise --out ./mitre/attack/enterprise --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+python tools/build_attack_knowledge.py --domain mobile --out ./mitre/attack/mobile --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+python tools/build_attack_knowledge.py --domain ics --out ./mitre/attack/ics --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+```
+
+ATT&CK documents are created with `docType: guide`, `guideType: pentest`,
+`question` as the searchable title, and `content` as the full Markdown document.
+
+## 4. Push CWE and CAPEC
+
+PowerShell:
+
+```powershell
+python tools/build_cwe_knowledge.py --out ./mitre/cwe --push --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
+python tools/build_capec_knowledge.py --out ./mitre/capec --push --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
+```
+
+cmd.exe:
+
+```cmd
+python tools\build_cwe_knowledge.py --out .\mitre\cwe --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
+python tools\build_capec_knowledge.py --out .\mitre\capec --push --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
+```
+
+Linux/macOS:
+
+```bash
+python tools/build_cwe_knowledge.py --out ./mitre/cwe --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+python tools/build_capec_knowledge.py --out ./mitre/capec --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+```
+
+CWE documents are created as `docType: answer`, `answerType: vulnerability`.
+CAPEC documents are created as `docType: guide`, `guideType: pentest`.
 
 ## 5. Push tooling overlays
 
-Tooling files under `tooling/` are standalone Markdown files with YAML frontmatter
-(not generated by any script). Use the included Python helper to push them:
+Tooling files under `tooling/` are curated Markdown files and are not generated.
+Only directories that exist can be pushed; currently the committed overlay is
+`tooling/enterprise`.
 
-```bash
-# push all enterprise tooling (repeat for mobile/ics/capec/cwe)
-python tools/push_tooling.py --dir tooling/enterprise ^
-  --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%"
+PowerShell:
+
+```powershell
+python tools/push_tooling.py --dir tooling/enterprise --pentagi-url https://localhost:8443 --token $env:PENTAGI_API_TOKEN --insecure
 ```
 
-The helper (`tools/push_tooling.py`) reads each `.md` file, wraps it in the same
-GraphQL mutation used by the build scripts, and sends it to PentAGI.
+cmd.exe:
 
-On Linux/macOS:
-```bash
-python tools/push_tooling.py --dir tooling/enterprise \
-  --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN"
+```cmd
+python tools\push_tooling.py --dir tooling\enterprise --pentagi-url https://localhost:8443 --token "%PENTAGI_API_TOKEN%" --insecure
 ```
 
-> **Tip:** Replace `localhost` with your PentAGI host and adjust TLS flags as needed.
+Linux/macOS:
+
+```bash
+python tools/push_tooling.py --dir tooling/enterprise --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
+```
+
+Tooling overlays are created with `docType: code`, `codeLang: markdown`,
+`question` as the file stem, and `content` as the full Markdown document.
 
 ## 6. Verify
 
-PentAGI UI -> **Knowledges** -> semantic search:
+In the PentAGI UI, open **Knowledges** and run semantic searches:
 
 | Query | Expected result |
-|-------|----------------|
-| *"dump credentials from LSASS"* | T1003 (OS Credential Dumping) |
-| *"format string vulnerability"* | CWE-134 |
-| *"sql injection attack pattern"* | CAPEC-66 |
-| *"powershell download cradle"* | T1059.001 - tooling entry |
+|-------|-----------------|
+| "dump credentials from LSASS" | T1003 (OS Credential Dumping) |
+| "format string vulnerability" | CWE-134 |
+| "sql injection attack pattern" | CAPEC-66 |
+| "powershell download cradle" | T1059.001 tooling entry |

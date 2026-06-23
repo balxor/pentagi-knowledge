@@ -262,6 +262,8 @@ def main():
     ap.add_argument("--push", action="store_true", help="push files into PentAGI Knowledges via GraphQL")
     ap.add_argument("--pentagi-url", default="https://localhost:8443")
     ap.add_argument("--token", default=os.environ.get("PENTAGI_API_TOKEN", ""))
+    ap.add_argument("--insecure", action="store_true",
+                    help="skip TLS certificate verification for local self-signed PentAGI")
     args = ap.parse_args()
 
     bundle = load_stix(args.domain, args.stix)
@@ -336,16 +338,17 @@ def main():
     print(f"[+] Wrote {len(written)} files to {args.out} "
           f"(tactics={len(tactics)}, techniques={n_top}, sub={n_sub})")
     if args.push:
-        push_to_pentagi(written, args.pentagi_url, args.token)
+        push_to_pentagi(written, args.pentagi_url, args.token, args.insecure)
 
 
-def push_to_pentagi(files, url, token):
+def push_to_pentagi(files, url, token, insecure=False):
     """Create one Knowledge document per markdown file via PentAGI GraphQL."""
     import json as _json, ssl
     endpoint = url.rstrip("/") + "/api/v1/graphql"
     ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
+    if insecure:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
     MUT = ("mutation($input: CreateKnowledgeDocumentInput!){"
            "createKnowledgeDocument(input: $input){ id }}")
     ok = 0
