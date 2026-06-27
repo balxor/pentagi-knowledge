@@ -1,23 +1,24 @@
 # pentagi-knowledge
 
-Open, machine-readable **security knowledge packs** for autonomous pentest agents -
-starting with **MITRE ATT&CK®** - formatted for import into
-[PentAGI](https://github.com/vxcontrol/pentagi) `Knowledges` (pgvector semantic search)
-to drive **MITRE-ATT&CK-based automation attack flows**.
+Open, machine-readable **security knowledge packs** for autonomous pentest agents.
+The initial pack is built from **MITRE ATT&CK®** and formatted for import into
+[PentAGI](https://github.com/vxcontrol/pentagi) `Knowledges`, where pgvector
+semantic search helps planner and pentester agents retrieve phase-relevant
+security knowledge.
 
 Each framework item (tactic, technique, sub-technique, …) becomes **one Markdown file**
-with YAML frontmatter, so a vector store returns precise, phase-relevant knowledge to the
-planner/pentester agents.
+with YAML frontmatter. This keeps retrieval precise and gives agents focused context
+for the current phase of an authorized assessment.
 
-> ⚠️ **Authorised use only.** These knowledge packs describe offensive techniques for
-> defensive understanding and *authorised* testing. Only run attack flows against systems
+> ⚠️ **Authorized use only.** These knowledge packs describe offensive techniques for
+> defensive understanding and *authorized* testing. Only run attack flows against systems
 > you own or have explicit written permission to test.
 
 ## What's inside
 
 | Source | Framework | Domain | Version | Items |
 |--------|-----------|--------|---------|-------|
-| MITRE ATT&CK | ATT&CK | Enterprise | v19.1 | 15 tactics - 222 techniques - 475 sub-techniques (712) |
+| MITRE ATT&CK | ATT&CK | Enterprise | v19.1 | 15 tactics, 222 techniques, 475 sub-techniques (712) |
 | MITRE ATT&CK | ATT&CK | Mobile | v19.1 | 12 tactics, 77 techniques, 47 sub-techniques (136) |
 | MITRE ATT&CK | ATT&CK | ICS | v19.1 | 12 tactics, 79 techniques, 18 sub-techniques (109) |
 
@@ -25,8 +26,8 @@ planner/pentester agents.
 
 | Source | Covers | Generator |
 |--------|--------|-----------|
-| MITRE CWE | weakness classes - e.g. CWE-134 (format string), CWE-120/121/122/787 (buffer overflow), CWE-416 (use-after-free) | `tools/build_cwe_knowledge.py` |
-| MITRE CAPEC | attack patterns - e.g. CAPEC-135 (format-string injection), CAPEC-100/123 (buffer overflow) | `tools/build_capec_knowledge.py` |
+| MITRE CWE | Weakness classes, e.g. CWE-134 (format string), CWE-120/121/122/787 (buffer overflow), CWE-416 (use-after-free) | `tools/build_cwe_knowledge.py` |
+| MITRE CAPEC | Attack patterns, e.g. CAPEC-135 (format-string injection), CAPEC-100/123 (buffer overflow) | `tools/build_capec_knowledge.py` |
 
 ## Repository structure
 
@@ -45,7 +46,7 @@ pentagi-knowledge/
 │   │   └── ics/                        # 12 tactics, 97 technique files, INDEX, manifest
 │   ├── capec/                          # CAPEC-### attack patterns (build_capec_knowledge.py)
 │   └── cwe/                            # CWE-### weakness classes (build_cwe_knowledge.py)
-├── tooling/                            # Curated tooling overlays (survive regenerate)
+├── tooling/                            # Curated tooling overlays (survive regeneration)
 │   ├── enterprise/                     # One .md per technique with execution commands
 │   ├── mobile/
 │   ├── ics/
@@ -60,9 +61,9 @@ pentagi-knowledge/
 
 MITRE frameworks live under `mitre/` (`attack/`, `capec/`, `cwe/`). Future non-MITRE
 sources sit as siblings of `mitre/` (e.g. `owasp/`), one framework per folder.
-Tooling overlays sit under `tooling/` - standalone Markdown files that reference ATT&CK
-IDs via YAML frontmatter but never merge into MITRE-generated files, so they survive
-regeneration. See `TRACKING.md` for priority order and progress.
+Tooling overlays sit under `tooling/` as standalone Markdown files. They reference
+ATT&CK IDs through YAML frontmatter but never merge into MITRE-generated files, so
+they survive regeneration. See `TRACKING.md` for priority order and progress.
 
 ## Source of truth
 
@@ -134,7 +135,6 @@ provider setup, API token, OS-specific commands, TLS verification, and batch pus
 
 ## License & attribution
 
-Code, tooling and structure: **MIT** (see `LICENSE`).
-Knowledge content derived from **MITRE ATT&CK®** © The MITRE Corporation, used under the
-[ATT&CK Terms of Use](https://attack.mitre.org/resources/legal-and-branding/terms-of-use/)
-- see `NOTICE`.
+Code, tooling, and repository structure: **MIT** (see `LICENSE`).
+Knowledge content derived from **MITRE ATT&CK®**, **MITRE CAPEC™**, and **MITRE CWE™**
+remains subject to the applicable MITRE terms of use. See `NOTICE`.

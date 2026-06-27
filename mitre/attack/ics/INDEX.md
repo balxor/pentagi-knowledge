@@ -1,4 +1,4 @@
-# MITRE ATT&CK Ics - Knowledge Index
+# MITRE ATT&CK ICS - Knowledge Index
 
 Tactics: 12 - Techniques+sub: 97 - Total files: 109
 

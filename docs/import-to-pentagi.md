@@ -47,7 +47,7 @@ docker compose up -d
 
 ## 2. Create an API token
 
-In the PentAGI UI, go to **Settings -> PentAGI API**, create a bearer token,
+In the PentAGI UI, go to **Settings > PentAGI API**, create a bearer token,
 and store it in an environment variable.
 
 PowerShell:

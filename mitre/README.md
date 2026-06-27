@@ -2,7 +2,7 @@
 
 Knowledge packs derived from MITRE's open security frameworks. They cross-reference
 each other: CWE = the weakness, CAPEC = how it is attacked, ATT&CK = adversary
-behaviour observed in the wild.
+behavior observed in the wild.
 
 | Folder | Framework | Per-item | Generator |
 |--------|-----------|----------|-----------|
@@ -10,4 +10,4 @@ behaviour observed in the wild.
 | [capec/](capec/)   | CAPEC | attack pattern | `tools/build_capec_knowledge.py` |
 | [cwe/](cwe/)       | CWE   | weakness class | `tools/build_cwe_knowledge.py` |
 
-All three are free to use with attribution to The MITRE Corporation - see `../NOTICE`.
+All three are available for use with attribution to The MITRE Corporation. See `../NOTICE`.

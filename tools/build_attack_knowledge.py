@@ -39,7 +39,7 @@ USAGE
 Note: ATT&CK is freely usable with attribution
 (https://attack.mitre.org/resources/legal-and-branding/terms-of-use/).
 Only run resulting attack flows against systems you own or are explicitly
-authorised to test.
+authorized to test.
 
 Author: Kenshin Himura of DTrust
 """
@@ -52,6 +52,11 @@ DOMAIN_FILE = {
     "enterprise": "enterprise-attack/enterprise-attack.json",
     "mobile": "mobile-attack/mobile-attack.json",
     "ics": "ics-attack/ics-attack.json",
+}
+DISPLAY_DOMAIN = {
+    "enterprise": "Enterprise",
+    "mobile": "Mobile",
+    "ics": "ICS",
 }
 
 
@@ -156,8 +161,13 @@ def parse(bundle):
 # ----------------------------------------------------------------------------
 # Markdown rendering
 # ----------------------------------------------------------------------------
+def yaml_scalar(value):
+    """Return a YAML-safe double-quoted scalar."""
+    return json.dumps(str(value), ensure_ascii=False)
+
+
 def yaml_list(items):
-    return "[" + ", ".join(items) + "]" if items else "[]"
+    return "[" + ", ".join(yaml_scalar(item) for item in items) + "]" if items else "[]"
 
 
 def md_tactic(aid, t, order, technique_aids):
@@ -166,9 +176,9 @@ def md_tactic(aid, t, order, technique_aids):
     fm = textwrap.dedent(f"""\
         ---
         attack_id: {aid}
-        name: {name}
+        name: {yaml_scalar(name)}
         type: tactic
-        shortname: {t['shortname']}
+        shortname: {yaml_scalar(t['shortname'])}
         killchain_order: {order}
         url: {t['url']}
         tags: [mitre-attack, tactic, {t['shortname']}]
@@ -205,7 +215,7 @@ def md_technique(aid, rec, mit_for, tactics, t_by_sn):
     fm = textwrap.dedent(f"""\
         ---
         attack_id: {aid}
-        name: {name}
+        name: {yaml_scalar(name)}
         type: {"sub-technique" if is_sub else "technique"}
         parent: {parent or "null"}
         tactics: {yaml_list(tactic_names)}
@@ -307,7 +317,7 @@ def main():
         written.append(path)
 
     with open(os.path.join(args.out, "INDEX.md"), "w", encoding="utf-8") as fh:
-        fh.write(f"# MITRE ATT&CK {domain.capitalize()} - Knowledge Index\n\n")
+        fh.write(f"# MITRE ATT&CK {DISPLAY_DOMAIN.get(domain, domain)} - Knowledge Index\n\n")
         fh.write(f"Tactics: {len(tactics)} - Techniques+sub: {len(techniques)} - "
                  f"Total files: {len(written)}\n\n")
         for i, sn in enumerate(order, 1):

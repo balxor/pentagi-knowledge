@@ -2,10 +2,10 @@
 
 Operator-focused command references that complement the MITRE ATT&CK packs in
 `pentagi-knowledge`. Each file maps to one ATT&CK technique by `attack_id` and adds
-concrete, runnable tooling (the "how", not the "what").
+curated operator tooling references (the "how", not the "what").
 
-Decoupled by design: these files live in their own source, so regenerating the
-ATT&CK packs never overwrites them.
+Decoupled by design: these files live in their own source tree, so regenerating
+the ATT&CK packs never overwrites them.
 
 ```
 tooling/
@@ -72,4 +72,4 @@ python tools/push_tooling.py --dir tooling/enterprise \
   --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN" --insecure
 ```
 
-> Authorised use only. These are offensive command references for sanctioned testing.
+> Authorized use only. These command references are for sanctioned testing.

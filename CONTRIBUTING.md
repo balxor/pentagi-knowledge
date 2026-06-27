@@ -10,8 +10,9 @@ Thanks for helping grow pentagi-knowledge!
    - the knowledge documents (one Markdown file per item),
    - an `INDEX.md` mapping every item,
    - a `manifest.json` (source, version, counts, generated_at, generator).
-3. Keep the document format consistent: YAML frontmatter (`id/name/type/tags/url`) +
-   structured body so semantic search stays precise.
+3. Keep the document format consistent: YAML frontmatter with a framework-specific
+   identifier (`attack_id`, `cwe_id`, or `capec_id`), `name`, `type`, `tags`, and
+   `url`, followed by a structured body so semantic search stays precise.
 4. Add a generator under `tools/` when the source has machine-readable data; prefer
    official structured data over scraping.
 
@@ -25,4 +26,4 @@ Thanks for helping grow pentagi-knowledge!
 ## Legal
 
 Only contribute content you have the right to redistribute, with proper attribution.
-This project is for defensive understanding and authorised testing only.
+This project is for defensive understanding and authorized testing only.

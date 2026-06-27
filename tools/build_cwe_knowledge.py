@@ -66,8 +66,13 @@ def slug(text):
     return s[:80] or "item"
 
 
+def yaml_scalar(value):
+    """Return a YAML-safe double-quoted scalar."""
+    return json.dumps(str(value), ensure_ascii=False)
+
+
 def yaml_list(items):
-    return "[" + ", ".join(items) + "]" if items else "[]"
+    return "[" + ", ".join(yaml_scalar(item) for item in items) + "]" if items else "[]"
 
 
 def parse(root):
@@ -143,10 +148,10 @@ def md_weakness(wid, w):
     fm = textwrap.dedent(f"""\
         ---
         cwe_id: {wid}
-        name: {name}
+        name: {yaml_scalar(name)}
         type: weakness
-        abstraction: {abstraction or 'n/a'}
-        status: {status or 'n/a'}
+        abstraction: {yaml_scalar(abstraction or 'n/a')}
+        status: {yaml_scalar(status or 'n/a')}
         languages: {yaml_list(langs)}
         related_capec: {yaml_list(rel_capec)}
         url: {url}

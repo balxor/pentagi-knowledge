@@ -20,6 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-NOTE: The MIT license above covers the original code, tooling, structure and
-prose in this repository. Knowledge content derived from MITRE ATT&CK remains
-subject to the MITRE ATT&CK Terms of Use - see NOTICE.
+NOTE: The MIT license above covers the original code, tooling, structure, and
+prose in this repository. Knowledge content derived from MITRE ATT&CK, CAPEC,
+and CWE remains subject to the applicable MITRE terms of use. See NOTICE.

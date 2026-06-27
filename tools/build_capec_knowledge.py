@@ -17,7 +17,7 @@ USAGE
         --push --pentagi-url https://localhost:8443 --token "$PENTAGI_API_TOKEN"
 
 CAPEC is free to use with attribution to The MITRE Corporation.
-Only run resulting attack flows against systems you are authorised to test.
+Only run resulting attack flows against systems you are authorized to test.
 
 Author: Kenshin Himura of DTrust
 """
@@ -87,8 +87,13 @@ def parse(bundle):
     return patterns, mit_for
 
 
+def yaml_scalar(value):
+    """Return a YAML-safe double-quoted scalar."""
+    return json.dumps(str(value), ensure_ascii=False)
+
+
 def yaml_list(items):
-    return "[" + ", ".join(items) + "]" if items else "[]"
+    return "[" + ", ".join(yaml_scalar(item) for item in items) + "]" if items else "[]"
 
 
 def md_pattern(cid, rec, mit_for):
@@ -112,11 +117,11 @@ def md_pattern(cid, rec, mit_for):
     fm = textwrap.dedent(f"""\
         ---
         capec_id: {cid}
-        name: {name}
+        name: {yaml_scalar(name)}
         type: attack-pattern
-        abstraction: {abstraction or 'n/a'}
-        likelihood: {likelihood or 'n/a'}
-        severity: {severity or 'n/a'}
+        abstraction: {yaml_scalar(abstraction or 'n/a')}
+        likelihood: {yaml_scalar(likelihood or 'n/a')}
+        severity: {yaml_scalar(severity or 'n/a')}
         related_cwe: {yaml_list(rel_cwe)}
         related_attack: {yaml_list(rel_attack)}
         url: {rec['url']}
